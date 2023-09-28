@@ -1,0 +1,12 @@
+prefix=/lab/projects1/GRUMP/HotMAPS2/.snakemake/conda/8753e9016cc1f5b96951553cc62b9320_
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+gmodule_supported=true
+
+Name: GModule
+Description: Dynamic module loader for GLib
+Version: 2.78.0
+Requires: gmodule-no-export-2.0, glib-2.0
+Libs: -Wl,--export-dynamic
+Cflags: -I${includedir}

@@ -1,0 +1,10 @@
+Copy code
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.egg
+*.egg-info
+__pycache__/
+
+# Log folder
+logs/

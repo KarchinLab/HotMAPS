@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                            count
+---------------------------  -------
+all                                1
+find_hotspot_regions               1
+hotspot                            1
+multiple_testing_correction        1
+total                              4
+
+Select jobs to execute...
+
+[Wed Sep 27 19:36:18 2023]
+rule hotspot:
+    input: output/NDD/NDD_mutation_counts.txt
+    output: output/NDD/NDD_merged_hotspots.txt
+    jobid: 2
+    reason: Missing output files: output/NDD/NDD_merged_hotspots.txt
+    resources: tmpdir=/tmp
+
+Activating conda environment: .snakemake/conda/8753e9016cc1f5b96951553cc62b9320_

@@ -1,0 +1,12 @@
+prefix=/lab/projects1/GRUMP/HotMAPS2/.snakemake/conda/8753e9016cc1f5b96951553cc62b9320_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: ICE
+Description: X Inter Client Exchange Library
+Version: 1.1.1
+Requires: xproto
+Cflags: -I${includedir}
+Libs: -L${libdir} -lICE
+Libs.private: 

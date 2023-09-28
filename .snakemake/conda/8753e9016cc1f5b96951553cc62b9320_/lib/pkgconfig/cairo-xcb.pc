@@ -1,0 +1,12 @@
+prefix=/lab/projects1/GRUMP/HotMAPS2/.snakemake/conda/8753e9016cc1f5b96951553cc62b9320_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: cairo-xcb
+Description: XCB surface backend for cairo graphics library
+Version: 1.16.0
+
+Requires: cairo xcb >= 1.6 xcb-render >= 1.6
+Libs:  
+Cflags: -I${includedir}/cairo 

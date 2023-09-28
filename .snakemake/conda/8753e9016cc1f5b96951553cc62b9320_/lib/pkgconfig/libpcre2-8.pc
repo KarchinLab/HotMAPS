@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/lab/projects1/GRUMP/HotMAPS2/.snakemake/conda/8753e9016cc1f5b96951553cc62b9320_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libpcre2-8
+Description: PCRE2 - Perl compatible regular expressions C library (2nd API) with 8 bit character support
+Version: 10.40
+Libs: -L${libdir} -lpcre2-8
+Libs.private:  
+Cflags: -I${includedir} 

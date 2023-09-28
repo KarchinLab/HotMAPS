@@ -1,0 +1,13 @@
+prefix=/lab/projects1/GRUMP/HotMAPS2/.snakemake/conda/8753e9016cc1f5b96951553cc62b9320_
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qt
+
+
+Name: Qt5 Purchasing
+Description: Qt Purchasing module
+Version: 5.15.8
+Libs: -L${libdir} -lQt5Purchasing 
+Cflags: -DQT_PURCHASING_LIB -I${includedir}/QtPurchasing -I${includedir}
+Requires: Qt5Core
+

@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /lab/projects1/GRUMP/HotMAPS2/.snakemake/conda/8753e9016cc1f5b96951553cc62b9320_/bin/python -m PyQt5.pyrcc_main ${1+"$@"}

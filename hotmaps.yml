@@ -1,0 +1,10 @@
+name: hotmaps2
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - biopython
+  - numpy
+  - pymol-open-source
+  - scipy

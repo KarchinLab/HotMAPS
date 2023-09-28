@@ -1,0 +1,13 @@
+prefix=/lab/projects1/GRUMP/HotMAPS2/.snakemake/conda/8753e9016cc1f5b96951553cc62b9320_
+exec_prefix=/lab/projects1/GRUMP/HotMAPS2/.snakemake/conda/8753e9016cc1f5b96951553cc62b9320_
+libdir=/lab/projects1/GRUMP/HotMAPS2/.snakemake/conda/8753e9016cc1f5b96951553cc62b9320_/lib
+includedir=/lab/projects1/GRUMP/HotMAPS2/.snakemake/conda/8753e9016cc1f5b96951553cc62b9320_/include
+ccompiler=/home/conda/feedstock_root/build_artifacts/libnetcdf_1688600553730/_build_env/bin/x86_64-conda-linux-gnu-cc
+
+Name: netCDF
+Description: NetCDF Client Library for C
+URL: https://www.unidata.ucar.edu/netcdf
+Version: 4.9.2
+Libs: -L${libdir} -lnetcdf
+Libs.private: -lmfhdf -ldf -lhdf5_hl -lhdf5 -lcrypto -lcurl -lrt -lpthread -lsz -lz -ldl -lm -lzip -lblosc -lzstd -lbz2 -lxml2
+Cflags: -I${includedir}

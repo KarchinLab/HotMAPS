@@ -1,0 +1,4 @@
+output/NDD/NDD_hotregions.txt
+output/NDD/NDD_merged_hotspots.txt
+output/NDD/NDD_significance_level.txt
+output/NDD/NDD_hotspots_multitestcorrected.txt

@@ -1,0 +1,3413 @@
+{
+  "build": "h00ab1b0_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=12",
+    "libstdcxx-ng >=12"
+  ],
+  "extracted_package_dir": "/lab/projects1/GRUMP/miniconda3/pkgs/glm-0.9.9.8-h00ab1b0_0",
+  "files": [
+    "include/glm/common.hpp",
+    "include/glm/detail/_features.hpp",
+    "include/glm/detail/_fixes.hpp",
+    "include/glm/detail/_noise.hpp",
+    "include/glm/detail/_swizzle.hpp",
+    "include/glm/detail/_swizzle_func.hpp",
+    "include/glm/detail/_vectorize.hpp",
+    "include/glm/detail/compute_common.hpp",
+    "include/glm/detail/compute_vector_relational.hpp",
+    "include/glm/detail/func_common.inl",
+    "include/glm/detail/func_common_simd.inl",
+    "include/glm/detail/func_exponential.inl",
+    "include/glm/detail/func_exponential_simd.inl",
+    "include/glm/detail/func_geometric.inl",
+    "include/glm/detail/func_geometric_simd.inl",
+    "include/glm/detail/func_integer.inl",
+    "include/glm/detail/func_integer_simd.inl",
+    "include/glm/detail/func_matrix.inl",
+    "include/glm/detail/func_matrix_simd.inl",
+    "include/glm/detail/func_packing.inl",
+    "include/glm/detail/func_packing_simd.inl",
+    "include/glm/detail/func_trigonometric.inl",
+    "include/glm/detail/func_trigonometric_simd.inl",
+    "include/glm/detail/func_vector_relational.inl",
+    "include/glm/detail/func_vector_relational_simd.inl",
+    "include/glm/detail/glm.cpp",
+    "include/glm/detail/qualifier.hpp",
+    "include/glm/detail/setup.hpp",
+    "include/glm/detail/type_float.hpp",
+    "include/glm/detail/type_half.hpp",
+    "include/glm/detail/type_half.inl",
+    "include/glm/detail/type_mat2x2.hpp",
+    "include/glm/detail/type_mat2x2.inl",
+    "include/glm/detail/type_mat2x3.hpp",
+    "include/glm/detail/type_mat2x3.inl",
+    "include/glm/detail/type_mat2x4.hpp",
+    "include/glm/detail/type_mat2x4.inl",
+    "include/glm/detail/type_mat3x2.hpp",
+    "include/glm/detail/type_mat3x2.inl",
+    "include/glm/detail/type_mat3x3.hpp",
+    "include/glm/detail/type_mat3x3.inl",
+    "include/glm/detail/type_mat3x4.hpp",
+    "include/glm/detail/type_mat3x4.inl",
+    "include/glm/detail/type_mat4x2.hpp",
+    "include/glm/detail/type_mat4x2.inl",
+    "include/glm/detail/type_mat4x3.hpp",
+    "include/glm/detail/type_mat4x3.inl",
+    "include/glm/detail/type_mat4x4.hpp",
+    "include/glm/detail/type_mat4x4.inl",
+    "include/glm/detail/type_mat4x4_simd.inl",
+    "include/glm/detail/type_quat.hpp",
+    "include/glm/detail/type_quat.inl",
+    "include/glm/detail/type_quat_simd.inl",
+    "include/glm/detail/type_vec1.hpp",
+    "include/glm/detail/type_vec1.inl",
+    "include/glm/detail/type_vec2.hpp",
+    "include/glm/detail/type_vec2.inl",
+    "include/glm/detail/type_vec3.hpp",
+    "include/glm/detail/type_vec3.inl",
+    "include/glm/detail/type_vec4.hpp",
+    "include/glm/detail/type_vec4.inl",
+    "include/glm/detail/type_vec4_simd.inl",
+    "include/glm/exponential.hpp",
+    "include/glm/ext.hpp",
+    "include/glm/ext/matrix_clip_space.hpp",
+    "include/glm/ext/matrix_clip_space.inl",
+    "include/glm/ext/matrix_common.hpp",
+    "include/glm/ext/matrix_common.inl",
+    "include/glm/ext/matrix_double2x2.hpp",
+    "include/glm/ext/matrix_double2x2_precision.hpp",
+    "include/glm/ext/matrix_double2x3.hpp",
+    "include/glm/ext/matrix_double2x3_precision.hpp",
+    "include/glm/ext/matrix_double2x4.hpp",
+    "include/glm/ext/matrix_double2x4_precision.hpp",
+    "include/glm/ext/matrix_double3x2.hpp",
+    "include/glm/ext/matrix_double3x2_precision.hpp",
+    "include/glm/ext/matrix_double3x3.hpp",
+    "include/glm/ext/matrix_double3x3_precision.hpp",
+    "include/glm/ext/matrix_double3x4.hpp",
+    "include/glm/ext/matrix_double3x4_precision.hpp",
+    "include/glm/ext/matrix_double4x2.hpp",
+    "include/glm/ext/matrix_double4x2_precision.hpp",
+    "include/glm/ext/matrix_double4x3.hpp",
+    "include/glm/ext/matrix_double4x3_precision.hpp",
+    "include/glm/ext/matrix_double4x4.hpp",
+    "include/glm/ext/matrix_double4x4_precision.hpp",
+    "include/glm/ext/matrix_float2x2.hpp",
+    "include/glm/ext/matrix_float2x2_precision.hpp",
+    "include/glm/ext/matrix_float2x3.hpp",
+    "include/glm/ext/matrix_float2x3_precision.hpp",
+    "include/glm/ext/matrix_float2x4.hpp",
+    "include/glm/ext/matrix_float2x4_precision.hpp",
+    "include/glm/ext/matrix_float3x2.hpp",
+    "include/glm/ext/matrix_float3x2_precision.hpp",
+    "include/glm/ext/matrix_float3x3.hpp",
+    "include/glm/ext/matrix_float3x3_precision.hpp",
+    "include/glm/ext/matrix_float3x4.hpp",
+    "include/glm/ext/matrix_float3x4_precision.hpp",
+    "include/glm/ext/matrix_float4x2.hpp",
+    "include/glm/ext/matrix_float4x2_precision.hpp",
+    "include/glm/ext/matrix_float4x3.hpp",
+    "include/glm/ext/matrix_float4x3_precision.hpp",
+    "include/glm/ext/matrix_float4x4.hpp",
+    "include/glm/ext/matrix_float4x4_precision.hpp",
+    "include/glm/ext/matrix_int2x2.hpp",
+    "include/glm/ext/matrix_int2x2_sized.hpp",
+    "include/glm/ext/matrix_int2x3.hpp",
+    "include/glm/ext/matrix_int2x3_sized.hpp",
+    "include/glm/ext/matrix_int2x4.hpp",
+    "include/glm/ext/matrix_int2x4_sized.hpp",
+    "include/glm/ext/matrix_int3x2.hpp",
+    "include/glm/ext/matrix_int3x2_sized.hpp",
+    "include/glm/ext/matrix_int3x3.hpp",
+    "include/glm/ext/matrix_int3x3_sized.hpp",
+    "include/glm/ext/matrix_int3x4.hpp",
+    "include/glm/ext/matrix_int3x4_sized.hpp",
+    "include/glm/ext/matrix_int4x2.hpp",
+    "include/glm/ext/matrix_int4x2_sized.hpp",
+    "include/glm/ext/matrix_int4x3.hpp",
+    "include/glm/ext/matrix_int4x3_sized.hpp",
+    "include/glm/ext/matrix_int4x4.hpp",
+    "include/glm/ext/matrix_int4x4_sized.hpp",
+    "include/glm/ext/matrix_projection.hpp",
+    "include/glm/ext/matrix_projection.inl",
+    "include/glm/ext/matrix_relational.hpp",
+    "include/glm/ext/matrix_relational.inl",
+    "include/glm/ext/matrix_transform.hpp",
+    "include/glm/ext/matrix_transform.inl",
+    "include/glm/ext/matrix_uint2x2.hpp",
+    "include/glm/ext/matrix_uint2x2_sized.hpp",
+    "include/glm/ext/matrix_uint2x3.hpp",
+    "include/glm/ext/matrix_uint2x3_sized.hpp",
+    "include/glm/ext/matrix_uint2x4.hpp",
+    "include/glm/ext/matrix_uint2x4_sized.hpp",
+    "include/glm/ext/matrix_uint3x2.hpp",
+    "include/glm/ext/matrix_uint3x2_sized.hpp",
+    "include/glm/ext/matrix_uint3x3.hpp",
+    "include/glm/ext/matrix_uint3x3_sized.hpp",
+    "include/glm/ext/matrix_uint3x4.hpp",
+    "include/glm/ext/matrix_uint3x4_sized.hpp",
+    "include/glm/ext/matrix_uint4x2.hpp",
+    "include/glm/ext/matrix_uint4x2_sized.hpp",
+    "include/glm/ext/matrix_uint4x3.hpp",
+    "include/glm/ext/matrix_uint4x3_sized.hpp",
+    "include/glm/ext/matrix_uint4x4.hpp",
+    "include/glm/ext/matrix_uint4x4_sized.hpp",
+    "include/glm/ext/quaternion_common.hpp",
+    "include/glm/ext/quaternion_common.inl",
+    "include/glm/ext/quaternion_common_simd.inl",
+    "include/glm/ext/quaternion_double.hpp",
+    "include/glm/ext/quaternion_double_precision.hpp",
+    "include/glm/ext/quaternion_exponential.hpp",
+    "include/glm/ext/quaternion_exponential.inl",
+    "include/glm/ext/quaternion_float.hpp",
+    "include/glm/ext/quaternion_float_precision.hpp",
+    "include/glm/ext/quaternion_geometric.hpp",
+    "include/glm/ext/quaternion_geometric.inl",
+    "include/glm/ext/quaternion_relational.hpp",
+    "include/glm/ext/quaternion_relational.inl",
+    "include/glm/ext/quaternion_transform.hpp",
+    "include/glm/ext/quaternion_transform.inl",
+    "include/glm/ext/quaternion_trigonometric.hpp",
+    "include/glm/ext/quaternion_trigonometric.inl",
+    "include/glm/ext/scalar_common.hpp",
+    "include/glm/ext/scalar_common.inl",
+    "include/glm/ext/scalar_constants.hpp",
+    "include/glm/ext/scalar_constants.inl",
+    "include/glm/ext/scalar_int_sized.hpp",
+    "include/glm/ext/scalar_integer.hpp",
+    "include/glm/ext/scalar_integer.inl",
+    "include/glm/ext/scalar_packing.hpp",
+    "include/glm/ext/scalar_packing.inl",
+    "include/glm/ext/scalar_relational.hpp",
+    "include/glm/ext/scalar_relational.inl",
+    "include/glm/ext/scalar_uint_sized.hpp",
+    "include/glm/ext/scalar_ulp.hpp",
+    "include/glm/ext/scalar_ulp.inl",
+    "include/glm/ext/vector_bool1.hpp",
+    "include/glm/ext/vector_bool1_precision.hpp",
+    "include/glm/ext/vector_bool2.hpp",
+    "include/glm/ext/vector_bool2_precision.hpp",
+    "include/glm/ext/vector_bool3.hpp",
+    "include/glm/ext/vector_bool3_precision.hpp",
+    "include/glm/ext/vector_bool4.hpp",
+    "include/glm/ext/vector_bool4_precision.hpp",
+    "include/glm/ext/vector_common.hpp",
+    "include/glm/ext/vector_common.inl",
+    "include/glm/ext/vector_double1.hpp",
+    "include/glm/ext/vector_double1_precision.hpp",
+    "include/glm/ext/vector_double2.hpp",
+    "include/glm/ext/vector_double2_precision.hpp",
+    "include/glm/ext/vector_double3.hpp",
+    "include/glm/ext/vector_double3_precision.hpp",
+    "include/glm/ext/vector_double4.hpp",
+    "include/glm/ext/vector_double4_precision.hpp",
+    "include/glm/ext/vector_float1.hpp",
+    "include/glm/ext/vector_float1_precision.hpp",
+    "include/glm/ext/vector_float2.hpp",
+    "include/glm/ext/vector_float2_precision.hpp",
+    "include/glm/ext/vector_float3.hpp",
+    "include/glm/ext/vector_float3_precision.hpp",
+    "include/glm/ext/vector_float4.hpp",
+    "include/glm/ext/vector_float4_precision.hpp",
+    "include/glm/ext/vector_int1.hpp",
+    "include/glm/ext/vector_int1_sized.hpp",
+    "include/glm/ext/vector_int2.hpp",
+    "include/glm/ext/vector_int2_sized.hpp",
+    "include/glm/ext/vector_int3.hpp",
+    "include/glm/ext/vector_int3_sized.hpp",
+    "include/glm/ext/vector_int4.hpp",
+    "include/glm/ext/vector_int4_sized.hpp",
+    "include/glm/ext/vector_integer.hpp",
+    "include/glm/ext/vector_integer.inl",
+    "include/glm/ext/vector_packing.hpp",
+    "include/glm/ext/vector_packing.inl",
+    "include/glm/ext/vector_relational.hpp",
+    "include/glm/ext/vector_relational.inl",
+    "include/glm/ext/vector_uint1.hpp",
+    "include/glm/ext/vector_uint1_sized.hpp",
+    "include/glm/ext/vector_uint2.hpp",
+    "include/glm/ext/vector_uint2_sized.hpp",
+    "include/glm/ext/vector_uint3.hpp",
+    "include/glm/ext/vector_uint3_sized.hpp",
+    "include/glm/ext/vector_uint4.hpp",
+    "include/glm/ext/vector_uint4_sized.hpp",
+    "include/glm/ext/vector_ulp.hpp",
+    "include/glm/ext/vector_ulp.inl",
+    "include/glm/fwd.hpp",
+    "include/glm/geometric.hpp",
+    "include/glm/glm.hpp",
+    "include/glm/gtc/bitfield.hpp",
+    "include/glm/gtc/bitfield.inl",
+    "include/glm/gtc/color_space.hpp",
+    "include/glm/gtc/color_space.inl",
+    "include/glm/gtc/constants.hpp",
+    "include/glm/gtc/constants.inl",
+    "include/glm/gtc/epsilon.hpp",
+    "include/glm/gtc/epsilon.inl",
+    "include/glm/gtc/integer.hpp",
+    "include/glm/gtc/integer.inl",
+    "include/glm/gtc/matrix_access.hpp",
+    "include/glm/gtc/matrix_access.inl",
+    "include/glm/gtc/matrix_integer.hpp",
+    "include/glm/gtc/matrix_inverse.hpp",
+    "include/glm/gtc/matrix_inverse.inl",
+    "include/glm/gtc/matrix_transform.hpp",
+    "include/glm/gtc/matrix_transform.inl",
+    "include/glm/gtc/noise.hpp",
+    "include/glm/gtc/noise.inl",
+    "include/glm/gtc/packing.hpp",
+    "include/glm/gtc/packing.inl",
+    "include/glm/gtc/quaternion.hpp",
+    "include/glm/gtc/quaternion.inl",
+    "include/glm/gtc/quaternion_simd.inl",
+    "include/glm/gtc/random.hpp",
+    "include/glm/gtc/random.inl",
+    "include/glm/gtc/reciprocal.hpp",
+    "include/glm/gtc/reciprocal.inl",
+    "include/glm/gtc/round.hpp",
+    "include/glm/gtc/round.inl",
+    "include/glm/gtc/type_aligned.hpp",
+    "include/glm/gtc/type_precision.hpp",
+    "include/glm/gtc/type_precision.inl",
+    "include/glm/gtc/type_ptr.hpp",
+    "include/glm/gtc/type_ptr.inl",
+    "include/glm/gtc/ulp.hpp",
+    "include/glm/gtc/ulp.inl",
+    "include/glm/gtc/vec1.hpp",
+    "include/glm/gtx/associated_min_max.hpp",
+    "include/glm/gtx/associated_min_max.inl",
+    "include/glm/gtx/bit.hpp",
+    "include/glm/gtx/bit.inl",
+    "include/glm/gtx/closest_point.hpp",
+    "include/glm/gtx/closest_point.inl",
+    "include/glm/gtx/color_encoding.hpp",
+    "include/glm/gtx/color_encoding.inl",
+    "include/glm/gtx/color_space.hpp",
+    "include/glm/gtx/color_space.inl",
+    "include/glm/gtx/color_space_YCoCg.hpp",
+    "include/glm/gtx/color_space_YCoCg.inl",
+    "include/glm/gtx/common.hpp",
+    "include/glm/gtx/common.inl",
+    "include/glm/gtx/compatibility.hpp",
+    "include/glm/gtx/compatibility.inl",
+    "include/glm/gtx/component_wise.hpp",
+    "include/glm/gtx/component_wise.inl",
+    "include/glm/gtx/dual_quaternion.hpp",
+    "include/glm/gtx/dual_quaternion.inl",
+    "include/glm/gtx/easing.hpp",
+    "include/glm/gtx/easing.inl",
+    "include/glm/gtx/euler_angles.hpp",
+    "include/glm/gtx/euler_angles.inl",
+    "include/glm/gtx/extend.hpp",
+    "include/glm/gtx/extend.inl",
+    "include/glm/gtx/extended_min_max.hpp",
+    "include/glm/gtx/extended_min_max.inl",
+    "include/glm/gtx/exterior_product.hpp",
+    "include/glm/gtx/exterior_product.inl",
+    "include/glm/gtx/fast_exponential.hpp",
+    "include/glm/gtx/fast_exponential.inl",
+    "include/glm/gtx/fast_square_root.hpp",
+    "include/glm/gtx/fast_square_root.inl",
+    "include/glm/gtx/fast_trigonometry.hpp",
+    "include/glm/gtx/fast_trigonometry.inl",
+    "include/glm/gtx/float_notmalize.inl",
+    "include/glm/gtx/functions.hpp",
+    "include/glm/gtx/functions.inl",
+    "include/glm/gtx/gradient_paint.hpp",
+    "include/glm/gtx/gradient_paint.inl",
+    "include/glm/gtx/handed_coordinate_space.hpp",
+    "include/glm/gtx/handed_coordinate_space.inl",
+    "include/glm/gtx/hash.hpp",
+    "include/glm/gtx/hash.inl",
+    "include/glm/gtx/integer.hpp",
+    "include/glm/gtx/integer.inl",
+    "include/glm/gtx/intersect.hpp",
+    "include/glm/gtx/intersect.inl",
+    "include/glm/gtx/io.hpp",
+    "include/glm/gtx/io.inl",
+    "include/glm/gtx/log_base.hpp",
+    "include/glm/gtx/log_base.inl",
+    "include/glm/gtx/matrix_cross_product.hpp",
+    "include/glm/gtx/matrix_cross_product.inl",
+    "include/glm/gtx/matrix_decompose.hpp",
+    "include/glm/gtx/matrix_decompose.inl",
+    "include/glm/gtx/matrix_factorisation.hpp",
+    "include/glm/gtx/matrix_factorisation.inl",
+    "include/glm/gtx/matrix_interpolation.hpp",
+    "include/glm/gtx/matrix_interpolation.inl",
+    "include/glm/gtx/matrix_major_storage.hpp",
+    "include/glm/gtx/matrix_major_storage.inl",
+    "include/glm/gtx/matrix_operation.hpp",
+    "include/glm/gtx/matrix_operation.inl",
+    "include/glm/gtx/matrix_query.hpp",
+    "include/glm/gtx/matrix_query.inl",
+    "include/glm/gtx/matrix_transform_2d.hpp",
+    "include/glm/gtx/matrix_transform_2d.inl",
+    "include/glm/gtx/mixed_product.hpp",
+    "include/glm/gtx/mixed_product.inl",
+    "include/glm/gtx/norm.hpp",
+    "include/glm/gtx/norm.inl",
+    "include/glm/gtx/normal.hpp",
+    "include/glm/gtx/normal.inl",
+    "include/glm/gtx/normalize_dot.hpp",
+    "include/glm/gtx/normalize_dot.inl",
+    "include/glm/gtx/number_precision.hpp",
+    "include/glm/gtx/number_precision.inl",
+    "include/glm/gtx/optimum_pow.hpp",
+    "include/glm/gtx/optimum_pow.inl",
+    "include/glm/gtx/orthonormalize.hpp",
+    "include/glm/gtx/orthonormalize.inl",
+    "include/glm/gtx/perpendicular.hpp",
+    "include/glm/gtx/perpendicular.inl",
+    "include/glm/gtx/polar_coordinates.hpp",
+    "include/glm/gtx/polar_coordinates.inl",
+    "include/glm/gtx/projection.hpp",
+    "include/glm/gtx/projection.inl",
+    "include/glm/gtx/quaternion.hpp",
+    "include/glm/gtx/quaternion.inl",
+    "include/glm/gtx/range.hpp",
+    "include/glm/gtx/raw_data.hpp",
+    "include/glm/gtx/raw_data.inl",
+    "include/glm/gtx/rotate_normalized_axis.hpp",
+    "include/glm/gtx/rotate_normalized_axis.inl",
+    "include/glm/gtx/rotate_vector.hpp",
+    "include/glm/gtx/rotate_vector.inl",
+    "include/glm/gtx/scalar_multiplication.hpp",
+    "include/glm/gtx/scalar_relational.hpp",
+    "include/glm/gtx/scalar_relational.inl",
+    "include/glm/gtx/spline.hpp",
+    "include/glm/gtx/spline.inl",
+    "include/glm/gtx/std_based_type.hpp",
+    "include/glm/gtx/std_based_type.inl",
+    "include/glm/gtx/string_cast.hpp",
+    "include/glm/gtx/string_cast.inl",
+    "include/glm/gtx/texture.hpp",
+    "include/glm/gtx/texture.inl",
+    "include/glm/gtx/transform.hpp",
+    "include/glm/gtx/transform.inl",
+    "include/glm/gtx/transform2.hpp",
+    "include/glm/gtx/transform2.inl",
+    "include/glm/gtx/type_aligned.hpp",
+    "include/glm/gtx/type_aligned.inl",
+    "include/glm/gtx/type_trait.hpp",
+    "include/glm/gtx/type_trait.inl",
+    "include/glm/gtx/vec_swizzle.hpp",
+    "include/glm/gtx/vector_angle.hpp",
+    "include/glm/gtx/vector_angle.inl",
+    "include/glm/gtx/vector_query.hpp",
+    "include/glm/gtx/vector_query.inl",
+    "include/glm/gtx/wrap.hpp",
+    "include/glm/gtx/wrap.inl",
+    "include/glm/integer.hpp",
+    "include/glm/mat2x2.hpp",
+    "include/glm/mat2x3.hpp",
+    "include/glm/mat2x4.hpp",
+    "include/glm/mat3x2.hpp",
+    "include/glm/mat3x3.hpp",
+    "include/glm/mat3x4.hpp",
+    "include/glm/mat4x2.hpp",
+    "include/glm/mat4x3.hpp",
+    "include/glm/mat4x4.hpp",
+    "include/glm/matrix.hpp",
+    "include/glm/packing.hpp",
+    "include/glm/simd/common.h",
+    "include/glm/simd/exponential.h",
+    "include/glm/simd/geometric.h",
+    "include/glm/simd/integer.h",
+    "include/glm/simd/matrix.h",
+    "include/glm/simd/neon.h",
+    "include/glm/simd/packing.h",
+    "include/glm/simd/platform.h",
+    "include/glm/simd/trigonometric.h",
+    "include/glm/simd/vector_relational.h",
+    "include/glm/trigonometric.hpp",
+    "include/glm/vec2.hpp",
+    "include/glm/vec3.hpp",
+    "include/glm/vec4.hpp",
+    "include/glm/vector_relational.hpp",
+    "share/cmake/glm/glmConfig.cmake",
+    "share/cmake/glm/glmConfigVersion.cmake",
+    "share/pkgconfig/glm.pc"
+  ],
+  "fn": "glm-0.9.9.8-h00ab1b0_0.conda",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/lab/projects1/GRUMP/miniconda3/pkgs/glm-0.9.9.8-h00ab1b0_0",
+    "type": 1
+  },
+  "md5": "03e44a0dcb373e50479a64260714aee4",
+  "name": "glm",
+  "package_tarball_full_path": "/lab/projects1/GRUMP/miniconda3/pkgs/glm-0.9.9.8-h00ab1b0_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/glm/common.hpp",
+        "path_type": "hardlink",
+        "sha256": "f3512ae64c0991372daad9cff5a761a97b8d3a1a82fa3132aa3f501661e51fd1",
+        "sha256_in_prefix": "f3512ae64c0991372daad9cff5a761a97b8d3a1a82fa3132aa3f501661e51fd1",
+        "size_in_bytes": 28157
+      },
+      {
+        "_path": "include/glm/detail/_features.hpp",
+        "path_type": "hardlink",
+        "sha256": "81fd608a289d234e3b0c844b22581e47cc5819672e5636b0e3fc1d1c069a0322",
+        "sha256_in_prefix": "81fd608a289d234e3b0c844b22581e47cc5819672e5636b0e3fc1d1c069a0322",
+        "size_in_bytes": 11770
+      },
+      {
+        "_path": "include/glm/detail/_fixes.hpp",
+        "path_type": "hardlink",
+        "sha256": "6fc9790fefc3bf84901fac960297c31e231e8d062b1a719750bcdae61abca254",
+        "sha256_in_prefix": "6fc9790fefc3bf84901fac960297c31e231e8d062b1a719750bcdae61abca254",
+        "size_in_bytes": 407
+      },
+      {
+        "_path": "include/glm/detail/_noise.hpp",
+        "path_type": "hardlink",
+        "sha256": "7ee81536e422dca32cef43c0326a0963f485432427a6460c05bc4f8b32a2fd7a",
+        "sha256_in_prefix": "7ee81536e422dca32cef43c0326a0963f485432427a6460c05bc4f8b32a2fd7a",
+        "size_in_bytes": 2360
+      },
+      {
+        "_path": "include/glm/detail/_swizzle.hpp",
+        "path_type": "hardlink",
+        "sha256": "c38fa07deddf30c27a5be8970f3b2c9ef0dbdcc960ea2fafd1e4d9088b8c8e7a",
+        "sha256_in_prefix": "c38fa07deddf30c27a5be8970f3b2c9ef0dbdcc960ea2fafd1e4d9088b8c8e7a",
+        "size_in_bytes": 49213
+      },
+      {
+        "_path": "include/glm/detail/_swizzle_func.hpp",
+        "path_type": "hardlink",
+        "sha256": "36cc1a6cc83ba84407c0ba617b4ee6416288813bbb0aa5c9b14b5f8112d119cb",
+        "sha256_in_prefix": "36cc1a6cc83ba84407c0ba617b4ee6416288813bbb0aa5c9b14b5f8112d119cb",
+        "size_in_bytes": 35019
+      },
+      {
+        "_path": "include/glm/detail/_vectorize.hpp",
+        "path_type": "hardlink",
+        "sha256": "119aa7332b6801c70f27460d5a0ec3f8baeb5099d269ad85077c367e3b18bd06",
+        "sha256_in_prefix": "119aa7332b6801c70f27460d5a0ec3f8baeb5099d269ad85077c367e3b18bd06",
+        "size_in_bytes": 5508
+      },
+      {
+        "_path": "include/glm/detail/compute_common.hpp",
+        "path_type": "hardlink",
+        "sha256": "604a836664c4d29dc4f963feae571705d3a76432849e1dffc9e320e83264b8aa",
+        "sha256_in_prefix": "604a836664c4d29dc4f963feae571705d3a76432849e1dffc9e320e83264b8aa",
+        "size_in_bytes": 1242
+      },
+      {
+        "_path": "include/glm/detail/compute_vector_relational.hpp",
+        "path_type": "hardlink",
+        "sha256": "ff168fc500c89f8d41b336b61e2b288e0a756a6aa67b03cde527f619baa73a82",
+        "sha256_in_prefix": "ff168fc500c89f8d41b336b61e2b288e0a756a6aa67b03cde527f619baa73a82",
+        "size_in_bytes": 630
+      },
+      {
+        "_path": "include/glm/detail/func_common.inl",
+        "path_type": "hardlink",
+        "sha256": "ff5ee8894d641a60e1b55f3130dff5de0d9369a368a76fefd369d8cf75ea93d8",
+        "sha256_in_prefix": "ff5ee8894d641a60e1b55f3130dff5de0d9369a368a76fefd369d8cf75ea93d8",
+        "size_in_bytes": 25400
+      },
+      {
+        "_path": "include/glm/detail/func_common_simd.inl",
+        "path_type": "hardlink",
+        "sha256": "e50161bf79155c9b621d23c992b0710be6f5cc78e5ac72051d86e0c475894e9c",
+        "sha256_in_prefix": "e50161bf79155c9b621d23c992b0710be6f5cc78e5ac72051d86e0c475894e9c",
+        "size_in_bytes": 6235
+      },
+      {
+        "_path": "include/glm/detail/func_exponential.inl",
+        "path_type": "hardlink",
+        "sha256": "0264b95a89c569be0a7c8fba007aacb851063d61f3345e7863e60c2049ca681f",
+        "sha256_in_prefix": "0264b95a89c569be0a7c8fba007aacb851063d61f3345e7863e60c2049ca681f",
+        "size_in_bytes": 4500
+      },
+      {
+        "_path": "include/glm/detail/func_exponential_simd.inl",
+        "path_type": "hardlink",
+        "sha256": "3b6e7099bb23a55facce588cc830ee968564803c48331b1dd48cf61e1ad731b6",
+        "sha256_in_prefix": "3b6e7099bb23a55facce588cc830ee968564803c48331b1dd48cf61e1ad731b6",
+        "size_in_bytes": 850
+      },
+      {
+        "_path": "include/glm/detail/func_geometric.inl",
+        "path_type": "hardlink",
+        "sha256": "490ee8efe78ffea91c863458a8f862056dabc9ba2e1000827806101b90d20310",
+        "sha256_in_prefix": "490ee8efe78ffea91c863458a8f862056dabc9ba2e1000827806101b90d20310",
+        "size_in_bytes": 7694
+      },
+      {
+        "_path": "include/glm/detail/func_geometric_simd.inl",
+        "path_type": "hardlink",
+        "sha256": "45872a838e0c37b49f58b557a0bd64fd8b8ac60a2dafe140d877ec53ec6b1174",
+        "sha256_in_prefix": "45872a838e0c37b49f58b557a0bd64fd8b8ac60a2dafe140d877ec53ec6b1174",
+        "size_in_bytes": 4279
+      },
+      {
+        "_path": "include/glm/detail/func_integer.inl",
+        "path_type": "hardlink",
+        "sha256": "161a37183e7d111564d59ae8e93d3e1d9c875813af4ed89af476bfc60ea97efe",
+        "sha256_in_prefix": "161a37183e7d111564d59ae8e93d3e1d9c875813af4ed89af476bfc60ea97efe",
+        "size_in_bytes": 15366
+      },
+      {
+        "_path": "include/glm/detail/func_integer_simd.inl",
+        "path_type": "hardlink",
+        "sha256": "2743d5f4aabcac6eb84316784b724d6b4da60e18c4afed83cf9b4cb151e40bf1",
+        "sha256_in_prefix": "2743d5f4aabcac6eb84316784b724d6b4da60e18c4afed83cf9b4cb151e40bf1",
+        "size_in_bytes": 1699
+      },
+      {
+        "_path": "include/glm/detail/func_matrix.inl",
+        "path_type": "hardlink",
+        "sha256": "3e40ff85473a7dd2049239aa8ae7050df7545c4ceb8208f1e7bbb2f03be78ba8",
+        "sha256_in_prefix": "3e40ff85473a7dd2049239aa8ae7050df7545c4ceb8208f1e7bbb2f03be78ba8",
+        "size_in_bytes": 13130
+      },
+      {
+        "_path": "include/glm/detail/func_matrix_simd.inl",
+        "path_type": "hardlink",
+        "sha256": "5b02f0cacc52ec651157aa690df073cb3ac23b41609ca592f9cdb64267c5e27f",
+        "sha256_in_prefix": "5b02f0cacc52ec651157aa690df073cb3ac23b41609ca592f9cdb64267c5e27f",
+        "size_in_bytes": 8812
+      },
+      {
+        "_path": "include/glm/detail/func_packing.inl",
+        "path_type": "hardlink",
+        "sha256": "579fb9b927f3b435350d63400e21da5457343bc3726e95d40d46c3203425eab4",
+        "sha256_in_prefix": "579fb9b927f3b435350d63400e21da5457343bc3726e95d40d46c3203425eab4",
+        "size_in_bytes": 3140
+      },
+      {
+        "_path": "include/glm/detail/func_packing_simd.inl",
+        "path_type": "hardlink",
+        "sha256": "279fd49fbd707a916e606d1f6fbb2e43e202334d6393dfab62fc7364f6234970",
+        "sha256_in_prefix": "279fd49fbd707a916e606d1f6fbb2e43e202334d6393dfab62fc7364f6234970",
+        "size_in_bytes": 78
+      },
+      {
+        "_path": "include/glm/detail/func_trigonometric.inl",
+        "path_type": "hardlink",
+        "sha256": "338418b118bdb6af143fe8633299b0781885c87136610b6af4cb47df83fb5ed5",
+        "sha256_in_prefix": "338418b118bdb6af143fe8633299b0781885c87136610b6af4cb47df83fb5ed5",
+        "size_in_bytes": 5413
+      },
+      {
+        "_path": "include/glm/detail/func_trigonometric_simd.inl",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "include/glm/detail/func_vector_relational.inl",
+        "path_type": "hardlink",
+        "sha256": "c9c60151b8b877d573b9fdb07f29364070c3e9f6736b39186bca6cc6b8112a5b",
+        "sha256_in_prefix": "c9c60151b8b877d573b9fdb07f29364070c3e9f6736b39186bca6cc6b8112a5b",
+        "size_in_bytes": 2495
+      },
+      {
+        "_path": "include/glm/detail/func_vector_relational_simd.inl",
+        "path_type": "hardlink",
+        "sha256": "279fd49fbd707a916e606d1f6fbb2e43e202334d6393dfab62fc7364f6234970",
+        "sha256_in_prefix": "279fd49fbd707a916e606d1f6fbb2e43e202334d6393dfab62fc7364f6234970",
+        "size_in_bytes": 78
+      },
+      {
+        "_path": "include/glm/detail/glm.cpp",
+        "path_type": "hardlink",
+        "sha256": "70c60a444b1b77faf5ae48d6fb66617413ab8adf91d1954d1bbc492b8695a6ca",
+        "sha256_in_prefix": "70c60a444b1b77faf5ae48d6fb66617413ab8adf91d1954d1bbc492b8695a6ca",
+        "size_in_bytes": 8728
+      },
+      {
+        "_path": "include/glm/detail/qualifier.hpp",
+        "path_type": "hardlink",
+        "sha256": "38eeeb81a7a992d7469467e3833accf208f16a9c91e26b82e859e50972f10318",
+        "sha256_in_prefix": "38eeeb81a7a992d7469467e3833accf208f16a9c91e26b82e859e50972f10318",
+        "size_in_bytes": 6126
+      },
+      {
+        "_path": "include/glm/detail/setup.hpp",
+        "path_type": "hardlink",
+        "sha256": "bbb0f036c33b0efec3ce60044dce73b0c09b5506b8110fb392ab62d0f8601e29",
+        "sha256_in_prefix": "bbb0f036c33b0efec3ce60044dce73b0c09b5506b8110fb392ab62d0f8601e29",
+        "size_in_bytes": 40588
+      },
+      {
+        "_path": "include/glm/detail/type_float.hpp",
+        "path_type": "hardlink",
+        "sha256": "a62772f6d894faf1b10bfe5468fe32accdfecae65e88b1d03150d1f60896ad1d",
+        "sha256_in_prefix": "a62772f6d894faf1b10bfe5468fe32accdfecae65e88b1d03150d1f60896ad1d",
+        "size_in_bytes": 1642
+      },
+      {
+        "_path": "include/glm/detail/type_half.hpp",
+        "path_type": "hardlink",
+        "sha256": "24173e7aaebf52860dfa8448c90db1f3cb3fcb9a56dc7126988165ae4c8ddc90",
+        "sha256_in_prefix": "24173e7aaebf52860dfa8448c90db1f3cb3fcb9a56dc7126988165ae4c8ddc90",
+        "size_in_bytes": 270
+      },
+      {
+        "_path": "include/glm/detail/type_half.inl",
+        "path_type": "hardlink",
+        "sha256": "910739a7048639738f4b87a0ed95c1c3e800551c44316a4e2366a097dca52a00",
+        "sha256_in_prefix": "910739a7048639738f4b87a0ed95c1c3e800551c44316a4e2366a097dca52a00",
+        "size_in_bytes": 4754
+      },
+      {
+        "_path": "include/glm/detail/type_mat2x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "946a1580d3371d06b5fc4444b1e8d94516c701f9372e9ebeddeaf868c975898d",
+        "sha256_in_prefix": "946a1580d3371d06b5fc4444b1e8d94516c701f9372e9ebeddeaf868c975898d",
+        "size_in_bytes": 6331
+      },
+      {
+        "_path": "include/glm/detail/type_mat2x2.inl",
+        "path_type": "hardlink",
+        "sha256": "353cf0ca8242144d769c586a5a37ea13069deb8f0364067eef6258250f60df33",
+        "sha256_in_prefix": "353cf0ca8242144d769c586a5a37ea13069deb8f0364067eef6258250f60df33",
+        "size_in_bytes": 14503
+      },
+      {
+        "_path": "include/glm/detail/type_mat2x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "cdb5e5b247d53d7e3614b7d9ebf4c9975c9b8ffdfef055b3604248be83986160",
+        "sha256_in_prefix": "cdb5e5b247d53d7e3614b7d9ebf4c9975c9b8ffdfef055b3604248be83986160",
+        "size_in_bytes": 5455
+      },
+      {
+        "_path": "include/glm/detail/type_mat2x3.inl",
+        "path_type": "hardlink",
+        "sha256": "dd2ba32110e514514a071be9d8af9cd4a104710eb78a18273783740aa1e6993d",
+        "sha256_in_prefix": "dd2ba32110e514514a071be9d8af9cd4a104710eb78a18273783740aa1e6993d",
+        "size_in_bytes": 13953
+      },
+      {
+        "_path": "include/glm/detail/type_mat2x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "7196fb6ca4922bd73938f3202d1c5795ed2bd4c7c792a2ae8408bb579d460212",
+        "sha256_in_prefix": "7196fb6ca4922bd73938f3202d1c5795ed2bd4c7c792a2ae8408bb579d460212",
+        "size_in_bytes": 5516
+      },
+      {
+        "_path": "include/glm/detail/type_mat2x4.inl",
+        "path_type": "hardlink",
+        "sha256": "03137081a35a05fe635841aa0cd73b668279d4a8fdec920049d5c8c86eb38084",
+        "sha256_in_prefix": "03137081a35a05fe635841aa0cd73b668279d4a8fdec920049d5c8c86eb38084",
+        "size_in_bytes": 14680
+      },
+      {
+        "_path": "include/glm/detail/type_mat3x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "3a686f9a945896c879ad4d40dc107d35a5da34dae23427c6e02d5c7c30109660",
+        "sha256_in_prefix": "3a686f9a945896c879ad4d40dc107d35a5da34dae23427c6e02d5c7c30109660",
+        "size_in_bytes": 5548
+      },
+      {
+        "_path": "include/glm/detail/type_mat3x2.inl",
+        "path_type": "hardlink",
+        "sha256": "8d92f493626947ecb2e6ae626a9d4c5dd000556f2d244bfbd6fb9f702431e311",
+        "sha256_in_prefix": "8d92f493626947ecb2e6ae626a9d4c5dd000556f2d244bfbd6fb9f702431e311",
+        "size_in_bytes": 15037
+      },
+      {
+        "_path": "include/glm/detail/type_mat3x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "98d23285fa6f089eb4289c6100137f9e3dcb0d9258f2b09ff8f7c0ab218198d9",
+        "sha256_in_prefix": "98d23285fa6f089eb4289c6100137f9e3dcb0d9258f2b09ff8f7c0ab218198d9",
+        "size_in_bytes": 6515
+      },
+      {
+        "_path": "include/glm/detail/type_mat3x3.inl",
+        "path_type": "hardlink",
+        "sha256": "a5c46968594f73463df0eadc2eacf279962da6284d209bd95a709cb9ac3b72af",
+        "sha256_in_prefix": "a5c46968594f73463df0eadc2eacf279962da6284d209bd95a709cb9ac3b72af",
+        "size_in_bytes": 17789
+      },
+      {
+        "_path": "include/glm/detail/type_mat3x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "3610e3994ae92343e68afe3be25240a07de8384e200b619ff7c57630a00a369f",
+        "sha256_in_prefix": "3610e3994ae92343e68afe3be25240a07de8384e200b619ff7c57630a00a369f",
+        "size_in_bytes": 5700
+      },
+      {
+        "_path": "include/glm/detail/type_mat3x4.inl",
+        "path_type": "hardlink",
+        "sha256": "a03235ddf08df119efa8c8b9fcc343e3d3109168d171960e87efea82e24535f9",
+        "sha256_in_prefix": "a03235ddf08df119efa8c8b9fcc343e3d3109168d171960e87efea82e24535f9",
+        "size_in_bytes": 17491
+      },
+      {
+        "_path": "include/glm/detail/type_mat4x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "0b8558216ad73e33a9f81e27c7e7ae2533aa7cac5fa4bd1df7f9192853749a9a",
+        "sha256_in_prefix": "0b8558216ad73e33a9f81e27c7e7ae2533aa7cac5fa4bd1df7f9192853749a9a",
+        "size_in_bytes": 5676
+      },
+      {
+        "_path": "include/glm/detail/type_mat4x2.inl",
+        "path_type": "hardlink",
+        "sha256": "2398a7611d09ddcb31118d5ba4bd14e43f736a4fc96ce3f3990047d3a7b7321f",
+        "sha256_in_prefix": "2398a7611d09ddcb31118d5ba4bd14e43f736a4fc96ce3f3990047d3a7b7321f",
+        "size_in_bytes": 16990
+      },
+      {
+        "_path": "include/glm/detail/type_mat4x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "91163024d07d4d493afa9251f32c190b8b510af423a2681dd30de34087b18011",
+        "sha256_in_prefix": "91163024d07d4d493afa9251f32c190b8b510af423a2681dd30de34087b18011",
+        "size_in_bytes": 5982
+      },
+      {
+        "_path": "include/glm/detail/type_mat4x3.inl",
+        "path_type": "hardlink",
+        "sha256": "593c8ddfed736810a0a527f9fef428c42e9ac9ceb2c41593610742bc9e690067",
+        "sha256_in_prefix": "593c8ddfed736810a0a527f9fef428c42e9ac9ceb2c41593610742bc9e690067",
+        "size_in_bytes": 18567
+      },
+      {
+        "_path": "include/glm/detail/type_mat4x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "3c9a7babf858367b8ab70eeb81877760b6cf6e7755c3db606cca2e97673f35dc",
+        "sha256_in_prefix": "3c9a7babf858367b8ab70eeb81877760b6cf6e7755c3db606cca2e97673f35dc",
+        "size_in_bytes": 7023
+      },
+      {
+        "_path": "include/glm/detail/type_mat4x4.inl",
+        "path_type": "hardlink",
+        "sha256": "99e745c336972833c3b8fabf44c4fde69290b361294a6a65667f86382f4fe8bf",
+        "sha256_in_prefix": "99e745c336972833c3b8fabf44c4fde69290b361294a6a65667f86382f4fe8bf",
+        "size_in_bytes": 26048
+      },
+      {
+        "_path": "include/glm/detail/type_mat4x4_simd.inl",
+        "path_type": "hardlink",
+        "sha256": "cf8869491df7e6741c389d93f71121a31f2d8bd73070cc8b16b3afeca108c2bf",
+        "sha256_in_prefix": "cf8869491df7e6741c389d93f71121a31f2d8bd73070cc8b16b3afeca108c2bf",
+        "size_in_bytes": 55
+      },
+      {
+        "_path": "include/glm/detail/type_quat.hpp",
+        "path_type": "hardlink",
+        "sha256": "339ac772b0b8ce90dd0335f3321050920e30d52b57f38384fcf73520d08104a9",
+        "sha256_in_prefix": "339ac772b0b8ce90dd0335f3321050920e30d52b57f38384fcf73520d08104a9",
+        "size_in_bytes": 6146
+      },
+      {
+        "_path": "include/glm/detail/type_quat.inl",
+        "path_type": "hardlink",
+        "sha256": "c79f4520d5618289435f6b37609a51b553e5928ff83fb7dca1c939de2c053797",
+        "sha256_in_prefix": "c79f4520d5618289435f6b37609a51b553e5928ff83fb7dca1c939de2c053797",
+        "size_in_bytes": 11903
+      },
+      {
+        "_path": "include/glm/detail/type_quat_simd.inl",
+        "path_type": "hardlink",
+        "sha256": "65a577fc00e4cddaac97488b37e1a44b00674bb0f344fe208db0ceca4004d996",
+        "sha256_in_prefix": "65a577fc00e4cddaac97488b37e1a44b00674bb0f344fe208db0ceca4004d996",
+        "size_in_bytes": 6164
+      },
+      {
+        "_path": "include/glm/detail/type_vec1.hpp",
+        "path_type": "hardlink",
+        "sha256": "a1545eccffd1680b8fdcbdcf730d79ccea7f3484b7a78ee055d2e090dc338400",
+        "sha256_in_prefix": "a1545eccffd1680b8fdcbdcf730d79ccea7f3484b7a78ee055d2e090dc338400",
+        "size_in_bytes": 11561
+      },
+      {
+        "_path": "include/glm/detail/type_vec1.inl",
+        "path_type": "hardlink",
+        "sha256": "f124b670b49ed4e2c3e9842ad3c52962f2d0c0722bccbfb5b7fdc516acebd364",
+        "sha256_in_prefix": "f124b670b49ed4e2c3e9842ad3c52962f2d0c0722bccbfb5b7fdc516acebd364",
+        "size_in_bytes": 14555
+      },
+      {
+        "_path": "include/glm/detail/type_vec2.hpp",
+        "path_type": "hardlink",
+        "sha256": "41c11ba64bf0b6f82a474dee65fb96dac50ec504a997b0d0103eb1b08a884c8c",
+        "sha256_in_prefix": "41c11ba64bf0b6f82a474dee65fb96dac50ec504a997b0d0103eb1b08a884c8c",
+        "size_in_bytes": 15997
+      },
+      {
+        "_path": "include/glm/detail/type_vec2.inl",
+        "path_type": "hardlink",
+        "sha256": "4f537da648857d68202b64fc9b1e467731089551a8fe1fbe72f776d484020f51",
+        "sha256_in_prefix": "4f537da648857d68202b64fc9b1e467731089551a8fe1fbe72f776d484020f51",
+        "size_in_bytes": 24139
+      },
+      {
+        "_path": "include/glm/detail/type_vec3.hpp",
+        "path_type": "hardlink",
+        "sha256": "d77e115b9020391bfb48620a8160c939cfdeed6ed5f76f46dc7b4e0fbcfb4537",
+        "sha256_in_prefix": "d77e115b9020391bfb48620a8160c939cfdeed6ed5f76f46dc7b4e0fbcfb4537",
+        "size_in_bytes": 17983
+      },
+      {
+        "_path": "include/glm/detail/type_vec3.inl",
+        "path_type": "hardlink",
+        "sha256": "5ac2332075a4692dac544f1558b797c04c731de2d9ef3302287f2aa39fa8a55f",
+        "sha256_in_prefix": "5ac2332075a4692dac544f1558b797c04c731de2d9ef3302287f2aa39fa8a55f",
+        "size_in_bytes": 28277
+      },
+      {
+        "_path": "include/glm/detail/type_vec4.hpp",
+        "path_type": "hardlink",
+        "sha256": "4e51a9652a024720210ae356c47a6f411f078b995cdbe5653e9cc27f4df37ef1",
+        "sha256_in_prefix": "4e51a9652a024720210ae356c47a6f411f078b995cdbe5653e9cc27f4df37ef1",
+        "size_in_bytes": 23324
+      },
+      {
+        "_path": "include/glm/detail/type_vec4.inl",
+        "path_type": "hardlink",
+        "sha256": "3cee7227d7ab4325f8c6dfb02a80be30878af92b617efe7aaec12743f2b97721",
+        "sha256_in_prefix": "3cee7227d7ab4325f8c6dfb02a80be30878af92b617efe7aaec12743f2b97721",
+        "size_in_bytes": 38321
+      },
+      {
+        "_path": "include/glm/detail/type_vec4_simd.inl",
+        "path_type": "hardlink",
+        "sha256": "5dca352454ce7cf3d1e3bee1de0c9bf05d266b3091fd39ea546f8e7ba0016913",
+        "sha256_in_prefix": "5dca352454ce7cf3d1e3bee1de0c9bf05d266b3091fd39ea546f8e7ba0016913",
+        "size_in_bytes": 20389
+      },
+      {
+        "_path": "include/glm/exponential.hpp",
+        "path_type": "hardlink",
+        "sha256": "5f5d347f4b73b9753203502e588aa0c8affae0eaebe737a9b02da56ac49d5674",
+        "sha256_in_prefix": "5f5d347f4b73b9753203502e588aa0c8affae0eaebe737a9b02da56ac49d5674",
+        "size_in_bytes": 5725
+      },
+      {
+        "_path": "include/glm/ext.hpp",
+        "path_type": "hardlink",
+        "sha256": "a7ac3b5b5aa0a736b6dce7e73757be9ac73f798a3da373213aac9cca6303597f",
+        "sha256_in_prefix": "a7ac3b5b5aa0a736b6dce7e73757be9ac73f798a3da373213aac9cca6303597f",
+        "size_in_bytes": 8728
+      },
+      {
+        "_path": "include/glm/ext/matrix_clip_space.hpp",
+        "path_type": "hardlink",
+        "sha256": "2614b00b9559eb2afcf70b6ded62c8fe239f540764ca226110e3cd76f1c39b3d",
+        "sha256_in_prefix": "2614b00b9559eb2afcf70b6ded62c8fe239f540764ca226110e3cd76f1c39b3d",
+        "size_in_bytes": 30247
+      },
+      {
+        "_path": "include/glm/ext/matrix_clip_space.inl",
+        "path_type": "hardlink",
+        "sha256": "d69309e11bbe4cca69069a87346c3e7b326791d60305c5a4b7e34485ab7b825b",
+        "sha256_in_prefix": "d69309e11bbe4cca69069a87346c3e7b326791d60305c5a4b7e34485ab7b825b",
+        "size_in_bytes": 20562
+      },
+      {
+        "_path": "include/glm/ext/matrix_common.hpp",
+        "path_type": "hardlink",
+        "sha256": "0eb2dc15ac8f2aa6d4f6bbdf98b62be371272b80fc5e9b855b4630fbcea9dec7",
+        "sha256_in_prefix": "0eb2dc15ac8f2aa6d4f6bbdf98b62be371272b80fc5e9b855b4630fbcea9dec7",
+        "size_in_bytes": 1031
+      },
+      {
+        "_path": "include/glm/ext/matrix_common.inl",
+        "path_type": "hardlink",
+        "sha256": "41f2bc7ee58509eb6ca63a9a0b85e9c9efe5422cc8650661b864474b324d4c82",
+        "sha256_in_prefix": "41f2bc7ee58509eb6ca63a9a0b85e9c9efe5422cc8650661b864474b324d4c82",
+        "size_in_bytes": 633
+      },
+      {
+        "_path": "include/glm/ext/matrix_double2x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "e28536ec12657a2e585bb6017ec113904b9f6c804cbaf68c16a9682397a0b823",
+        "sha256_in_prefix": "e28536ec12657a2e585bb6017ec113904b9f6c804cbaf68c16a9682397a0b823",
+        "size_in_bytes": 739
+      },
+      {
+        "_path": "include/glm/ext/matrix_double2x2_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "2b795b1e984fa3b7d24e0b95aa61c0597c239cb5d5187cb6691bddefc9664fa3",
+        "sha256_in_prefix": "2b795b1e984fa3b7d24e0b95aa61c0597c239cb5d5187cb6691bddefc9664fa3",
+        "size_in_bytes": 3019
+      },
+      {
+        "_path": "include/glm/ext/matrix_double2x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "c11a0748fa8c7786ac25361e61a85022f7eded975d73080e1d8761ab41013bb1",
+        "sha256_in_prefix": "c11a0748fa8c7786ac25361e61a85022f7eded975d73080e1d8761ab41013bb1",
+        "size_in_bytes": 469
+      },
+      {
+        "_path": "include/glm/ext/matrix_double2x3_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "1ba3ed6f786496481c3f972119fc2e1cbf68f1aa758e6a8b74001efbea5b36d0",
+        "sha256_in_prefix": "1ba3ed6f786496481c3f972119fc2e1cbf68f1aa758e6a8b74001efbea5b36d0",
+        "size_in_bytes": 1621
+      },
+      {
+        "_path": "include/glm/ext/matrix_double2x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "ec639b0b93a6ec60c8de7095e2e5452eeb15dc8fd40f8c271925a96d2feb23ac",
+        "sha256_in_prefix": "ec639b0b93a6ec60c8de7095e2e5452eeb15dc8fd40f8c271925a96d2feb23ac",
+        "size_in_bytes": 469
+      },
+      {
+        "_path": "include/glm/ext/matrix_double2x4_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "281b2a8761ccd5759d2fd152282858429db4e45b665ab106a7d87682a55e89b6",
+        "sha256_in_prefix": "281b2a8761ccd5759d2fd152282858429db4e45b665ab106a7d87682a55e89b6",
+        "size_in_bytes": 1621
+      },
+      {
+        "_path": "include/glm/ext/matrix_double3x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "4be9c05f29a7d77e6a79266fd923420f30851ffb48a1cb7c09174654b5f29789",
+        "sha256_in_prefix": "4be9c05f29a7d77e6a79266fd923420f30851ffb48a1cb7c09174654b5f29789",
+        "size_in_bytes": 469
+      },
+      {
+        "_path": "include/glm/ext/matrix_double3x2_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "0ef483e736066641b1f404d6167f083efd7ac59ebdf8a25256e8ec96d90f2806",
+        "sha256_in_prefix": "0ef483e736066641b1f404d6167f083efd7ac59ebdf8a25256e8ec96d90f2806",
+        "size_in_bytes": 1621
+      },
+      {
+        "_path": "include/glm/ext/matrix_double3x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "430b06751247f8d8654a7163e26cc337f507316fbf5f10e8c2bf517c2aaa5ca8",
+        "sha256_in_prefix": "430b06751247f8d8654a7163e26cc337f507316fbf5f10e8c2bf517c2aaa5ca8",
+        "size_in_bytes": 739
+      },
+      {
+        "_path": "include/glm/ext/matrix_double3x3_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "176aabc4e86027253dd5543ddd9684dbcbad1fea33c3c5ccc0b473f491b95580",
+        "sha256_in_prefix": "176aabc4e86027253dd5543ddd9684dbcbad1fea33c3c5ccc0b473f491b95580",
+        "size_in_bytes": 3019
+      },
+      {
+        "_path": "include/glm/ext/matrix_double3x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "62527ff366e80a4c954c8724695bc09a202e60fc478250f4870c87998b00c9ab",
+        "sha256_in_prefix": "62527ff366e80a4c954c8724695bc09a202e60fc478250f4870c87998b00c9ab",
+        "size_in_bytes": 469
+      },
+      {
+        "_path": "include/glm/ext/matrix_double3x4_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "ae712fc20285c97f9433d88dab2915ac39a38f5e59ee62ad7c30c5ec0092129a",
+        "sha256_in_prefix": "ae712fc20285c97f9433d88dab2915ac39a38f5e59ee62ad7c30c5ec0092129a",
+        "size_in_bytes": 1621
+      },
+      {
+        "_path": "include/glm/ext/matrix_double4x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "b61b99842606f38bb7127750cd7eb313a9333fce80980220bfde8e81df119762",
+        "sha256_in_prefix": "b61b99842606f38bb7127750cd7eb313a9333fce80980220bfde8e81df119762",
+        "size_in_bytes": 469
+      },
+      {
+        "_path": "include/glm/ext/matrix_double4x2_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "996b6d3f29d0fc6f7cf9f0f9981b4cc519fff55341423fbf261c8c1a204b42a9",
+        "sha256_in_prefix": "996b6d3f29d0fc6f7cf9f0f9981b4cc519fff55341423fbf261c8c1a204b42a9",
+        "size_in_bytes": 1621
+      },
+      {
+        "_path": "include/glm/ext/matrix_double4x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "021dbc9cc77be8a0dff9f84a5103bfdccb013ea0a134b2bbeab97fad44314f2a",
+        "sha256_in_prefix": "021dbc9cc77be8a0dff9f84a5103bfdccb013ea0a134b2bbeab97fad44314f2a",
+        "size_in_bytes": 469
+      },
+      {
+        "_path": "include/glm/ext/matrix_double4x3_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "3b47d8d4e2b86551fabd9d85aba2cc60488255f7fcfcf7cf5b3ad793fb8f1319",
+        "sha256_in_prefix": "3b47d8d4e2b86551fabd9d85aba2cc60488255f7fcfcf7cf5b3ad793fb8f1319",
+        "size_in_bytes": 1621
+      },
+      {
+        "_path": "include/glm/ext/matrix_double4x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "26040ba340dcb95f4d48f3e0ccc8828af925be7c04c171702282a7139e04b5c4",
+        "sha256_in_prefix": "26040ba340dcb95f4d48f3e0ccc8828af925be7c04c171702282a7139e04b5c4",
+        "size_in_bytes": 739
+      },
+      {
+        "_path": "include/glm/ext/matrix_double4x4_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "7669392ddeb68c4cc3bd7d4f6517e74e7900a49e6a98fc68c2b7a486daa801bb",
+        "sha256_in_prefix": "7669392ddeb68c4cc3bd7d4f6517e74e7900a49e6a98fc68c2b7a486daa801bb",
+        "size_in_bytes": 3019
+      },
+      {
+        "_path": "include/glm/ext/matrix_float2x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "bf4587b54860ca193dcb1a2fdcc327f70a771812fb7834d265c40b5b8a8e885c",
+        "sha256_in_prefix": "bf4587b54860ca193dcb1a2fdcc327f70a771812fb7834d265c40b5b8a8e885c",
+        "size_in_bytes": 734
+      },
+      {
+        "_path": "include/glm/ext/matrix_float2x2_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "52a85595bf0ac4b3a5035de32e7f207c5997846e368962100f2e11e5e60d6bab",
+        "sha256_in_prefix": "52a85595bf0ac4b3a5035de32e7f207c5997846e368962100f2e11e5e60d6bab",
+        "size_in_bytes": 3004
+      },
+      {
+        "_path": "include/glm/ext/matrix_float2x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "7a677179835b2a26da137f7dd42512db7bda0e4182f1865f6e9f30835c02ac0b",
+        "sha256_in_prefix": "7a677179835b2a26da137f7dd42512db7bda0e4182f1865f6e9f30835c02ac0b",
+        "size_in_bytes": 466
+      },
+      {
+        "_path": "include/glm/ext/matrix_float2x3_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "ea9b5d97edd6a1d9be9552b2da1bc88657e0b52f35a2c8f8b05d21d6b39f93aa",
+        "sha256_in_prefix": "ea9b5d97edd6a1d9be9552b2da1bc88657e0b52f35a2c8f8b05d21d6b39f93aa",
+        "size_in_bytes": 1613
+      },
+      {
+        "_path": "include/glm/ext/matrix_float2x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "605920fe8064ea495dac25bd67324df9e48b014b18ab6f5957290dddeaccc399",
+        "sha256_in_prefix": "605920fe8064ea495dac25bd67324df9e48b014b18ab6f5957290dddeaccc399",
+        "size_in_bytes": 466
+      },
+      {
+        "_path": "include/glm/ext/matrix_float2x4_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "05b75e5b02168e44b199d3d47434840a0f0c852e2bae1e57ad4a15e4413b3422",
+        "sha256_in_prefix": "05b75e5b02168e44b199d3d47434840a0f0c852e2bae1e57ad4a15e4413b3422",
+        "size_in_bytes": 1613
+      },
+      {
+        "_path": "include/glm/ext/matrix_float3x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "02a7ac14ec45a771a0a9bb1512cb3f54e62f3e694318f625d47880e546a69203",
+        "sha256_in_prefix": "02a7ac14ec45a771a0a9bb1512cb3f54e62f3e694318f625d47880e546a69203",
+        "size_in_bytes": 460
+      },
+      {
+        "_path": "include/glm/ext/matrix_float3x2_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "f9fbabe399b19161caaa361ae1c215b1955263cc914190300b64d9ce92d9ebab",
+        "sha256_in_prefix": "f9fbabe399b19161caaa361ae1c215b1955263cc914190300b64d9ce92d9ebab",
+        "size_in_bytes": 1613
+      },
+      {
+        "_path": "include/glm/ext/matrix_float3x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "299e7945455a373d8d49dda9d1cfec0eb4b48eff8f1c14c156ba88fbdde4eee0",
+        "sha256_in_prefix": "299e7945455a373d8d49dda9d1cfec0eb4b48eff8f1c14c156ba88fbdde4eee0",
+        "size_in_bytes": 736
+      },
+      {
+        "_path": "include/glm/ext/matrix_float3x3_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "896dd61706db0a36b0e58e880f48566d29a58ffac1da85f69aa4a4a260bf1454",
+        "sha256_in_prefix": "896dd61706db0a36b0e58e880f48566d29a58ffac1da85f69aa4a4a260bf1454",
+        "size_in_bytes": 3004
+      },
+      {
+        "_path": "include/glm/ext/matrix_float3x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "cd9bceec04a4fdade2fc8940468e256e4871a5629824a0a390986524be26fc4d",
+        "sha256_in_prefix": "cd9bceec04a4fdade2fc8940468e256e4871a5629824a0a390986524be26fc4d",
+        "size_in_bytes": 467
+      },
+      {
+        "_path": "include/glm/ext/matrix_float3x4_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "96aa315929994b7d2fae34f6c33eb6df4ae614b50fe03fedc9c7df91c337d8d2",
+        "sha256_in_prefix": "96aa315929994b7d2fae34f6c33eb6df4ae614b50fe03fedc9c7df91c337d8d2",
+        "size_in_bytes": 1613
+      },
+      {
+        "_path": "include/glm/ext/matrix_float4x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "3d4b080dda4dbe1350d0ab96a18dbf297de911b9710257dd272a5049ca999e02",
+        "sha256_in_prefix": "3d4b080dda4dbe1350d0ab96a18dbf297de911b9710257dd272a5049ca999e02",
+        "size_in_bytes": 467
+      },
+      {
+        "_path": "include/glm/ext/matrix_float4x2_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "bc4f715f93951b2154a15d906557f7474673411590f61c2f520e2cbae6f67917",
+        "sha256_in_prefix": "bc4f715f93951b2154a15d906557f7474673411590f61c2f520e2cbae6f67917",
+        "size_in_bytes": 1613
+      },
+      {
+        "_path": "include/glm/ext/matrix_float4x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "22116ae630cd2be2baad2c7f545814f6b21bb3bf9dc8913d848c61f54ac9b666",
+        "sha256_in_prefix": "22116ae630cd2be2baad2c7f545814f6b21bb3bf9dc8913d848c61f54ac9b666",
+        "size_in_bytes": 467
+      },
+      {
+        "_path": "include/glm/ext/matrix_float4x3_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "426099fdd6b1a040ccae7e31d3adb240d798efefd2492e611b3180495a49fd48",
+        "sha256_in_prefix": "426099fdd6b1a040ccae7e31d3adb240d798efefd2492e611b3180495a49fd48",
+        "size_in_bytes": 1613
+      },
+      {
+        "_path": "include/glm/ext/matrix_float4x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "e8c9c29e09ed93683aed373ce03c9ef7af9e4f0e63f2b66ad6d74c4a2c4fb177",
+        "sha256_in_prefix": "e8c9c29e09ed93683aed373ce03c9ef7af9e4f0e63f2b66ad6d74c4a2c4fb177",
+        "size_in_bytes": 733
+      },
+      {
+        "_path": "include/glm/ext/matrix_float4x4_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "89c47a65ef88bb4bdb4b09a9981ff8249465fffb429c47693bc7fac0a2857fbd",
+        "sha256_in_prefix": "89c47a65ef88bb4bdb4b09a9981ff8249465fffb429c47693bc7fac0a2857fbd",
+        "size_in_bytes": 3004
+      },
+      {
+        "_path": "include/glm/ext/matrix_int2x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "6d5247fec5409dd7ede74eb3509d5694a9c26f62e0d48047d346b997980f1f71",
+        "sha256_in_prefix": "6d5247fec5409dd7ede74eb3509d5694a9c26f62e0d48047d346b997980f1f71",
+        "size_in_bytes": 839
+      },
+      {
+        "_path": "include/glm/ext/matrix_int2x2_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "19b266627dcdb6c72c0d02b6ca1e98108b7be88b5e95d098b8164b0be02c46aa",
+        "sha256_in_prefix": "19b266627dcdb6c72c0d02b6ca1e98108b7be88b5e95d098b8164b0be02c46aa",
+        "size_in_bytes": 1755
+      },
+      {
+        "_path": "include/glm/ext/matrix_int2x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "b63e2fffc56a21d17bdfee7bc7db0ae996ac771fa4ca2c012ba4b803403f6000",
+        "sha256_in_prefix": "b63e2fffc56a21d17bdfee7bc7db0ae996ac771fa4ca2c012ba4b803403f6000",
+        "size_in_bytes": 727
+      },
+      {
+        "_path": "include/glm/ext/matrix_int2x3_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "f18985310afb35b2a68d99a19e967b92d7f7b2b0550791f09621408c51f2e84b",
+        "sha256_in_prefix": "f18985310afb35b2a68d99a19e967b92d7f7b2b0550791f09621408c51f2e84b",
+        "size_in_bytes": 1228
+      },
+      {
+        "_path": "include/glm/ext/matrix_int2x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "51810e91abf3449f5771f3c6572e193c3dd1a15810a811b75a9323c7ba2cc09b",
+        "sha256_in_prefix": "51810e91abf3449f5771f3c6572e193c3dd1a15810a811b75a9323c7ba2cc09b",
+        "size_in_bytes": 727
+      },
+      {
+        "_path": "include/glm/ext/matrix_int2x4_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "410dd75e2e805f44449f8fb5d8806f844d61a96009927f5c0e2199515fe65241",
+        "sha256_in_prefix": "410dd75e2e805f44449f8fb5d8806f844d61a96009927f5c0e2199515fe65241",
+        "size_in_bytes": 1228
+      },
+      {
+        "_path": "include/glm/ext/matrix_int3x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "d5bafab855e5d13e6e261868d794c25fc137100052113bfc8c13c324a8175ca8",
+        "sha256_in_prefix": "d5bafab855e5d13e6e261868d794c25fc137100052113bfc8c13c324a8175ca8",
+        "size_in_bytes": 727
+      },
+      {
+        "_path": "include/glm/ext/matrix_int3x2_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "249fa1ee1aa3c83cacd0b09745c8bc32b9f36b92254ffb68c48fc00cdea6ce6b",
+        "sha256_in_prefix": "249fa1ee1aa3c83cacd0b09745c8bc32b9f36b92254ffb68c48fc00cdea6ce6b",
+        "size_in_bytes": 1228
+      },
+      {
+        "_path": "include/glm/ext/matrix_int3x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "7f7153f9ba8341efcf0a78a4bf6da9c831218ce893cfa5c2fbe9443d8ec1ba96",
+        "sha256_in_prefix": "7f7153f9ba8341efcf0a78a4bf6da9c831218ce893cfa5c2fbe9443d8ec1ba96",
+        "size_in_bytes": 839
+      },
+      {
+        "_path": "include/glm/ext/matrix_int3x3_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "ffbc21bc5ffd4d64a3b193c0152c732d640427adc206f982904e08778f06b2b1",
+        "sha256_in_prefix": "ffbc21bc5ffd4d64a3b193c0152c732d640427adc206f982904e08778f06b2b1",
+        "size_in_bytes": 1755
+      },
+      {
+        "_path": "include/glm/ext/matrix_int3x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "d402e33a47346f77329096538464c99d813f90ec60e3f95747de393f8d98075b",
+        "sha256_in_prefix": "d402e33a47346f77329096538464c99d813f90ec60e3f95747de393f8d98075b",
+        "size_in_bytes": 727
+      },
+      {
+        "_path": "include/glm/ext/matrix_int3x4_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "bb5978ceb2357442306c50b11c74b2b1feb7e95da666456c4e4ab81bf2f58d73",
+        "sha256_in_prefix": "bb5978ceb2357442306c50b11c74b2b1feb7e95da666456c4e4ab81bf2f58d73",
+        "size_in_bytes": 1228
+      },
+      {
+        "_path": "include/glm/ext/matrix_int4x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "4866bc6f1485a9db6eeca14ffe17b68522ae31a25c15b9995f122c8f74741698",
+        "sha256_in_prefix": "4866bc6f1485a9db6eeca14ffe17b68522ae31a25c15b9995f122c8f74741698",
+        "size_in_bytes": 727
+      },
+      {
+        "_path": "include/glm/ext/matrix_int4x2_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "12876d2adc52760ce57eec1a69d6ca6047ac5b3d4af3c8786e56723e4333b208",
+        "sha256_in_prefix": "12876d2adc52760ce57eec1a69d6ca6047ac5b3d4af3c8786e56723e4333b208",
+        "size_in_bytes": 1228
+      },
+      {
+        "_path": "include/glm/ext/matrix_int4x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "a518d3f6f2d0b1c2676069c2fb5b02c22a8c41b0adb232934cf38c6b6c8626d4",
+        "sha256_in_prefix": "a518d3f6f2d0b1c2676069c2fb5b02c22a8c41b0adb232934cf38c6b6c8626d4",
+        "size_in_bytes": 727
+      },
+      {
+        "_path": "include/glm/ext/matrix_int4x3_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "ad30f972bfb8b6aa4a4ab5ce51c1feb3fa9a87c6bdfac88db9991d45e09a4f3d",
+        "sha256_in_prefix": "ad30f972bfb8b6aa4a4ab5ce51c1feb3fa9a87c6bdfac88db9991d45e09a4f3d",
+        "size_in_bytes": 1228
+      },
+      {
+        "_path": "include/glm/ext/matrix_int4x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "7828461e3691bea5ba67aada828c7a4807c27c04b4dcbc11f67d2d78557d951d",
+        "sha256_in_prefix": "7828461e3691bea5ba67aada828c7a4807c27c04b4dcbc11f67d2d78557d951d",
+        "size_in_bytes": 839
+      },
+      {
+        "_path": "include/glm/ext/matrix_int4x4_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "46807f7c767a22a5554bfe6396247df2e733da1c70a8501ff97192cf80b4d3ca",
+        "sha256_in_prefix": "46807f7c767a22a5554bfe6396247df2e733da1c70a8501ff97192cf80b4d3ca",
+        "size_in_bytes": 1755
+      },
+      {
+        "_path": "include/glm/ext/matrix_projection.hpp",
+        "path_type": "hardlink",
+        "sha256": "5d51a7f0e6c62ea4592e5590d89576efeed9d1d3e361de7f91af16af24066a9c",
+        "sha256_in_prefix": "5d51a7f0e6c62ea4592e5590d89576efeed9d1d3e361de7f91af16af24066a9c",
+        "size_in_bytes": 8205
+      },
+      {
+        "_path": "include/glm/ext/matrix_projection.inl",
+        "path_type": "hardlink",
+        "sha256": "98f2dbdef968478aeda1a7a9c42b595b1057c30b97691f527dbbfdb806c69081",
+        "sha256_in_prefix": "98f2dbdef968478aeda1a7a9c42b595b1057c30b97691f527dbbfdb806c69081",
+        "size_in_bytes": 4067
+      },
+      {
+        "_path": "include/glm/ext/matrix_relational.hpp",
+        "path_type": "hardlink",
+        "sha256": "175ca70354d3451dbd895f2ddc23523f3457a907e0e2bdd808c29a7c3676873b",
+        "sha256_in_prefix": "175ca70354d3451dbd895f2ddc23523f3457a907e0e2bdd808c29a7c3676873b",
+        "size_in_bytes": 6842
+      },
+      {
+        "_path": "include/glm/ext/matrix_relational.inl",
+        "path_type": "hardlink",
+        "sha256": "82f966848ec353b0040330221344f0e0372819e02129e749e313b8e56019580e",
+        "sha256_in_prefix": "82f966848ec353b0040330221344f0e0372819e02129e749e313b8e56019580e",
+        "size_in_bytes": 3008
+      },
+      {
+        "_path": "include/glm/ext/matrix_transform.hpp",
+        "path_type": "hardlink",
+        "sha256": "9913b3aca3817a34daf0f1c3cb7ef62737af0f6e29aef5d851c37eec2a6c14c7",
+        "sha256_in_prefix": "9913b3aca3817a34daf0f1c3cb7ef62737af0f6e29aef5d851c37eec2a6c14c7",
+        "size_in_bytes": 6170
+      },
+      {
+        "_path": "include/glm/ext/matrix_transform.inl",
+        "path_type": "hardlink",
+        "sha256": "a767002867b0bd37290566db2257345e674caa5ee2b655ce719f8027f4e37e10",
+        "sha256_in_prefix": "a767002867b0bd37290566db2257345e674caa5ee2b655ce719f8027f4e37e10",
+        "size_in_bytes": 4849
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint2x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "0b8be99b78d263419caafb5c03a8681202da11afd65a70c3174d6d018a5ee5b9",
+        "sha256_in_prefix": "0b8be99b78d263419caafb5c03a8681202da11afd65a70c3174d6d018a5ee5b9",
+        "size_in_bytes": 854
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint2x2_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "33c9609345d98105a0053c53974797d94b51cb3683849e4b2a1c6ad6e1723752",
+        "sha256_in_prefix": "33c9609345d98105a0053c53974797d94b51cb3683849e4b2a1c6ad6e1723752",
+        "size_in_bytes": 1795
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint2x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "75741d6dc91f5d3992a692dd2fbd419f1ad0edb94e3a11b23d10883b452e930a",
+        "sha256_in_prefix": "75741d6dc91f5d3992a692dd2fbd419f1ad0edb94e3a11b23d10883b452e930a",
+        "size_in_bytes": 737
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint2x3_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "017f29df7c242e83b8ecf74c6c294ee9b87128a3fa4eb5c4780d824fb696a184",
+        "sha256_in_prefix": "017f29df7c242e83b8ecf74c6c294ee9b87128a3fa4eb5c4780d824fb696a184",
+        "size_in_bytes": 1252
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint2x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "dc05769835c1662878111c8555c4d59f668a9a3a8ca31f2cb035da4016f33b2e",
+        "sha256_in_prefix": "dc05769835c1662878111c8555c4d59f668a9a3a8ca31f2cb035da4016f33b2e",
+        "size_in_bytes": 737
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint2x4_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "d04492e6e6f77697517c4b0f188ed4e0fe20fa19dd2f215e69e5399f3144f7c5",
+        "sha256_in_prefix": "d04492e6e6f77697517c4b0f188ed4e0fe20fa19dd2f215e69e5399f3144f7c5",
+        "size_in_bytes": 1253
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint3x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "9c621fa388dfa250ef51421fbdc592fa0d80d39b1167853ed70f0ef0f66babb5",
+        "sha256_in_prefix": "9c621fa388dfa250ef51421fbdc592fa0d80d39b1167853ed70f0ef0f66babb5",
+        "size_in_bytes": 737
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint3x2_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "7e19fcf420a7f005f2831737495954c6236c87e5f769750e66c68e6158d46553",
+        "sha256_in_prefix": "7e19fcf420a7f005f2831737495954c6236c87e5f769750e66c68e6158d46553",
+        "size_in_bytes": 1244
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint3x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "1e38036921d256d92568930d5d3c857e997d3e3b45ee3095af5059d440a70208",
+        "sha256_in_prefix": "1e38036921d256d92568930d5d3c857e997d3e3b45ee3095af5059d440a70208",
+        "size_in_bytes": 854
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint3x3_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "428f78e645b31aed02eb18c7f4b066630def7224786b59581dd3864a56abc197",
+        "sha256_in_prefix": "428f78e645b31aed02eb18c7f4b066630def7224786b59581dd3864a56abc197",
+        "size_in_bytes": 1795
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint3x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "8fe65acc7e7f724e69109c7ac58eca7e9643533d88aa6472794a50b2ca4d4d5c",
+        "sha256_in_prefix": "8fe65acc7e7f724e69109c7ac58eca7e9643533d88aa6472794a50b2ca4d4d5c",
+        "size_in_bytes": 736
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint3x4_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "7670d82e145d7615601f5651ac71a1ab58bc11b26c9d76c4aa839c55546fa612",
+        "sha256_in_prefix": "7670d82e145d7615601f5651ac71a1ab58bc11b26c9d76c4aa839c55546fa612",
+        "size_in_bytes": 1252
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint4x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "421700cb09951adcfb844e56b095078af9ab525046c7acbd97980a6a0ae32feb",
+        "sha256_in_prefix": "421700cb09951adcfb844e56b095078af9ab525046c7acbd97980a6a0ae32feb",
+        "size_in_bytes": 738
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint4x2_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "0b5a60a5f8826bf1729ec6ed87e577d91a8c1039397ec3b289212c15b2778d05",
+        "sha256_in_prefix": "0b5a60a5f8826bf1729ec6ed87e577d91a8c1039397ec3b289212c15b2778d05",
+        "size_in_bytes": 1252
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint4x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "4024bd221457676fed7edacbb6cf0cf0d36d2ed9c9f2aae2317f25d3f0da5d97",
+        "sha256_in_prefix": "4024bd221457676fed7edacbb6cf0cf0d36d2ed9c9f2aae2317f25d3f0da5d97",
+        "size_in_bytes": 738
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint4x3_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "7c4e04bf4f1fb0dd4568814ae9d87ed56f14ea1e86138f774b528c8d1e809f3d",
+        "sha256_in_prefix": "7c4e04bf4f1fb0dd4568814ae9d87ed56f14ea1e86138f774b528c8d1e809f3d",
+        "size_in_bytes": 1252
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint4x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "5030fc9e2b8378a7b8d73c6b0c65898a3d8c5327f50782474e8c3de6b75ea400",
+        "sha256_in_prefix": "5030fc9e2b8378a7b8d73c6b0c65898a3d8c5327f50782474e8c3de6b75ea400",
+        "size_in_bytes": 854
+      },
+      {
+        "_path": "include/glm/ext/matrix_uint4x4_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "c84a58b688cbe469f70e30cd1831b666d02faf4060a7c8b6bdbd302bce85109c",
+        "sha256_in_prefix": "c84a58b688cbe469f70e30cd1831b666d02faf4060a7c8b6bdbd302bce85109c",
+        "size_in_bytes": 1795
+      },
+      {
+        "_path": "include/glm/ext/quaternion_common.hpp",
+        "path_type": "hardlink",
+        "sha256": "72105dcca27ac574ae30a1c395b073885426aab59a44ff94bfec089d8e0afd74",
+        "sha256_in_prefix": "72105dcca27ac574ae30a1c395b073885426aab59a44ff94bfec089d8e0afd74",
+        "size_in_bytes": 4975
+      },
+      {
+        "_path": "include/glm/ext/quaternion_common.inl",
+        "path_type": "hardlink",
+        "sha256": "0a4f382d22caf6049f2bd2233be096ba78bca6dbe2b615ed32653d165a02817d",
+        "sha256_in_prefix": "0a4f382d22caf6049f2bd2233be096ba78bca6dbe2b615ed32653d165a02817d",
+        "size_in_bytes": 4523
+      },
+      {
+        "_path": "include/glm/ext/quaternion_common_simd.inl",
+        "path_type": "hardlink",
+        "sha256": "3927d5a7b625f600cd633ed10d4bb10c7ec128c758d32f06e327ba8bec7984a6",
+        "sha256_in_prefix": "3927d5a7b625f600cd633ed10d4bb10c7ec128c758d32f06e327ba8bec7984a6",
+        "size_in_bytes": 390
+      },
+      {
+        "_path": "include/glm/ext/quaternion_double.hpp",
+        "path_type": "hardlink",
+        "sha256": "5dc2dec7cfe4a93367446444d5c32c1d7049659ffcb9aa6e542aaafc88d80fff",
+        "sha256_in_prefix": "5dc2dec7cfe4a93367446444d5c32c1d7049659ffcb9aa6e542aaafc88d80fff",
+        "size_in_bytes": 1024
+      },
+      {
+        "_path": "include/glm/ext/quaternion_double_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "58870286e18d6b15f86dc70cdd7b27159e64e3079647052ee49657f066e1cf2e",
+        "sha256_in_prefix": "58870286e18d6b15f86dc70cdd7b27159e64e3079647052ee49657f066e1cf2e",
+        "size_in_bytes": 1360
+      },
+      {
+        "_path": "include/glm/ext/quaternion_exponential.hpp",
+        "path_type": "hardlink",
+        "sha256": "d054df4923c2b5cb68a56e2d1f4aa7c4cd7225c9ad43036b702b90770da39ae8",
+        "sha256_in_prefix": "d054df4923c2b5cb68a56e2d1f4aa7c4cd7225c9ad43036b702b90770da39ae8",
+        "size_in_bytes": 1804
+      },
+      {
+        "_path": "include/glm/ext/quaternion_exponential.inl",
+        "path_type": "hardlink",
+        "sha256": "5560aa87d94e9215acb9ecc4293388eab27594477b0f1541e2ae3bc015bc679b",
+        "sha256_in_prefix": "5560aa87d94e9215acb9ecc4293388eab27594477b0f1541e2ae3bc015bc679b",
+        "size_in_bytes": 2659
+      },
+      {
+        "_path": "include/glm/ext/quaternion_float.hpp",
+        "path_type": "hardlink",
+        "sha256": "e09777cc9d5ddfacc2430b20396eff6334c1f33e4ab85c30a0d773d3346f30d1",
+        "sha256_in_prefix": "e09777cc9d5ddfacc2430b20396eff6334c1f33e4ab85c30a0d773d3346f30d1",
+        "size_in_bytes": 1015
+      },
+      {
+        "_path": "include/glm/ext/quaternion_float_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "87e39971534ea53f2df2b02e8b5287a8985e911708c06ea1382a15d412412027",
+        "sha256_in_prefix": "87e39971534ea53f2df2b02e8b5287a8985e911708c06ea1382a15d412412027",
+        "size_in_bytes": 1189
+      },
+      {
+        "_path": "include/glm/ext/quaternion_geometric.hpp",
+        "path_type": "hardlink",
+        "sha256": "9494d3e6f5ee18e6802db263e85c9a2e69ac9c628e003c1346869c932aae13dd",
+        "sha256_in_prefix": "9494d3e6f5ee18e6802db263e85c9a2e69ac9c628e003c1346869c932aae13dd",
+        "size_in_bytes": 1967
+      },
+      {
+        "_path": "include/glm/ext/quaternion_geometric.inl",
+        "path_type": "hardlink",
+        "sha256": "33b4c75a6fc13f4b14a9b8079493be933654751ff1015b059944d7d49476bb6b",
+        "sha256_in_prefix": "33b4c75a6fc13f4b14a9b8079493be933654751ff1015b059944d7d49476bb6b",
+        "size_in_bytes": 1254
+      },
+      {
+        "_path": "include/glm/ext/quaternion_relational.hpp",
+        "path_type": "hardlink",
+        "sha256": "8f945bcf8fe0759f66d077b2f6231d24c4426c9226d45a56ea1b993241db67f7",
+        "sha256_in_prefix": "8f945bcf8fe0759f66d077b2f6231d24c4426c9226d45a56ea1b993241db67f7",
+        "size_in_bytes": 2016
+      },
+      {
+        "_path": "include/glm/ext/quaternion_relational.inl",
+        "path_type": "hardlink",
+        "sha256": "6f4d1f0ca1cc58eaac8b660a5626cb9fcd7415d638aabe0860dd01302236445d",
+        "sha256_in_prefix": "6f4d1f0ca1cc58eaac8b660a5626cb9fcd7415d638aabe0860dd01302236445d",
+        "size_in_bytes": 1054
+      },
+      {
+        "_path": "include/glm/ext/quaternion_transform.hpp",
+        "path_type": "hardlink",
+        "sha256": "30fcf6ff83cb49f5b4be682d1c7ebeb0da22c398dfff64a3ad3f2e51df808db1",
+        "sha256_in_prefix": "30fcf6ff83cb49f5b4be682d1c7ebeb0da22c398dfff64a3ad3f2e51df808db1",
+        "size_in_bytes": 1378
+      },
+      {
+        "_path": "include/glm/ext/quaternion_transform.inl",
+        "path_type": "hardlink",
+        "sha256": "d713382c01a0b18b4cee856ba1ff9ec3f660a25d0518c81aa0b03a56f31dcaca",
+        "sha256_in_prefix": "d713382c01a0b18b4cee856ba1ff9ec3f660a25d0518c81aa0b03a56f31dcaca",
+        "size_in_bytes": 653
+      },
+      {
+        "_path": "include/glm/ext/quaternion_trigonometric.hpp",
+        "path_type": "hardlink",
+        "sha256": "a80990e7828978f9d257f29a9d235dcff57eb2b44d561b5e803ddce03ab6a0e8",
+        "sha256_in_prefix": "a80990e7828978f9d257f29a9d235dcff57eb2b44d561b5e803ddce03ab6a0e8",
+        "size_in_bytes": 1876
+      },
+      {
+        "_path": "include/glm/ext/quaternion_trigonometric.inl",
+        "path_type": "hardlink",
+        "sha256": "05337ba75b016580979abefc941e08c1099a0994c593af2dd2fd12bb9263916c",
+        "sha256_in_prefix": "05337ba75b016580979abefc941e08c1099a0994c593af2dd2fd12bb9263916c",
+        "size_in_bytes": 929
+      },
+      {
+        "_path": "include/glm/ext/scalar_common.hpp",
+        "path_type": "hardlink",
+        "sha256": "cfac65a97560ef30ac011ffbd3afbd0cd7ee7ffa64a91d80daed12a9b548377f",
+        "sha256_in_prefix": "cfac65a97560ef30ac011ffbd3afbd0cd7ee7ffa64a91d80daed12a9b548377f",
+        "size_in_bytes": 5194
+      },
+      {
+        "_path": "include/glm/ext/scalar_common.inl",
+        "path_type": "hardlink",
+        "sha256": "18f9c1a9a02fa7a6426091eb6d0596913b8051dd2e286bdda42d74c3bcf04e2b",
+        "sha256_in_prefix": "18f9c1a9a02fa7a6426091eb6d0596913b8051dd2e286bdda42d74c3bcf04e2b",
+        "size_in_bytes": 3724
+      },
+      {
+        "_path": "include/glm/ext/scalar_constants.hpp",
+        "path_type": "hardlink",
+        "sha256": "f7e8c57f48b3f8beb53e13601f42f2ad65c2f2ec4693e2e9869f6e72643a2053",
+        "sha256_in_prefix": "f7e8c57f48b3f8beb53e13601f42f2ad65c2f2ec4693e2e9869f6e72643a2053",
+        "size_in_bytes": 1077
+      },
+      {
+        "_path": "include/glm/ext/scalar_constants.inl",
+        "path_type": "hardlink",
+        "sha256": "84781fb1a61773b6d115e473d86636903b07b03218073d1fd7a73d056f617bad",
+        "sha256_in_prefix": "84781fb1a61773b6d115e473d86636903b07b03218073d1fd7a73d056f617bad",
+        "size_in_bytes": 734
+      },
+      {
+        "_path": "include/glm/ext/scalar_int_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "19ec6f0609602ec5e59a8008770706adc1168e768decb2c0219e6d8638fded5c",
+        "sha256_in_prefix": "19ec6f0609602ec5e59a8008770706adc1168e768decb2c0219e6d8638fded5c",
+        "size_in_bytes": 1399
+      },
+      {
+        "_path": "include/glm/ext/scalar_integer.hpp",
+        "path_type": "hardlink",
+        "sha256": "1392f8c7510446a79581740708c5f9d794db50b99c4c0c57ebb68180ef9e5ced",
+        "sha256_in_prefix": "1392f8c7510446a79581740708c5f9d794db50b99c4c0c57ebb68180ef9e5ced",
+        "size_in_bytes": 2775
+      },
+      {
+        "_path": "include/glm/ext/scalar_integer.inl",
+        "path_type": "hardlink",
+        "sha256": "b9b8e15dae43cc050e89dc1c521f580312cc5f8f4e0902e5fe59836cedc31eaa",
+        "sha256_in_prefix": "b9b8e15dae43cc050e89dc1c521f580312cc5f8f4e0902e5fe59836cedc31eaa",
+        "size_in_bytes": 7187
+      },
+      {
+        "_path": "include/glm/ext/scalar_packing.hpp",
+        "path_type": "hardlink",
+        "sha256": "255b695fa7d8821c65e410dc8f601c3c3bc39b8f6527d188ecf5a2f5c76a6097",
+        "sha256_in_prefix": "255b695fa7d8821c65e410dc8f601c3c3bc39b8f6527d188ecf5a2f5c76a6097",
+        "size_in_bytes": 708
+      },
+      {
+        "_path": "include/glm/ext/scalar_packing.inl",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "include/glm/ext/scalar_relational.hpp",
+        "path_type": "hardlink",
+        "sha256": "9a739dee17f8bdc1770b395b84985d04b35427bffc588cd5a3e031ce2bbb743e",
+        "sha256_in_prefix": "9a739dee17f8bdc1770b395b84985d04b35427bffc588cd5a3e031ce2bbb743e",
+        "size_in_bytes": 2329
+      },
+      {
+        "_path": "include/glm/ext/scalar_relational.inl",
+        "path_type": "hardlink",
+        "sha256": "97a5cf9f71a43e7f36c846d86ee62fe2200e24dbea77e4ad0f0618d8e037ee54",
+        "sha256_in_prefix": "97a5cf9f71a43e7f36c846d86ee62fe2200e24dbea77e4ad0f0618d8e037ee54",
+        "size_in_bytes": 1167
+      },
+      {
+        "_path": "include/glm/ext/scalar_uint_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "4cf39d073cfb89e468d54d186811d1e24692893bef7bf7b8416b1a2ffbb42f57",
+        "sha256_in_prefix": "4cf39d073cfb89e468d54d186811d1e24692893bef7bf7b8416b1a2ffbb42f57",
+        "size_in_bytes": 1436
+      },
+      {
+        "_path": "include/glm/ext/scalar_ulp.hpp",
+        "path_type": "hardlink",
+        "sha256": "697bd3d995b56fa9c7e3cbb3adce440f231ac08eda4cf6f4bda4b36019835f60",
+        "sha256_in_prefix": "697bd3d995b56fa9c7e3cbb3adce440f231ac08eda4cf6f4bda4b36019835f60",
+        "size_in_bytes": 2124
+      },
+      {
+        "_path": "include/glm/ext/scalar_ulp.inl",
+        "path_type": "hardlink",
+        "sha256": "07756ce503bed11822d294ce45c6d7f58d58eefad4dcd79f0815946b3fff38c6",
+        "sha256_in_prefix": "07756ce503bed11822d294ce45c6d7f58d58eefad4dcd79f0815946b3fff38c6",
+        "size_in_bytes": 7322
+      },
+      {
+        "_path": "include/glm/ext/vector_bool1.hpp",
+        "path_type": "hardlink",
+        "sha256": "8cf8fe4886a0bbec143c2901f300fd56617d1df73b0c6043d55d87a342b1e3a5",
+        "sha256_in_prefix": "8cf8fe4886a0bbec143c2901f300fd56617d1df73b0c6043d55d87a342b1e3a5",
+        "size_in_bytes": 679
+      },
+      {
+        "_path": "include/glm/ext/vector_bool1_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "856be7dd822b1d0dbdb6e83e93041d1ed5e3d6f0fa97b801e99e93dfafc3c0bb",
+        "sha256_in_prefix": "856be7dd822b1d0dbdb6e83e93041d1ed5e3d6f0fa97b801e99e93dfafc3c0bb",
+        "size_in_bytes": 910
+      },
+      {
+        "_path": "include/glm/ext/vector_bool2.hpp",
+        "path_type": "hardlink",
+        "sha256": "08bc020cccad86af4294e2e1cdac3ffb2033041358d4102e281130588432788c",
+        "sha256_in_prefix": "08bc020cccad86af4294e2e1cdac3ffb2033041358d4102e281130588432788c",
+        "size_in_bytes": 410
+      },
+      {
+        "_path": "include/glm/ext/vector_bool2_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "e2f84fd2b920227c511ebc2afd798e9002c21272e4c0aff9793bcad6c84c6716",
+        "sha256_in_prefix": "e2f84fd2b920227c511ebc2afd798e9002c21272e4c0aff9793bcad6c84c6716",
+        "size_in_bytes": 1371
+      },
+      {
+        "_path": "include/glm/ext/vector_bool3.hpp",
+        "path_type": "hardlink",
+        "sha256": "a828c03d2b6e9f68d4b859c4465cf1a0f2b42c94825e80643ac77fba99fde1b8",
+        "sha256_in_prefix": "a828c03d2b6e9f68d4b859c4465cf1a0f2b42c94825e80643ac77fba99fde1b8",
+        "size_in_bytes": 410
+      },
+      {
+        "_path": "include/glm/ext/vector_bool3_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "7aa0a1650188f00e603af5d837b84a092c480e6a395e782d619c4762c7de753d",
+        "sha256_in_prefix": "7aa0a1650188f00e603af5d837b84a092c480e6a395e782d619c4762c7de753d",
+        "size_in_bytes": 1371
+      },
+      {
+        "_path": "include/glm/ext/vector_bool4.hpp",
+        "path_type": "hardlink",
+        "sha256": "754ecb017dfebaa17a185533d282c30e400cfa161233af835ae38f17703770d5",
+        "sha256_in_prefix": "754ecb017dfebaa17a185533d282c30e400cfa161233af835ae38f17703770d5",
+        "size_in_bytes": 410
+      },
+      {
+        "_path": "include/glm/ext/vector_bool4_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "93cb3a0613e0dec131e9f572f392e9c0799b03ed4bb84a63c81c10ada416964c",
+        "sha256_in_prefix": "93cb3a0613e0dec131e9f572f392e9c0799b03ed4bb84a63c81c10ada416964c",
+        "size_in_bytes": 1371
+      },
+      {
+        "_path": "include/glm/ext/vector_common.hpp",
+        "path_type": "hardlink",
+        "sha256": "c57c94248c94875d73c1e2b1bee2352d9d847594a5079e9862aaa833b6c0a341",
+        "sha256_in_prefix": "c57c94248c94875d73c1e2b1bee2352d9d847594a5079e9862aaa833b6c0a341",
+        "size_in_bytes": 9547
+      },
+      {
+        "_path": "include/glm/ext/vector_common.inl",
+        "path_type": "hardlink",
+        "sha256": "89232fb4efa781acc71c3e3b34e2759f22a7ad1f3c95deecd243460a1e74ee7a",
+        "sha256_in_prefix": "89232fb4efa781acc71c3e3b34e2759f22a7ad1f3c95deecd243460a1e74ee7a",
+        "size_in_bytes": 5370
+      },
+      {
+        "_path": "include/glm/ext/vector_double1.hpp",
+        "path_type": "hardlink",
+        "sha256": "caed423426fef4ef71c10a0c4a4f5147169932ea42e01695479ab4ca893e2a80",
+        "sha256_in_prefix": "caed423426fef4ef71c10a0c4a4f5147169932ea42e01695479ab4ca893e2a80",
+        "size_in_bytes": 813
+      },
+      {
+        "_path": "include/glm/ext/vector_double1_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "8b8248eef014f277d138a4453fcce73f74615c6ca6a3328e692b764cc5b2b677",
+        "sha256_in_prefix": "8b8248eef014f277d138a4453fcce73f74615c6ca6a3328e692b764cc5b2b677",
+        "size_in_bytes": 1191
+      },
+      {
+        "_path": "include/glm/ext/vector_double2.hpp",
+        "path_type": "hardlink",
+        "sha256": "aa65d51f6f502e7be3c03f23d614e58b3c3620a68f3a76a1ddafc54db2d9e654",
+        "sha256_in_prefix": "aa65d51f6f502e7be3c03f23d614e58b3c3620a68f3a76a1ddafc54db2d9e654",
+        "size_in_bytes": 446
+      },
+      {
+        "_path": "include/glm/ext/vector_double2_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "97825cffc45a58054c9f6dfc07ccbc40bb0cd4c47183a8b4e7bd29a2e737ab10",
+        "sha256_in_prefix": "97825cffc45a58054c9f6dfc07ccbc40bb0cd4c47183a8b4e7bd29a2e737ab10",
+        "size_in_bytes": 1431
+      },
+      {
+        "_path": "include/glm/ext/vector_double3.hpp",
+        "path_type": "hardlink",
+        "sha256": "640fd2e9cb876b076381b2564a6dd6dc564cb28aa334c0726a0b9d5cf38d6b84",
+        "sha256_in_prefix": "640fd2e9cb876b076381b2564a6dd6dc564cb28aa334c0726a0b9d5cf38d6b84",
+        "size_in_bytes": 446
+      },
+      {
+        "_path": "include/glm/ext/vector_double3_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "0cf3c9415fa477eb52840778be7f7ee8d104c3fd911fc5b72b56e84a0a220fac",
+        "sha256_in_prefix": "0cf3c9415fa477eb52840778be7f7ee8d104c3fd911fc5b72b56e84a0a220fac",
+        "size_in_bytes": 1590
+      },
+      {
+        "_path": "include/glm/ext/vector_double4.hpp",
+        "path_type": "hardlink",
+        "sha256": "6f48af6fa7e368e8848ce7b040a6efe05ac80e087dc6f91fad9d58e2ed90ef6d",
+        "sha256_in_prefix": "6f48af6fa7e368e8848ce7b040a6efe05ac80e087dc6f91fad9d58e2ed90ef6d",
+        "size_in_bytes": 446
+      },
+      {
+        "_path": "include/glm/ext/vector_double4_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "cde72699e11ccc7b28955065217387d3f9d7d6087ee2992fc7c48e9daaa08a3e",
+        "sha256_in_prefix": "cde72699e11ccc7b28955065217387d3f9d7d6087ee2992fc7c48e9daaa08a3e",
+        "size_in_bytes": 1622
+      },
+      {
+        "_path": "include/glm/ext/vector_float1.hpp",
+        "path_type": "hardlink",
+        "sha256": "368abb2fc79f3d2706e5baa82a40b8a988b2ca3ac840dd5eff2634ce750cb722",
+        "sha256_in_prefix": "368abb2fc79f3d2706e5baa82a40b8a988b2ca3ac840dd5eff2634ce750cb722",
+        "size_in_bytes": 804
+      },
+      {
+        "_path": "include/glm/ext/vector_float1_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "093d2164294135ea0a77ff7365791e2d413b02cda9a6155e56cf4ab0e482ab98",
+        "sha256_in_prefix": "093d2164294135ea0a77ff7365791e2d413b02cda9a6155e56cf4ab0e482ab98",
+        "size_in_bytes": 1186
+      },
+      {
+        "_path": "include/glm/ext/vector_float2.hpp",
+        "path_type": "hardlink",
+        "sha256": "cbb12f8f18196f7b7e47c4ba64d11bc2ffaf18fcf13294b733d7814223652174",
+        "sha256_in_prefix": "cbb12f8f18196f7b7e47c4ba64d11bc2ffaf18fcf13294b733d7814223652174",
+        "size_in_bytes": 442
+      },
+      {
+        "_path": "include/glm/ext/vector_float2_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "d9855e815a007eecfeabb34fe85009b5a70c2b21a9aad6e96689059faf12693e",
+        "sha256_in_prefix": "d9855e815a007eecfeabb34fe85009b5a70c2b21a9aad6e96689059faf12693e",
+        "size_in_bytes": 1425
+      },
+      {
+        "_path": "include/glm/ext/vector_float3.hpp",
+        "path_type": "hardlink",
+        "sha256": "0ea127ffc477a43a39ca0737ae9062363541dcf4fb39540d0d2447ad3b8a16c9",
+        "sha256_in_prefix": "0ea127ffc477a43a39ca0737ae9062363541dcf4fb39540d0d2447ad3b8a16c9",
+        "size_in_bytes": 443
+      },
+      {
+        "_path": "include/glm/ext/vector_float3_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "3928df5009a88ba934f4e4fba3b38c3d1d1cea4a203a8b7fd6552000703d5fc4",
+        "sha256_in_prefix": "3928df5009a88ba934f4e4fba3b38c3d1d1cea4a203a8b7fd6552000703d5fc4",
+        "size_in_bytes": 1425
+      },
+      {
+        "_path": "include/glm/ext/vector_float4.hpp",
+        "path_type": "hardlink",
+        "sha256": "cc41791cc7bbced0d798a58ba796a2ebdc5f10af483986773d95a55be95c3fe7",
+        "sha256_in_prefix": "cc41791cc7bbced0d798a58ba796a2ebdc5f10af483986773d95a55be95c3fe7",
+        "size_in_bytes": 443
+      },
+      {
+        "_path": "include/glm/ext/vector_float4_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "11dbb5651fb744c866cb8deadf84c03a6c1f2b901f62ad9f1f26edef998a217b",
+        "sha256_in_prefix": "11dbb5651fb744c866cb8deadf84c03a6c1f2b901f62ad9f1f26edef998a217b",
+        "size_in_bytes": 1425
+      },
+      {
+        "_path": "include/glm/ext/vector_int1.hpp",
+        "path_type": "hardlink",
+        "sha256": "474e2cccc75553cd0b116b2fde5da1b45cd2362cb9a489384edb5de9731ac101",
+        "sha256_in_prefix": "474e2cccc75553cd0b116b2fde5da1b45cd2362cb9a489384edb5de9731ac101",
+        "size_in_bytes": 725
+      },
+      {
+        "_path": "include/glm/ext/vector_int1_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "d422a72eb2a5bcff804548650ba39662602d966fc6c58f7eeb8b124de5c96b60",
+        "sha256_in_prefix": "d422a72eb2a5bcff804548650ba39662602d966fc6c58f7eeb8b124de5c96b60",
+        "size_in_bytes": 1261
+      },
+      {
+        "_path": "include/glm/ext/vector_int2.hpp",
+        "path_type": "hardlink",
+        "sha256": "0b22b6950e3274a9c285fbf6a7d85a7521c956bda32e44c4a883ccf30d26cb1c",
+        "sha256_in_prefix": "0b22b6950e3274a9c285fbf6a7d85a7521c956bda32e44c4a883ccf30d26cb1c",
+        "size_in_bytes": 423
+      },
+      {
+        "_path": "include/glm/ext/vector_int2_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "4bcf7b8241e0063e2536bbc019083e1f253c47a734bcd4738cebf5a620470503",
+        "sha256_in_prefix": "4bcf7b8241e0063e2536bbc019083e1f253c47a734bcd4738cebf5a620470503",
+        "size_in_bytes": 1284
+      },
+      {
+        "_path": "include/glm/ext/vector_int3.hpp",
+        "path_type": "hardlink",
+        "sha256": "0732541c4b296456a1be9999253f2e4c7b68f0f4dd997e974816cbaeb667d2bf",
+        "sha256_in_prefix": "0732541c4b296456a1be9999253f2e4c7b68f0f4dd997e974816cbaeb667d2bf",
+        "size_in_bytes": 423
+      },
+      {
+        "_path": "include/glm/ext/vector_int3_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "5591ca8630ebabaca6252e8131e8f0bad51e68c70bd3978ae96752316ac34d9c",
+        "sha256_in_prefix": "5591ca8630ebabaca6252e8131e8f0bad51e68c70bd3978ae96752316ac34d9c",
+        "size_in_bytes": 1284
+      },
+      {
+        "_path": "include/glm/ext/vector_int4.hpp",
+        "path_type": "hardlink",
+        "sha256": "8eb57ddad25682eb4617a62fea5629f2923c20f2cdaa7c0f1f9337044afdcade",
+        "sha256_in_prefix": "8eb57ddad25682eb4617a62fea5629f2923c20f2cdaa7c0f1f9337044afdcade",
+        "size_in_bytes": 423
+      },
+      {
+        "_path": "include/glm/ext/vector_int4_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "733d4313b73eb482e5ae40807e9a14f7992599a47f3c689b1664be97c08a18b3",
+        "sha256_in_prefix": "733d4313b73eb482e5ae40807e9a14f7992599a47f3c689b1664be97c08a18b3",
+        "size_in_bytes": 1284
+      },
+      {
+        "_path": "include/glm/ext/vector_integer.hpp",
+        "path_type": "hardlink",
+        "sha256": "9f18af5c2dbb58656a97791d2fae76025bea7e5ddfac3413ddac3467f6b61b3d",
+        "sha256_in_prefix": "9f18af5c2dbb58656a97791d2fae76025bea7e5ddfac3413ddac3467f6b61b3d",
+        "size_in_bytes": 5659
+      },
+      {
+        "_path": "include/glm/ext/vector_integer.inl",
+        "path_type": "hardlink",
+        "sha256": "b9aa5e0913aa76be3987cc14c418bf490225303ccf6bcfae7db626bb6d859b00",
+        "sha256_in_prefix": "b9aa5e0913aa76be3987cc14c418bf490225303ccf6bcfae7db626bb6d859b00",
+        "size_in_bytes": 3410
+      },
+      {
+        "_path": "include/glm/ext/vector_packing.hpp",
+        "path_type": "hardlink",
+        "sha256": "7f66cb79070fa1d775010af9252fa29283dc8e0169c927a4db1e36ff0ff16acd",
+        "sha256_in_prefix": "7f66cb79070fa1d775010af9252fa29283dc8e0169c927a4db1e36ff0ff16acd",
+        "size_in_bytes": 702
+      },
+      {
+        "_path": "include/glm/ext/vector_packing.inl",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "include/glm/ext/vector_relational.hpp",
+        "path_type": "hardlink",
+        "sha256": "8a2a257e7d7b7d5544a28da2730f6f9fc7c87a3611695415931a15848016eeb2",
+        "sha256_in_prefix": "8a2a257e7d7b7d5544a28da2730f6f9fc7c87a3611695415931a15848016eeb2",
+        "size_in_bytes": 4636
+      },
+      {
+        "_path": "include/glm/ext/vector_relational.inl",
+        "path_type": "hardlink",
+        "sha256": "395e5b0ce1a28bf72ef5657f9d14022623724df05b5680026f3092edaf211f55",
+        "sha256_in_prefix": "395e5b0ce1a28bf72ef5657f9d14022623724df05b5680026f3092edaf211f55",
+        "size_in_bytes": 2537
+      },
+      {
+        "_path": "include/glm/ext/vector_uint1.hpp",
+        "path_type": "hardlink",
+        "sha256": "8d7220735f0fc85477e6f0e78fe1a0e75d605973e3cd6cfd14fcdceaee539899",
+        "sha256_in_prefix": "8d7220735f0fc85477e6f0e78fe1a0e75d605973e3cd6cfd14fcdceaee539899",
+        "size_in_bytes": 743
+      },
+      {
+        "_path": "include/glm/ext/vector_uint1_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "692bf3b97887dcfae9a8ea6ca6a63ece46e03667f35ee2440f2a7ce9abb8d656",
+        "sha256_in_prefix": "692bf3b97887dcfae9a8ea6ca6a63ece46e03667f35ee2440f2a7ce9abb8d656",
+        "size_in_bytes": 1289
+      },
+      {
+        "_path": "include/glm/ext/vector_uint2.hpp",
+        "path_type": "hardlink",
+        "sha256": "3d098c2039dbc9ba6d63512a1b5127075557602baa3e9f0f57152226bd859ea1",
+        "sha256_in_prefix": "3d098c2039dbc9ba6d63512a1b5127075557602baa3e9f0f57152226bd859ea1",
+        "size_in_bytes": 435
+      },
+      {
+        "_path": "include/glm/ext/vector_uint2_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "dd246da5ae6ffa6f38d9ae8d4988535395c732e2467278ae882e3c9d3c01d587",
+        "sha256_in_prefix": "dd246da5ae6ffa6f38d9ae8d4988535395c732e2467278ae882e3c9d3c01d587",
+        "size_in_bytes": 1308
+      },
+      {
+        "_path": "include/glm/ext/vector_uint3.hpp",
+        "path_type": "hardlink",
+        "sha256": "7719bc51395424bbd73f9bec3e43fe341495f924c8a97bcdf3a1163e19d29a32",
+        "sha256_in_prefix": "7719bc51395424bbd73f9bec3e43fe341495f924c8a97bcdf3a1163e19d29a32",
+        "size_in_bytes": 435
+      },
+      {
+        "_path": "include/glm/ext/vector_uint3_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "0f6d956d610a36f228c7a6c2d2f29fbf7a877f37377d0ef5ddea1b1e2d6139d4",
+        "sha256_in_prefix": "0f6d956d610a36f228c7a6c2d2f29fbf7a877f37377d0ef5ddea1b1e2d6139d4",
+        "size_in_bytes": 1308
+      },
+      {
+        "_path": "include/glm/ext/vector_uint4.hpp",
+        "path_type": "hardlink",
+        "sha256": "c2fefc4791975a7799147d5c0f2626816020489d574c03b85a35e1c45aec5c34",
+        "sha256_in_prefix": "c2fefc4791975a7799147d5c0f2626816020489d574c03b85a35e1c45aec5c34",
+        "size_in_bytes": 435
+      },
+      {
+        "_path": "include/glm/ext/vector_uint4_sized.hpp",
+        "path_type": "hardlink",
+        "sha256": "f520cfd07ccc383185ad6644ba2b6b5133b98240d8b4baf1880e4928951365a0",
+        "sha256_in_prefix": "f520cfd07ccc383185ad6644ba2b6b5133b98240d8b4baf1880e4928951365a0",
+        "size_in_bytes": 1308
+      },
+      {
+        "_path": "include/glm/ext/vector_ulp.hpp",
+        "path_type": "hardlink",
+        "sha256": "09a74a2fedab6437f8751783b1098ac564e3b22af85bded4fc995830bd0ed312",
+        "sha256_in_prefix": "09a74a2fedab6437f8751783b1098ac564e3b22af85bded4fc995830bd0ed312",
+        "size_in_bytes": 3957
+      },
+      {
+        "_path": "include/glm/ext/vector_ulp.inl",
+        "path_type": "hardlink",
+        "sha256": "9d3a03d64f923daaa8d2afcd4e7208b69c7335276d3d81badedffb101aad6bee",
+        "sha256_in_prefix": "9d3a03d64f923daaa8d2afcd4e7208b69c7335276d3d81badedffb101aad6bee",
+        "size_in_bytes": 2268
+      },
+      {
+        "_path": "include/glm/fwd.hpp",
+        "path_type": "hardlink",
+        "sha256": "804cd91cb5260d9a3f33166c6834329c2e226b112ef6db22a0d655ab6dd4fd4f",
+        "sha256_in_prefix": "804cd91cb5260d9a3f33166c6834329c2e226b112ef6db22a0d655ab6dd4fd4f",
+        "size_in_bytes": 46775
+      },
+      {
+        "_path": "include/glm/geometric.hpp",
+        "path_type": "hardlink",
+        "sha256": "38d156e97a440c26888b98a84732299218707f1d09a3d8915f413325a6384cc1",
+        "sha256_in_prefix": "38d156e97a440c26888b98a84732299218707f1d09a3d8915f413325a6384cc1",
+        "size_in_bytes": 5467
+      },
+      {
+        "_path": "include/glm/glm.hpp",
+        "path_type": "hardlink",
+        "sha256": "a60e914477f5850be5df4564dfc5a74e659f0b20042595760c680223fb19ec71",
+        "sha256_in_prefix": "a60e914477f5850be5df4564dfc5a74e659f0b20042595760c680223fb19ec71",
+        "size_in_bytes": 4635
+      },
+      {
+        "_path": "include/glm/gtc/bitfield.hpp",
+        "path_type": "hardlink",
+        "sha256": "4d8765e027a85758f1301af829f619d1e10121d5b8f1372e0aca759075ee470f",
+        "sha256_in_prefix": "4d8765e027a85758f1301af829f619d1e10121d5b8f1372e0aca759075ee470f",
+        "size_in_bytes": 10144
+      },
+      {
+        "_path": "include/glm/gtc/bitfield.inl",
+        "path_type": "hardlink",
+        "sha256": "70334eefaa82b23da4a874a2df6987a1a7f124841850edbe23eae2c03f17db6f",
+        "sha256_in_prefix": "70334eefaa82b23da4a874a2df6987a1a7f124841850edbe23eae2c03f17db6f",
+        "size_in_bytes": 20757
+      },
+      {
+        "_path": "include/glm/gtc/color_space.hpp",
+        "path_type": "hardlink",
+        "sha256": "c6f321b9d904e7824d69f559dfb8f369d5d510329299c45f72ae4b6ef2fac9ef",
+        "sha256_in_prefix": "c6f321b9d904e7824d69f559dfb8f369d5d510329299c45f72ae4b6ef2fac9ef",
+        "size_in_bytes": 2020
+      },
+      {
+        "_path": "include/glm/gtc/color_space.inl",
+        "path_type": "hardlink",
+        "sha256": "85a27af8807abc69234917e6eb067bbd94bb1d2a562d5137600fd0426e373e47",
+        "sha256_in_prefix": "85a27af8807abc69234917e6eb067bbd94bb1d2a562d5137600fd0426e373e47",
+        "size_in_bytes": 3038
+      },
+      {
+        "_path": "include/glm/gtc/constants.hpp",
+        "path_type": "hardlink",
+        "sha256": "de780b2dbc014b22f11d747a57ea294be5f378053d3e502d1b5518c70316e3c8",
+        "sha256_in_prefix": "de780b2dbc014b22f11d747a57ea294be5f378053d3e502d1b5518c70316e3c8",
+        "size_in_bytes": 4179
+      },
+      {
+        "_path": "include/glm/gtc/constants.inl",
+        "path_type": "hardlink",
+        "sha256": "a81eb19f67054bcbd4d4ecaf5f6983f01ad7c849784f84537e097e9cd9224808",
+        "sha256_in_prefix": "a81eb19f67054bcbd4d4ecaf5f6983f01ad7c849784f84537e097e9cd9224808",
+        "size_in_bytes": 4004
+      },
+      {
+        "_path": "include/glm/gtc/epsilon.hpp",
+        "path_type": "hardlink",
+        "sha256": "7bd3acd70818a52fc711f85923990c30fc6affd1899736a5fc7b91705baa9367",
+        "sha256_in_prefix": "7bd3acd70818a52fc711f85923990c30fc6affd1899736a5fc7b91705baa9367",
+        "size_in_bytes": 1828
+      },
+      {
+        "_path": "include/glm/gtc/epsilon.inl",
+        "path_type": "hardlink",
+        "sha256": "a24dc6c2947721cf4fc89de604563b5fe9e85e1de2674908721ffe5d249aff70",
+        "sha256_in_prefix": "a24dc6c2947721cf4fc89de604563b5fe9e85e1de2674908721ffe5d249aff70",
+        "size_in_bytes": 2276
+      },
+      {
+        "_path": "include/glm/gtc/integer.hpp",
+        "path_type": "hardlink",
+        "sha256": "7b72e4b3b849172b3b6ad88f33a2ddb9235d8b92bff4845abc45263f8facf034",
+        "sha256_in_prefix": "7b72e4b3b849172b3b6ad88f33a2ddb9235d8b92bff4845abc45263f8facf034",
+        "size_in_bytes": 2096
+      },
+      {
+        "_path": "include/glm/gtc/integer.inl",
+        "path_type": "hardlink",
+        "sha256": "7f179f693d713f1aba98c80902ddb855e7252b52e3ae84829fa93c7009d129b1",
+        "sha256_in_prefix": "7f179f693d713f1aba98c80902ddb855e7252b52e3ae84829fa93c7009d129b1",
+        "size_in_bytes": 2338
+      },
+      {
+        "_path": "include/glm/gtc/matrix_access.hpp",
+        "path_type": "hardlink",
+        "sha256": "1c7028cb87b23548dc8559943cc413e2ba2fededcfaca6d619d999ced1f117bf",
+        "sha256_in_prefix": "1c7028cb87b23548dc8559943cc413e2ba2fededcfaca6d619d999ced1f117bf",
+        "size_in_bytes": 1468
+      },
+      {
+        "_path": "include/glm/gtc/matrix_access.inl",
+        "path_type": "hardlink",
+        "sha256": "3841a8e83e94219ffb2617963fb5bba4a850108a59da1f4ede1567dba80e5411",
+        "sha256_in_prefix": "3841a8e83e94219ffb2617963fb5bba4a850108a59da1f4ede1567dba80e5411",
+        "size_in_bytes": 1187
+      },
+      {
+        "_path": "include/glm/gtc/matrix_integer.hpp",
+        "path_type": "hardlink",
+        "sha256": "dc99c57f54646f5f4adef1ac5e74da161e1469584ff96862e1c973caa9948379",
+        "sha256_in_prefix": "dc99c57f54646f5f4adef1ac5e74da161e1469584ff96862e1c973caa9948379",
+        "size_in_bytes": 13046
+      },
+      {
+        "_path": "include/glm/gtc/matrix_inverse.hpp",
+        "path_type": "hardlink",
+        "sha256": "eafa74eed0a6ab8f9c63dd8bde2ba0aa7705bbc3eab1a433eb0bf14f24d9be98",
+        "sha256_in_prefix": "eafa74eed0a6ab8f9c63dd8bde2ba0aa7705bbc3eab1a433eb0bf14f24d9be98",
+        "size_in_bytes": 1517
+      },
+      {
+        "_path": "include/glm/gtc/matrix_inverse.inl",
+        "path_type": "hardlink",
+        "sha256": "2f2a1105e3a79789a6e91ee95ce2497290a242e00c49bf868a0642d9b73a0790",
+        "sha256_in_prefix": "2f2a1105e3a79789a6e91ee95ce2497290a242e00c49bf868a0642d9b73a0790",
+        "size_in_bytes": 5046
+      },
+      {
+        "_path": "include/glm/gtc/matrix_transform.hpp",
+        "path_type": "hardlink",
+        "sha256": "8a77c7a08b5521ed8580267db0d342832c0e357da8e54e0a6408d97287ce76fd",
+        "sha256_in_prefix": "8a77c7a08b5521ed8580267db0d342832c0e357da8e54e0a6408d97287ce76fd",
+        "size_in_bytes": 1226
+      },
+      {
+        "_path": "include/glm/gtc/matrix_transform.inl",
+        "path_type": "hardlink",
+        "sha256": "c39b77df42c51b443c400397992853d6ce221ad3d7a12a81aac8ca6f7fef1691",
+        "sha256_in_prefix": "c39b77df42c51b443c400397992853d6ce221ad3d7a12a81aac8ca6f7fef1691",
+        "size_in_bytes": 88
+      },
+      {
+        "_path": "include/glm/gtc/noise.hpp",
+        "path_type": "hardlink",
+        "sha256": "eb2665c5adbe9335f3f2dd35a8d33a0f8f02d2e08da560727f8113b4f78c844d",
+        "sha256_in_prefix": "eb2665c5adbe9335f3f2dd35a8d33a0f8f02d2e08da560727f8113b4f78c844d",
+        "size_in_bytes": 1553
+      },
+      {
+        "_path": "include/glm/gtc/noise.inl",
+        "path_type": "hardlink",
+        "sha256": "8e5cbd2c04b0c02167c5983e3eeb93353230985666a9871c31e8c822e4aed0f8",
+        "sha256_in_prefix": "8e5cbd2c04b0c02167c5983e3eeb93353230985666a9871c31e8c822e4aed0f8",
+        "size_in_bytes": 33979
+      },
+      {
+        "_path": "include/glm/gtc/packing.hpp",
+        "path_type": "hardlink",
+        "sha256": "10a4fe7b8e233a94f84ce6dfc326d224c32285e569d34e681fc0c2f4dc5b3fd4",
+        "sha256_in_prefix": "10a4fe7b8e233a94f84ce6dfc326d224c32285e569d34e681fc0c2f4dc5b3fd4",
+        "size_in_bytes": 36716
+      },
+      {
+        "_path": "include/glm/gtc/packing.inl",
+        "path_type": "hardlink",
+        "sha256": "4a1beec27c8680b8176fc914d6d6632e7a56e9f3b759790e37f255d1954b0b16",
+        "sha256_in_prefix": "4a1beec27c8680b8176fc914d6d6632e7a56e9f3b759790e37f255d1954b0b16",
+        "size_in_bytes": 25757
+      },
+      {
+        "_path": "include/glm/gtc/quaternion.hpp",
+        "path_type": "hardlink",
+        "sha256": "9e8c97ce43770801569459ab254d42b9700600223e3a58335a10a072f1445ed5",
+        "sha256_in_prefix": "9e8c97ce43770801569459ab254d42b9700600223e3a58335a10a072f1445ed5",
+        "size_in_bytes": 5638
+      },
+      {
+        "_path": "include/glm/gtc/quaternion.inl",
+        "path_type": "hardlink",
+        "sha256": "5516202af05a46baaedf642631fc6f2e0bdec27773024515c504e11dbe1fa4b8",
+        "sha256_in_prefix": "5516202af05a46baaedf642631fc6f2e0bdec27773024515c504e11dbe1fa4b8",
+        "size_in_bytes": 6239
+      },
+      {
+        "_path": "include/glm/gtc/quaternion_simd.inl",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "include/glm/gtc/random.hpp",
+        "path_type": "hardlink",
+        "sha256": "1a4eb6920eebf4070403b3c05416b1f146b086887d4f38c7d0318dd649be0e85",
+        "sha256_in_prefix": "1a4eb6920eebf4070403b3c05416b1f146b086887d4f38c7d0318dd649be0e85",
+        "size_in_bytes": 2689
+      },
+      {
+        "_path": "include/glm/gtc/random.inl",
+        "path_type": "hardlink",
+        "sha256": "1007bdcd368edb2c35f07e28767b0ce3465d56ad4a55b37c09f52786320d639f",
+        "sha256_in_prefix": "1007bdcd368edb2c35f07e28767b0ce3465d56ad4a55b37c09f52786320d639f",
+        "size_in_bytes": 9004
+      },
+      {
+        "_path": "include/glm/gtc/reciprocal.hpp",
+        "path_type": "hardlink",
+        "sha256": "cacc748226e3d9ded75a2831af27ea07611e64ac91033b4238078b132e5d5cb7",
+        "sha256_in_prefix": "cacc748226e3d9ded75a2831af27ea07611e64ac91033b4238078b132e5d5cb7",
+        "size_in_bytes": 3550
+      },
+      {
+        "_path": "include/glm/gtc/reciprocal.inl",
+        "path_type": "hardlink",
+        "sha256": "1fc7d80ed26ab17445fbdec1dcf8847c203c9286372e7720b7f22c21d5a1ea80",
+        "sha256_in_prefix": "1fc7d80ed26ab17445fbdec1dcf8847c203c9286372e7720b7f22c21d5a1ea80",
+        "size_in_bytes": 6527
+      },
+      {
+        "_path": "include/glm/gtc/round.hpp",
+        "path_type": "hardlink",
+        "sha256": "867f39b9b118dc31c1c1179d68a469a7b739caf385758617aca834568b2193d0",
+        "sha256_in_prefix": "867f39b9b118dc31c1c1179d68a469a7b739caf385758617aca834568b2193d0",
+        "size_in_bytes": 5438
+      },
+      {
+        "_path": "include/glm/gtc/round.inl",
+        "path_type": "hardlink",
+        "sha256": "062a26e0d01017c5f3c60859eed11ff5e2841de0d256f3d76c1113ea81fbea5d",
+        "sha256_in_prefix": "062a26e0d01017c5f3c60859eed11ff5e2841de0d256f3d76c1113ea81fbea5d",
+        "size_in_bytes": 4529
+      },
+      {
+        "_path": "include/glm/gtc/type_aligned.hpp",
+        "path_type": "hardlink",
+        "sha256": "f5b765623b8f2734c436fa4fdf6aa58afb86396810cec0cd9b3976517e4e2e3d",
+        "sha256_in_prefix": "f5b765623b8f2734c436fa4fdf6aa58afb86396810cec0cd9b3976517e4e2e3d",
+        "size_in_bytes": 69298
+      },
+      {
+        "_path": "include/glm/gtc/type_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "f4256dce56401ae4950175d19b1c653eb9b5fd37c03f2b1928be9e36c0cd9282",
+        "sha256_in_prefix": "f4256dce56401ae4950175d19b1c653eb9b5fd37c03f2b1928be9e36c0cd9282",
+        "size_in_bytes": 66315
+      },
+      {
+        "_path": "include/glm/gtc/type_precision.inl",
+        "path_type": "hardlink",
+        "sha256": "499b40d2ab6777d2e938df1473c003f8bd722947818bcf28bee9909a27062d1e",
+        "sha256_in_prefix": "499b40d2ab6777d2e938df1473c003f8bd722947818bcf28bee9909a27062d1e",
+        "size_in_bytes": 49
+      },
+      {
+        "_path": "include/glm/gtc/type_ptr.hpp",
+        "path_type": "hardlink",
+        "sha256": "7d0d2eaf0695be88fcd8210c5e227ee233b1d2fc9f96d3def1fe4ab67b01b045",
+        "sha256_in_prefix": "7d0d2eaf0695be88fcd8210c5e227ee233b1d2fc9f96d3def1fe4ab67b01b045",
+        "size_in_bytes": 7056
+      },
+      {
+        "_path": "include/glm/gtc/type_ptr.inl",
+        "path_type": "hardlink",
+        "sha256": "b9f59c25fbf9633f74921e87d4f3af6313be6d28afa26a4683e9cd33a059f3bd",
+        "sha256_in_prefix": "b9f59c25fbf9633f74921e87d4f3af6313be6d28afa26a4683e9cd33a059f3bd",
+        "size_in_bytes": 8935
+      },
+      {
+        "_path": "include/glm/gtc/ulp.hpp",
+        "path_type": "hardlink",
+        "sha256": "45f2466027f52aef733def6d5933066b9982dc51cd94352ead15097873329cb8",
+        "sha256_in_prefix": "45f2466027f52aef733def6d5933066b9982dc51cd94352ead15097873329cb8",
+        "size_in_bytes": 5194
+      },
+      {
+        "_path": "include/glm/gtc/ulp.inl",
+        "path_type": "hardlink",
+        "sha256": "afc4f76821b57d072633a47a735fc71b9bb51eb502740710907eb371d1fc28a0",
+        "sha256_in_prefix": "afc4f76821b57d072633a47a735fc71b9bb51eb502740710907eb371d1fc28a0",
+        "size_in_bytes": 5182
+      },
+      {
+        "_path": "include/glm/gtc/vec1.hpp",
+        "path_type": "hardlink",
+        "sha256": "be8642cdef56b328a5ca6439f398e92a53e82c61f74445edd55708c8fd214ad7",
+        "sha256_in_prefix": "be8642cdef56b328a5ca6439f398e92a53e82c61f74445edd55708c8fd214ad7",
+        "size_in_bytes": 838
+      },
+      {
+        "_path": "include/glm/gtx/associated_min_max.hpp",
+        "path_type": "hardlink",
+        "sha256": "ac859edadc1e122cc3eff705e99abd92e600386b26519a49a5ee56feca03a6c4",
+        "sha256_in_prefix": "ac859edadc1e122cc3eff705e99abd92e600386b26519a49a5ee56feca03a6c4",
+        "size_in_bytes": 7836
+      },
+      {
+        "_path": "include/glm/gtx/associated_min_max.inl",
+        "path_type": "hardlink",
+        "sha256": "df2227b4992e8e5f3c4b97bac6586eee238f971dba737873207c5b2262ca2662",
+        "sha256_in_prefix": "df2227b4992e8e5f3c4b97bac6586eee238f971dba737873207c5b2262ca2662",
+        "size_in_bytes": 8890
+      },
+      {
+        "_path": "include/glm/gtx/bit.hpp",
+        "path_type": "hardlink",
+        "sha256": "c61a94a642e70620943ecbd1fb02d46fb93b888387aa5984ae28426724244716",
+        "sha256_in_prefix": "c61a94a642e70620943ecbd1fb02d46fb93b888387aa5984ae28426724244716",
+        "size_in_bytes": 3136
+      },
+      {
+        "_path": "include/glm/gtx/bit.inl",
+        "path_type": "hardlink",
+        "sha256": "eb1bc0d4968285a6e989ca25314834c21e160d6ca39ecca95f7643cb565253f6",
+        "sha256_in_prefix": "eb1bc0d4968285a6e989ca25314834c21e160d6ca39ecca95f7643cb565253f6",
+        "size_in_bytes": 2354
+      },
+      {
+        "_path": "include/glm/gtx/closest_point.hpp",
+        "path_type": "hardlink",
+        "sha256": "36b1f8eabd3da963c3a7eae38db7635f2f8b6b930b716027fcc9498dd9c916b5",
+        "sha256_in_prefix": "36b1f8eabd3da963c3a7eae38db7635f2f8b6b930b716027fcc9498dd9c916b5",
+        "size_in_bytes": 1376
+      },
+      {
+        "_path": "include/glm/gtx/closest_point.inl",
+        "path_type": "hardlink",
+        "sha256": "77d431a9988c9e33f15a3b02b7b00cdd6f16f86c56cae1a96b46f502bbf922f0",
+        "sha256_in_prefix": "77d431a9988c9e33f15a3b02b7b00cdd6f16f86c56cae1a96b46f502bbf922f0",
+        "size_in_bytes": 1162
+      },
+      {
+        "_path": "include/glm/gtx/color_encoding.hpp",
+        "path_type": "hardlink",
+        "sha256": "087a5242a4c5135a700c171c6225fd9053fa70ce95cb1276a75026bc1fe38ded",
+        "sha256_in_prefix": "087a5242a4c5135a700c171c6225fd9053fa70ce95cb1276a75026bc1fe38ded",
+        "size_in_bytes": 1730
+      },
+      {
+        "_path": "include/glm/gtx/color_encoding.inl",
+        "path_type": "hardlink",
+        "sha256": "5df281855c1cd0a970a6e1169b0bf0393a53c1655913c9a70cc61bbaccd6e81f",
+        "sha256_in_prefix": "5df281855c1cd0a970a6e1169b0bf0393a53c1655913c9a70cc61bbaccd6e81f",
+        "size_in_bytes": 1792
+      },
+      {
+        "_path": "include/glm/gtx/color_space.hpp",
+        "path_type": "hardlink",
+        "sha256": "4ffbf3e00a39226fa25e9eb55cb56ca36539a1e620962441c2eea4a1f21debfd",
+        "sha256_in_prefix": "4ffbf3e00a39226fa25e9eb55cb56ca36539a1e620962441c2eea4a1f21debfd",
+        "size_in_bytes": 2045
+      },
+      {
+        "_path": "include/glm/gtx/color_space.inl",
+        "path_type": "hardlink",
+        "sha256": "26bfa1782cbc574434f5bb58a8ab2e23b04a68d20e0958b9e34226b7973040e0",
+        "sha256_in_prefix": "26bfa1782cbc574434f5bb58a8ab2e23b04a68d20e0958b9e34226b7973040e0",
+        "size_in_bytes": 3330
+      },
+      {
+        "_path": "include/glm/gtx/color_space_YCoCg.hpp",
+        "path_type": "hardlink",
+        "sha256": "7161f89fc2b1b6b7e5c76f2ec0ef0f16770927ae80337f82e5640cde38cea076",
+        "sha256_in_prefix": "7161f89fc2b1b6b7e5c76f2ec0ef0f16770927ae80337f82e5640cde38cea076",
+        "size_in_bytes": 1926
+      },
+      {
+        "_path": "include/glm/gtx/color_space_YCoCg.inl",
+        "path_type": "hardlink",
+        "sha256": "202e3f3e966ef501a482061864e7168b10f856dafd4f1da54242598a2b102e7c",
+        "sha256_in_prefix": "202e3f3e966ef501a482061864e7168b10f856dafd4f1da54242598a2b102e7c",
+        "size_in_bytes": 2844
+      },
+      {
+        "_path": "include/glm/gtx/common.hpp",
+        "path_type": "hardlink",
+        "sha256": "082bfbebe7ee8971b1f9652c3a5553aa42bb5fc2cf1b9acfe2a2a0d070c332e5",
+        "sha256_in_prefix": "082bfbebe7ee8971b1f9652c3a5553aa42bb5fc2cf1b9acfe2a2a0d070c332e5",
+        "size_in_bytes": 3192
+      },
+      {
+        "_path": "include/glm/gtx/common.inl",
+        "path_type": "hardlink",
+        "sha256": "9d870dd62eb68aeaef90b66e9c0a3c02c0489d454ecc979c6ef59a92cbe592fc",
+        "sha256_in_prefix": "9d870dd62eb68aeaef90b66e9c0a3c02c0489d454ecc979c6ef59a92cbe592fc",
+        "size_in_bytes": 3569
+      },
+      {
+        "_path": "include/glm/gtx/compatibility.hpp",
+        "path_type": "hardlink",
+        "sha256": "e8d9388c7fe70ef697883a9a0f17d95e5c4096f8dcc52cb4f3df7d5041013f38",
+        "sha256_in_prefix": "e8d9388c7fe70ef697883a9a0f17d95e5c4096f8dcc52cb4f3df7d5041013f38",
+        "size_in_bytes": 15122
+      },
+      {
+        "_path": "include/glm/gtx/compatibility.inl",
+        "path_type": "hardlink",
+        "sha256": "c4d9e1f4a084d95e5c3f927b975b7954f5d246f7e96e037b7efcae3193e01f9c",
+        "sha256_in_prefix": "c4d9e1f4a084d95e5c3f927b975b7954f5d246f7e96e037b7efcae3193e01f9c",
+        "size_in_bytes": 1523
+      },
+      {
+        "_path": "include/glm/gtx/component_wise.hpp",
+        "path_type": "hardlink",
+        "sha256": "d4c81a1b5c95f6e05d5f029efa45d8a38ca86bebe5da9a4fb7a3ad9864f7e020",
+        "sha256_in_prefix": "d4c81a1b5c95f6e05d5f029efa45d8a38ca86bebe5da9a4fb7a3ad9864f7e020",
+        "size_in_bytes": 2420
+      },
+      {
+        "_path": "include/glm/gtx/component_wise.inl",
+        "path_type": "hardlink",
+        "sha256": "7e2a8744f92feff03eaf05282e6d9bbe7cfccc75b1a567273d287f54d7521f88",
+        "sha256_in_prefix": "7e2a8744f92feff03eaf05282e6d9bbe7cfccc75b1a567273d287f54d7521f88",
+        "size_in_bytes": 4315
+      },
+      {
+        "_path": "include/glm/gtx/dual_quaternion.hpp",
+        "path_type": "hardlink",
+        "sha256": "c86fa89ed8c0049da3aa43fca3ea34f969ab045fb2d66fb89e6e15d87e159b7b",
+        "sha256_in_prefix": "c86fa89ed8c0049da3aa43fca3ea34f969ab045fb2d66fb89e6e15d87e159b7b",
+        "size_in_bytes": 9737
+      },
+      {
+        "_path": "include/glm/gtx/dual_quaternion.inl",
+        "path_type": "hardlink",
+        "sha256": "94a364299e16f9809b1eee284f879868ec0cfc72ea6920d56b6a82abd17ecb16",
+        "sha256_in_prefix": "94a364299e16f9809b1eee284f879868ec0cfc72ea6920d56b6a82abd17ecb16",
+        "size_in_bytes": 10678
+      },
+      {
+        "_path": "include/glm/gtx/easing.hpp",
+        "path_type": "hardlink",
+        "sha256": "002e3d674e37ebf65405491da19fe9ec2e82c16ac6534bcde074fa25ac462041",
+        "sha256_in_prefix": "002e3d674e37ebf65405491da19fe9ec2e82c16ac6534bcde074fa25ac462041",
+        "size_in_bytes": 7092
+      },
+      {
+        "_path": "include/glm/gtx/easing.inl",
+        "path_type": "hardlink",
+        "sha256": "fc4edf4097450101ff410c3508b713262f0c6a005a57977bd98c823fad148270",
+        "sha256_in_prefix": "fc4edf4097450101ff410c3508b713262f0c6a005a57977bd98c823fad148270",
+        "size_in_bytes": 12136
+      },
+      {
+        "_path": "include/glm/gtx/euler_angles.hpp",
+        "path_type": "hardlink",
+        "sha256": "49c0daf5eb8a545b632343dc95bbd503e98d24284283e26aca6d9a8e3f26b5b9",
+        "sha256_in_prefix": "49c0daf5eb8a545b632343dc95bbd503e98d24284283e26aca6d9a8e3f26b5b9",
+        "size_in_bytes": 11012
+      },
+      {
+        "_path": "include/glm/gtx/euler_angles.inl",
+        "path_type": "hardlink",
+        "sha256": "a9d9bdd6e8fa3b6aa17d8364d2ef16a76950b06feadea874cc740f3ade5e1601",
+        "sha256_in_prefix": "a9d9bdd6e8fa3b6aa17d8364d2ef16a76950b06feadea874cc740f3ade5e1601",
+        "size_in_bytes": 23652
+      },
+      {
+        "_path": "include/glm/gtx/extend.hpp",
+        "path_type": "hardlink",
+        "sha256": "08c035a81cc0b88f757457a40e3b83cdba66922b10dafc658171af3d66fa3fc6",
+        "sha256_in_prefix": "08c035a81cc0b88f757457a40e3b83cdba66922b10dafc658171af3d66fa3fc6",
+        "size_in_bytes": 1111
+      },
+      {
+        "_path": "include/glm/gtx/extend.inl",
+        "path_type": "hardlink",
+        "sha256": "e7a99dc2904ee6f41e89307aa60673655cc32ba367c985d90fd31bfb6ed4cbb5",
+        "sha256_in_prefix": "e7a99dc2904ee6f41e89307aa60673655cc32ba367c985d90fd31bfb6ed4cbb5",
+        "size_in_bytes": 949
+      },
+      {
+        "_path": "include/glm/gtx/extended_min_max.hpp",
+        "path_type": "hardlink",
+        "sha256": "a2192981879f7aaf59c190b75d50ac4d7e5b293cae7120895112c52bef156c73",
+        "sha256_in_prefix": "a2192981879f7aaf59c190b75d50ac4d7e5b293cae7120895112c52bef156c73",
+        "size_in_bytes": 3711
+      },
+      {
+        "_path": "include/glm/gtx/extended_min_max.inl",
+        "path_type": "hardlink",
+        "sha256": "52babce4a806847f23d06ed3e0a4119c84e619faafc7f66abf94ea88c41685d1",
+        "sha256_in_prefix": "52babce4a806847f23d06ed3e0a4119c84e619faafc7f66abf94ea88c41685d1",
+        "size_in_bytes": 2487
+      },
+      {
+        "_path": "include/glm/gtx/exterior_product.hpp",
+        "path_type": "hardlink",
+        "sha256": "ae7f36c845d1902a146e40d1951fd38c45551396a342a28daddc14ad831ccdc0",
+        "sha256_in_prefix": "ae7f36c845d1902a146e40d1951fd38c45551396a342a28daddc14ad831ccdc0",
+        "size_in_bytes": 1381
+      },
+      {
+        "_path": "include/glm/gtx/exterior_product.inl",
+        "path_type": "hardlink",
+        "sha256": "9f92c3bdb5d29872e826376e4662171955cb569c24f9f8b974d87b0bf89a1dac",
+        "sha256_in_prefix": "9f92c3bdb5d29872e826376e4662171955cb569c24f9f8b974d87b0bf89a1dac",
+        "size_in_bytes": 659
+      },
+      {
+        "_path": "include/glm/gtx/fast_exponential.hpp",
+        "path_type": "hardlink",
+        "sha256": "737db0dfe9d7ebb311791956a9750dede251731b0e46192942f3f7616ae064cf",
+        "sha256_in_prefix": "737db0dfe9d7ebb311791956a9750dede251731b0e46192942f3f7616ae064cf",
+        "size_in_bytes": 3213
+      },
+      {
+        "_path": "include/glm/gtx/fast_exponential.inl",
+        "path_type": "hardlink",
+        "sha256": "5f51ef6dd1cf2414b3e1ff1c33c7682cf180deb2bcace063e1d8a4fcec00b33b",
+        "sha256_in_prefix": "5f51ef6dd1cf2414b3e1ff1c33c7682cf180deb2bcace063e1d8a4fcec00b33b",
+        "size_in_bytes": 4342
+      },
+      {
+        "_path": "include/glm/gtx/fast_square_root.hpp",
+        "path_type": "hardlink",
+        "sha256": "027ffa722efee13f16b5e538198dce18f0661f01f7e281e4fe7bea852f1bb69c",
+        "sha256_in_prefix": "027ffa722efee13f16b5e538198dce18f0661f01f7e281e4fe7bea852f1bb69c",
+        "size_in_bytes": 3025
+      },
+      {
+        "_path": "include/glm/gtx/fast_square_root.inl",
+        "path_type": "hardlink",
+        "sha256": "39ebc2d10f28f32c17244d75e3b1d7a5d6c4ed168d4003e6dd94aa16d189e729",
+        "sha256_in_prefix": "39ebc2d10f28f32c17244d75e3b1d7a5d6c4ed168d4003e6dd94aa16d189e729",
+        "size_in_bytes": 2119
+      },
+      {
+        "_path": "include/glm/gtx/fast_trigonometry.hpp",
+        "path_type": "hardlink",
+        "sha256": "6fe19a38f399c99f11de1c82e1b92fd3061f951180a11db7b63f168ce8c29763",
+        "sha256_in_prefix": "6fe19a38f399c99f11de1c82e1b92fd3061f951180a11db7b63f168ce8c29763",
+        "size_in_bytes": 2474
+      },
+      {
+        "_path": "include/glm/gtx/fast_trigonometry.inl",
+        "path_type": "hardlink",
+        "sha256": "75f26c73c02372f23a145811c5f58a49cf08646156c4f9feb13383a2c2b04bc7",
+        "sha256_in_prefix": "75f26c73c02372f23a145811c5f58a49cf08646156c4f9feb13383a2c2b04bc7",
+        "size_in_bytes": 4156
+      },
+      {
+        "_path": "include/glm/gtx/float_notmalize.inl",
+        "path_type": "hardlink",
+        "sha256": "0ac42864b8af5655e781a7490c8708e0f6c2e5d2a9d22fe9dc70e99d9dca8d9f",
+        "sha256_in_prefix": "0ac42864b8af5655e781a7490c8708e0f6c2e5d2a9d22fe9dc70e99d9dca8d9f",
+        "size_in_bytes": 306
+      },
+      {
+        "_path": "include/glm/gtx/functions.hpp",
+        "path_type": "hardlink",
+        "sha256": "71b7fe5cac084b8aadce7a6d0184cd013bc6ec0ccc9b1efe1973eeffe689734b",
+        "sha256_in_prefix": "71b7fe5cac084b8aadce7a6d0184cd013bc6ec0ccc9b1efe1973eeffe689734b",
+        "size_in_bytes": 1342
+      },
+      {
+        "_path": "include/glm/gtx/functions.inl",
+        "path_type": "hardlink",
+        "sha256": "1d5fd64588101956ae76a0df749636a47ccf46ac652bb5228ce77e38853e8a0a",
+        "sha256_in_prefix": "1d5fd64588101956ae76a0df749636a47ccf46ac652bb5228ce77e38853e8a0a",
+        "size_in_bytes": 803
+      },
+      {
+        "_path": "include/glm/gtx/gradient_paint.hpp",
+        "path_type": "hardlink",
+        "sha256": "572124517b6ff00972f773144dbd79ecd242721f2fbe48b715b91eccecb8acd8",
+        "sha256_in_prefix": "572124517b6ff00972f773144dbd79ecd242721f2fbe48b715b91eccecb8acd8",
+        "size_in_bytes": 1514
+      },
+      {
+        "_path": "include/glm/gtx/gradient_paint.inl",
+        "path_type": "hardlink",
+        "sha256": "524a51579e00b894b50d279c810efeb085aca6efb02cf5813c0439c460779663",
+        "sha256_in_prefix": "524a51579e00b894b50d279c810efeb085aca6efb02cf5813c0439c460779663",
+        "size_in_bytes": 940
+      },
+      {
+        "_path": "include/glm/gtx/handed_coordinate_space.hpp",
+        "path_type": "hardlink",
+        "sha256": "ec742fb105ff1e798ad4726c12b4cadf69505452a66bb083f56148828ed9b2d9",
+        "sha256_in_prefix": "ec742fb105ff1e798ad4726c12b4cadf69505452a66bb083f56148828ed9b2d9",
+        "size_in_bytes": 1564
+      },
+      {
+        "_path": "include/glm/gtx/handed_coordinate_space.inl",
+        "path_type": "hardlink",
+        "sha256": "590abaf0f5388468a554d7ece4b17523dec50da535c70bbd2102c0d092e8cbe7",
+        "sha256_in_prefix": "590abaf0f5388468a554d7ece4b17523dec50da535c70bbd2102c0d092e8cbe7",
+        "size_in_bytes": 559
+      },
+      {
+        "_path": "include/glm/gtx/hash.hpp",
+        "path_type": "hardlink",
+        "sha256": "8db6660d984b2b1e490e48749bc0be508c0db1a4aa1e7232cdf99f52e207aa15",
+        "sha256_in_prefix": "8db6660d984b2b1e490e48749bc0be508c0db1a4aa1e7232cdf99f52e207aa15",
+        "size_in_bytes": 3615
+      },
+      {
+        "_path": "include/glm/gtx/hash.inl",
+        "path_type": "hardlink",
+        "sha256": "e2bcb69c56d9783cc43032212394c305411f9b36203aca65c3eef48a308d6a54",
+        "sha256_in_prefix": "e2bcb69c56d9783cc43032212394c305411f9b36203aca65c3eef48a308d6a54",
+        "size_in_bytes": 5795
+      },
+      {
+        "_path": "include/glm/gtx/integer.hpp",
+        "path_type": "hardlink",
+        "sha256": "561f8bde4b20d6f94c88913d96810a1b0042ddb2dade83f24d906ab1ffd71422",
+        "sha256_in_prefix": "561f8bde4b20d6f94c88913d96810a1b0042ddb2dade83f24d906ab1ffd71422",
+        "size_in_bytes": 2242
+      },
+      {
+        "_path": "include/glm/gtx/integer.inl",
+        "path_type": "hardlink",
+        "sha256": "37a148ec06f28e8e6af2ee98b215366c7fba0e55d45fd14a1fce5ebe30a29698",
+        "sha256_in_prefix": "37a148ec06f28e8e6af2ee98b215366c7fba0e55d45fd14a1fce5ebe30a29698",
+        "size_in_bytes": 4009
+      },
+      {
+        "_path": "include/glm/gtx/intersect.hpp",
+        "path_type": "hardlink",
+        "sha256": "12d112e271700b9775a6f502030ca240ea5373f29134d45f04cbcc2f759d3f2d",
+        "sha256_in_prefix": "12d112e271700b9775a6f502030ca240ea5373f29134d45f04cbcc2f759d3f2d",
+        "size_in_bytes": 3442
+      },
+      {
+        "_path": "include/glm/gtx/intersect.inl",
+        "path_type": "hardlink",
+        "sha256": "067f0cff22c66ac3da522d58282646567d1c357e366684b44e3f0c58bfdced18",
+        "sha256_in_prefix": "067f0cff22c66ac3da522d58282646567d1c357e366684b44e3f0c58bfdced18",
+        "size_in_bytes": 6871
+      },
+      {
+        "_path": "include/glm/gtx/io.hpp",
+        "path_type": "hardlink",
+        "sha256": "b1cd3fecc98297ae6975072f1e7ae79e8ac439bc93f234f3c67493d1f89dd619",
+        "sha256_in_prefix": "b1cd3fecc98297ae6975072f1e7ae79e8ac439bc93f234f3c67493d1f89dd619",
+        "size_in_bytes": 7363
+      },
+      {
+        "_path": "include/glm/gtx/io.inl",
+        "path_type": "hardlink",
+        "sha256": "94802658c163f5ab3b4824417f3eb4e1d2bd6b3f0b720e18f913fa0f02133f36",
+        "sha256_in_prefix": "94802658c163f5ab3b4824417f3eb4e1d2bd6b3f0b720e18f913fa0f02133f36",
+        "size_in_bytes": 12376
+      },
+      {
+        "_path": "include/glm/gtx/log_base.hpp",
+        "path_type": "hardlink",
+        "sha256": "76a1160929922d117e7dc9fa87d9ade722a9d3fe81212f0a53d24c81c14fbe94",
+        "sha256_in_prefix": "76a1160929922d117e7dc9fa87d9ade722a9d3fe81212f0a53d24c81c14fbe94",
+        "size_in_bytes": 1218
+      },
+      {
+        "_path": "include/glm/gtx/log_base.inl",
+        "path_type": "hardlink",
+        "sha256": "cbc15245977dbc4297be89ed71a2b9f1984a3e39602a5f63d92927ba617a3b5f",
+        "sha256_in_prefix": "cbc15245977dbc4297be89ed71a2b9f1984a3e39602a5f63d92927ba617a3b5f",
+        "size_in_bytes": 395
+      },
+      {
+        "_path": "include/glm/gtx/matrix_cross_product.hpp",
+        "path_type": "hardlink",
+        "sha256": "76a28cbc0ebaef284131e68f418c2fc9708b8de9e8e3bc043e58c55b318c45a4",
+        "sha256_in_prefix": "76a28cbc0ebaef284131e68f418c2fc9708b8de9e8e3bc043e58c55b318c45a4",
+        "size_in_bytes": 1372
+      },
+      {
+        "_path": "include/glm/gtx/matrix_cross_product.inl",
+        "path_type": "hardlink",
+        "sha256": "2f7c488c6b6e3ee1c78bd17535d27b7ae59b9d01652cc777d36537868e710801",
+        "sha256_in_prefix": "2f7c488c6b6e3ee1c78bd17535d27b7ae59b9d01652cc777d36537868e710801",
+        "size_in_bytes": 715
+      },
+      {
+        "_path": "include/glm/gtx/matrix_decompose.hpp",
+        "path_type": "hardlink",
+        "sha256": "aafbaf841489d81ed29077b34d485b0bbf31823cf2acd286f7a2b0302c76b40c",
+        "sha256_in_prefix": "aafbaf841489d81ed29077b34d485b0bbf31823cf2acd286f7a2b0302c76b40c",
+        "size_in_bytes": 1443
+      },
+      {
+        "_path": "include/glm/gtx/matrix_decompose.inl",
+        "path_type": "hardlink",
+        "sha256": "fac1df9ffcace359bbdfeba90cc506b8da364548cde60cadd10dd40800feb767",
+        "sha256_in_prefix": "fac1df9ffcace359bbdfeba90cc506b8da364548cde60cadd10dd40800feb767",
+        "size_in_bytes": 6626
+      },
+      {
+        "_path": "include/glm/gtx/matrix_factorisation.hpp",
+        "path_type": "hardlink",
+        "sha256": "9251bc6ec7c459854657f528fbb8b8b8cbd11d10f19eb7c69a2704987f42a5bb",
+        "sha256_in_prefix": "9251bc6ec7c459854657f528fbb8b8b8cbd11d10f19eb7c69a2704987f42a5bb",
+        "size_in_bytes": 2956
+      },
+      {
+        "_path": "include/glm/gtx/matrix_factorisation.inl",
+        "path_type": "hardlink",
+        "sha256": "8e0e28d936d8f4e5d23c101b6559b955d3984b97a7276673131b27de56fbc33d",
+        "sha256_in_prefix": "8e0e28d936d8f4e5d23c101b6559b955d3984b97a7276673131b27de56fbc33d",
+        "size_in_bytes": 2857
+      },
+      {
+        "_path": "include/glm/gtx/matrix_interpolation.hpp",
+        "path_type": "hardlink",
+        "sha256": "3b1f99f80144c4fbaf1926aa7ef930f6c40a96eb6244cbd32eb46f2aa779af8f",
+        "sha256_in_prefix": "3b1f99f80144c4fbaf1926aa7ef930f6c40a96eb6244cbd32eb46f2aa779af8f",
+        "size_in_bytes": 2058
+      },
+      {
+        "_path": "include/glm/gtx/matrix_interpolation.inl",
+        "path_type": "hardlink",
+        "sha256": "82d7d18df8ab05d60f119c6394ca1601e3699cd5508a03f7ee50e48fb21bc96d",
+        "sha256_in_prefix": "82d7d18df8ab05d60f119c6394ca1601e3699cd5508a03f7ee50e48fb21bc96d",
+        "size_in_bytes": 4388
+      },
+      {
+        "_path": "include/glm/gtx/matrix_major_storage.hpp",
+        "path_type": "hardlink",
+        "sha256": "ec544bb9a20aebb2f32741852521cb1a25b9eb56fab40504dff836eb2035c7ef",
+        "sha256_in_prefix": "ec544bb9a20aebb2f32741852521cb1a25b9eb56fab40504dff836eb2035c7ef",
+        "size_in_bytes": 3881
+      },
+      {
+        "_path": "include/glm/gtx/matrix_major_storage.inl",
+        "path_type": "hardlink",
+        "sha256": "70a9d90b3b29d7ebbecab5f1e0f5fdbfbc5c1b6c0a9a66bbe82fb109ad7275f6",
+        "sha256_in_prefix": "70a9d90b3b29d7ebbecab5f1e0f5fdbfbc5c1b6c0a9a66bbe82fb109ad7275f6",
+        "size_in_bytes": 3821
+      },
+      {
+        "_path": "include/glm/gtx/matrix_operation.hpp",
+        "path_type": "hardlink",
+        "sha256": "88610ebef51cfadebe8c4f77a3497c50a05b8639f44fcfeca7b168b84d7500d6",
+        "sha256_in_prefix": "88610ebef51cfadebe8c4f77a3497c50a05b8639f44fcfeca7b168b84d7500d6",
+        "size_in_bytes": 3155
+      },
+      {
+        "_path": "include/glm/gtx/matrix_operation.inl",
+        "path_type": "hardlink",
+        "sha256": "741d7ca3b468f87dccdb2bfb85e20449f89e070979944f7ba33bd3cc2a24d488",
+        "sha256_in_prefix": "741d7ca3b468f87dccdb2bfb85e20449f89e070979944f7ba33bd3cc2a24d488",
+        "size_in_bytes": 5820
+      },
+      {
+        "_path": "include/glm/gtx/matrix_query.hpp",
+        "path_type": "hardlink",
+        "sha256": "9fbc6a4a7fd162b81d24d55214e594d1b46f556e2f6beb817b744e307f846818",
+        "sha256_in_prefix": "9fbc6a4a7fd162b81d24d55214e594d1b46f556e2f6beb817b744e307f846818",
+        "size_in_bytes": 2821
+      },
+      {
+        "_path": "include/glm/gtx/matrix_query.inl",
+        "path_type": "hardlink",
+        "sha256": "f19ebf13873dda3d0dbae2e371458e6d6479d1385291e077c6ded35eb6294c39",
+        "sha256_in_prefix": "f19ebf13873dda3d0dbae2e371458e6d6479d1385291e077c6ded35eb6294c39",
+        "size_in_bytes": 3352
+      },
+      {
+        "_path": "include/glm/gtx/matrix_transform_2d.hpp",
+        "path_type": "hardlink",
+        "sha256": "fe77edbcb302bce86ee166aeff323df1909331f34ee9914f1dd252a09f77de02",
+        "sha256_in_prefix": "fe77edbcb302bce86ee166aeff323df1909331f34ee9914f1dd252a09f77de02",
+        "size_in_bytes": 2609
+      },
+      {
+        "_path": "include/glm/gtx/matrix_transform_2d.inl",
+        "path_type": "hardlink",
+        "sha256": "36f589208d7e7fc920bd899efa59d9af450c9d147cf02aa50199327171017fc6",
+        "sha256_in_prefix": "36f589208d7e7fc920bd899efa59d9af450c9d147cf02aa50199327171017fc6",
+        "size_in_bytes": 1411
+      },
+      {
+        "_path": "include/glm/gtx/mixed_product.hpp",
+        "path_type": "hardlink",
+        "sha256": "47d48bfa6e991e696a01c554edd6c57a954163c8eef6c8c87600be165a419290",
+        "sha256_in_prefix": "47d48bfa6e991e696a01c554edd6c57a954163c8eef6c8c87600be165a419290",
+        "size_in_bytes": 1101
+      },
+      {
+        "_path": "include/glm/gtx/mixed_product.inl",
+        "path_type": "hardlink",
+        "sha256": "e2b952b467ce9ce42e91606784a22f120624344247558a32c2ebdefe834e1671",
+        "sha256_in_prefix": "e2b952b467ce9ce42e91606784a22f120624344247558a32c2ebdefe834e1671",
+        "size_in_bytes": 268
+      },
+      {
+        "_path": "include/glm/gtx/norm.hpp",
+        "path_type": "hardlink",
+        "sha256": "ad9bcbc160d66eb817f4aa2a1511e6691c88d4a12dca7eef06deaaa214708726",
+        "sha256_in_prefix": "ad9bcbc160d66eb817f4aa2a1511e6691c88d4a12dca7eef06deaaa214708726",
+        "size_in_bytes": 2783
+      },
+      {
+        "_path": "include/glm/gtx/norm.inl",
+        "path_type": "hardlink",
+        "sha256": "e53a2ab51630071d4d3212c084ceb99b9fb998ad4ac02beb2cb60b07a8d60058",
+        "sha256_in_prefix": "e53a2ab51630071d4d3212c084ceb99b9fb998ad4ac02beb2cb60b07a8d60058",
+        "size_in_bytes": 2699
+      },
+      {
+        "_path": "include/glm/gtx/normal.hpp",
+        "path_type": "hardlink",
+        "sha256": "1f82b8445392336953e994cf5afc0a5cf898266862939d8bae34eada3d22e6fa",
+        "sha256_in_prefix": "1f82b8445392336953e994cf5afc0a5cf898266862939d8bae34eada3d22e6fa",
+        "size_in_bytes": 1091
+      },
+      {
+        "_path": "include/glm/gtx/normal.inl",
+        "path_type": "hardlink",
+        "sha256": "1d900308144c5f24a9f2eca52c326984fcd1f439c96d6abf276bf414ef31f4d2",
+        "sha256_in_prefix": "1d900308144c5f24a9f2eca52c326984fcd1f439c96d6abf276bf414ef31f4d2",
+        "size_in_bytes": 286
+      },
+      {
+        "_path": "include/glm/gtx/normalize_dot.hpp",
+        "path_type": "hardlink",
+        "sha256": "5b622fddc034ba4f50be90646a52d9cbe416bab590be0ff6b1d30762a3e053f9",
+        "sha256_in_prefix": "5b622fddc034ba4f50be90646a52d9cbe416bab590be0ff6b1d30762a3e053f9",
+        "size_in_bytes": 1579
+      },
+      {
+        "_path": "include/glm/gtx/normalize_dot.inl",
+        "path_type": "hardlink",
+        "sha256": "f481433af7a2cae38552353de39c73844ffa20ea1f195956023f500247d13654",
+        "sha256_in_prefix": "f481433af7a2cae38552353de39c73844ffa20ea1f195956023f500247d13654",
+        "size_in_bytes": 508
+      },
+      {
+        "_path": "include/glm/gtx/number_precision.hpp",
+        "path_type": "hardlink",
+        "sha256": "0a59425324a5cbd07766a463650b6c86074b6855ee8ec2664cc1a164e6e431d0",
+        "sha256_in_prefix": "0a59425324a5cbd07766a463650b6c86074b6855ee8ec2664cc1a164e6e431d0",
+        "size_in_bytes": 2383
+      },
+      {
+        "_path": "include/glm/gtx/number_precision.inl",
+        "path_type": "hardlink",
+        "sha256": "bb24b5b90a0c90905910b230ecb4fdb867215b1ebfc55a772f12418c427e3262",
+        "sha256_in_prefix": "bb24b5b90a0c90905910b230ecb4fdb867215b1ebfc55a772f12418c427e3262",
+        "size_in_bytes": 56
+      },
+      {
+        "_path": "include/glm/gtx/optimum_pow.hpp",
+        "path_type": "hardlink",
+        "sha256": "092f6987490469e2e5f99fbe0448d3b598c64bafcbc6d7decbbe01f149bbe4cf",
+        "sha256_in_prefix": "092f6987490469e2e5f99fbe0448d3b598c64bafcbc6d7decbbe01f149bbe4cf",
+        "size_in_bytes": 1361
+      },
+      {
+        "_path": "include/glm/gtx/optimum_pow.inl",
+        "path_type": "hardlink",
+        "sha256": "ecaa78597ef04791c4577e20266d59f3253704bcb2f350e392d26463282ca4b5",
+        "sha256_in_prefix": "ecaa78597ef04791c4577e20266d59f3253704bcb2f350e392d26463282ca4b5",
+        "size_in_bytes": 402
+      },
+      {
+        "_path": "include/glm/gtx/orthonormalize.hpp",
+        "path_type": "hardlink",
+        "sha256": "c83ba61943ddba20604b8691fd6879c75c0b5000acc32a5a438111d9fdc394e4",
+        "sha256_in_prefix": "c83ba61943ddba20604b8691fd6879c75c0b5000acc32a5a438111d9fdc394e4",
+        "size_in_bytes": 1371
+      },
+      {
+        "_path": "include/glm/gtx/orthonormalize.inl",
+        "path_type": "hardlink",
+        "sha256": "9a8a53dcb7da420cb25fa849fb2086bd586173c119df6b968a7f7e760a540e27",
+        "sha256_in_prefix": "9a8a53dcb7da420cb25fa849fb2086bd586173c119df6b968a7f7e760a540e27",
+        "size_in_bytes": 633
+      },
+      {
+        "_path": "include/glm/gtx/perpendicular.hpp",
+        "path_type": "hardlink",
+        "sha256": "e155328b37e9790714a2b3247deeaf630d4b9df6a2e81c02207b2c33bc6db5cb",
+        "sha256_in_prefix": "e155328b37e9790714a2b3247deeaf630d4b9df6a2e81c02207b2c33bc6db5cb",
+        "size_in_bytes": 1148
+      },
+      {
+        "_path": "include/glm/gtx/perpendicular.inl",
+        "path_type": "hardlink",
+        "sha256": "1a43f42acc2eb4ac582ae29a946c964dbfa0ec4009d66566ce3eb7e7df2eed76",
+        "sha256_in_prefix": "1a43f42acc2eb4ac582ae29a946c964dbfa0ec4009d66566ce3eb7e7df2eed76",
+        "size_in_bytes": 209
+      },
+      {
+        "_path": "include/glm/gtx/polar_coordinates.hpp",
+        "path_type": "hardlink",
+        "sha256": "2e0db5611a8847ed31028a72029922aca6661f595f1100263dda216f022ee086",
+        "sha256_in_prefix": "2e0db5611a8847ed31028a72029922aca6661f595f1100263dda216f022ee086",
+        "size_in_bytes": 1381
+      },
+      {
+        "_path": "include/glm/gtx/polar_coordinates.inl",
+        "path_type": "hardlink",
+        "sha256": "f36524a5115833045e2ff214739ee74091c59e0bdcc180b3a4c40368c1a75946",
+        "sha256_in_prefix": "f36524a5115833045e2ff214739ee74091c59e0bdcc180b3a4c40368c1a75946",
+        "size_in_bytes": 770
+      },
+      {
+        "_path": "include/glm/gtx/projection.hpp",
+        "path_type": "hardlink",
+        "sha256": "93aa8b1c80751e9254f67b1a40928858b372848b384e0932eac51e97b5e41228",
+        "sha256_in_prefix": "93aa8b1c80751e9254f67b1a40928858b372848b384e0932eac51e97b5e41228",
+        "size_in_bytes": 1135
+      },
+      {
+        "_path": "include/glm/gtx/projection.inl",
+        "path_type": "hardlink",
+        "sha256": "b6e31ce9b6a5213db0f3fc87ed5b48f5ef2e854000f2252f88a882fedb77664b",
+        "sha256_in_prefix": "b6e31ce9b6a5213db0f3fc87ed5b48f5ef2e854000f2252f88a882fedb77664b",
+        "size_in_bytes": 242
+      },
+      {
+        "_path": "include/glm/gtx/quaternion.hpp",
+        "path_type": "hardlink",
+        "sha256": "4512185d25adf15d72487ccb30de3734292245ccca949f77644f1a7d189a40a4",
+        "sha256_in_prefix": "4512185d25adf15d72487ccb30de3734292245ccca949f77644f1a7d189a40a4",
+        "size_in_bytes": 4751
+      },
+      {
+        "_path": "include/glm/gtx/quaternion.inl",
+        "path_type": "hardlink",
+        "sha256": "0c9421d6f4688907385366ce9763211bab5b78afe321b3c06079ffc6f58ff6b6",
+        "sha256_in_prefix": "0c9421d6f4688907385366ce9763211bab5b78afe321b3c06079ffc6f58ff6b6",
+        "size_in_bytes": 4368
+      },
+      {
+        "_path": "include/glm/gtx/range.hpp",
+        "path_type": "hardlink",
+        "sha256": "e8b92813eb4ba9e07f7b6e1e68cd76c5f193c5811d6745cacf4459bebc4ecd8f",
+        "sha256_in_prefix": "e8b92813eb4ba9e07f7b6e1e68cd76c5f193c5811d6745cacf4459bebc4ecd8f",
+        "size_in_bytes": 2336
+      },
+      {
+        "_path": "include/glm/gtx/raw_data.hpp",
+        "path_type": "hardlink",
+        "sha256": "b0ad4fc45ba268b255aad8b5e1aa665099122370bfe87424e26759f0c79e3020",
+        "sha256_in_prefix": "b0ad4fc45ba268b255aad8b5e1aa665099122370bfe87424e26759f0c79e3020",
+        "size_in_bytes": 1294
+      },
+      {
+        "_path": "include/glm/gtx/raw_data.inl",
+        "path_type": "hardlink",
+        "sha256": "217d8ed5345f35de139a76b383bcf6dc0f81970d0bb97fb679b086af15ec7cf8",
+        "sha256_in_prefix": "217d8ed5345f35de139a76b383bcf6dc0f81970d0bb97fb679b086af15ec7cf8",
+        "size_in_bytes": 25
+      },
+      {
+        "_path": "include/glm/gtx/rotate_normalized_axis.hpp",
+        "path_type": "hardlink",
+        "sha256": "d61c2ef9cdb59fa502d1b8a3eea882a34d07d004197e97041d339a297989a3b5",
+        "sha256_in_prefix": "d61c2ef9cdb59fa502d1b8a3eea882a34d07d004197e97041d339a297989a3b5",
+        "size_in_bytes": 2304
+      },
+      {
+        "_path": "include/glm/gtx/rotate_normalized_axis.inl",
+        "path_type": "hardlink",
+        "sha256": "535e4148a293dde6e3cdebb52fc0695c006ed0487061e0309ccce8eac65b8397",
+        "sha256_in_prefix": "535e4148a293dde6e3cdebb52fc0695c006ed0487061e0309ccce8eac65b8397",
+        "size_in_bytes": 1710
+      },
+      {
+        "_path": "include/glm/gtx/rotate_vector.hpp",
+        "path_type": "hardlink",
+        "sha256": "90c33f89b6288c31e95f5f210f775ff2deeb90a145064469d8a00a43c17288bb",
+        "sha256_in_prefix": "90c33f89b6288c31e95f5f210f775ff2deeb90a145064469d8a00a43c17288bb",
+        "size_in_bytes": 3713
+      },
+      {
+        "_path": "include/glm/gtx/rotate_vector.inl",
+        "path_type": "hardlink",
+        "sha256": "e3f164718b25b422943b65d6470c6d0338a4b2a990ea43f80355771397b6dba8",
+        "sha256_in_prefix": "e3f164718b25b422943b65d6470c6d0338a4b2a990ea43f80355771397b6dba8",
+        "size_in_bytes": 4020
+      },
+      {
+        "_path": "include/glm/gtx/scalar_multiplication.hpp",
+        "path_type": "hardlink",
+        "sha256": "06e902495a828b885dd98618ffec94d90c978d708f223d5c67cbc214050a9a7b",
+        "sha256_in_prefix": "06e902495a828b885dd98618ffec94d90c978d708f223d5c67cbc214050a9a7b",
+        "size_in_bytes": 2328
+      },
+      {
+        "_path": "include/glm/gtx/scalar_relational.hpp",
+        "path_type": "hardlink",
+        "sha256": "130430856d5090150c58504edc979e11b4e7f8a5ca2bfe4be117366952efa01a",
+        "sha256_in_prefix": "130430856d5090150c58504edc979e11b4e7f8a5ca2bfe4be117366952efa01a",
+        "size_in_bytes": 925
+      },
+      {
+        "_path": "include/glm/gtx/scalar_relational.inl",
+        "path_type": "hardlink",
+        "sha256": "32af3efa4f2bac8f2db8f239cfe4fbe31b5d593982574a1060fe1a40dc176895",
+        "sha256_in_prefix": "32af3efa4f2bac8f2db8f239cfe4fbe31b5d593982574a1060fe1a40dc176895",
+        "size_in_bytes": 1184
+      },
+      {
+        "_path": "include/glm/gtx/spline.hpp",
+        "path_type": "hardlink",
+        "sha256": "bc06c715353093eea2e0b60a3d6f4684c21b128adf5e7ff7aec2b9ea7786f99a",
+        "sha256_in_prefix": "bc06c715353093eea2e0b60a3d6f4684c21b128adf5e7ff7aec2b9ea7786f99a",
+        "size_in_bytes": 1645
+      },
+      {
+        "_path": "include/glm/gtx/spline.inl",
+        "path_type": "hardlink",
+        "sha256": "7b8c6f9ad43cddb279ffe5ab5f9f93f3f12cf793fd7d6ce52cb457cadb859a00",
+        "sha256_in_prefix": "7b8c6f9ad43cddb279ffe5ab5f9f93f3f12cf793fd7d6ce52cb457cadb859a00",
+        "size_in_bytes": 1861
+      },
+      {
+        "_path": "include/glm/gtx/std_based_type.hpp",
+        "path_type": "hardlink",
+        "sha256": "b139ff1b8760dd6d9ce0b7e66d3f99f508f676a5a74b2cdaa12df95220eaf200",
+        "sha256_in_prefix": "b139ff1b8760dd6d9ce0b7e66d3f99f508f676a5a74b2cdaa12df95220eaf200",
+        "size_in_bytes": 2081
+      },
+      {
+        "_path": "include/glm/gtx/std_based_type.inl",
+        "path_type": "hardlink",
+        "sha256": "6dca9d97921172c9de9665468dbd85cdf78e39de39fbbf4a1e5b7ebc1b8c8683",
+        "sha256_in_prefix": "6dca9d97921172c9de9665468dbd85cdf78e39de39fbbf4a1e5b7ebc1b8c8683",
+        "size_in_bytes": 54
+      },
+      {
+        "_path": "include/glm/gtx/string_cast.hpp",
+        "path_type": "hardlink",
+        "sha256": "f1ba0ad9223985307b523c3c96a45b01a31977fd82844f262458a2e530df152d",
+        "sha256_in_prefix": "f1ba0ad9223985307b523c3c96a45b01a31977fd82844f262458a2e530df152d",
+        "size_in_bytes": 1435
+      },
+      {
+        "_path": "include/glm/gtx/string_cast.inl",
+        "path_type": "hardlink",
+        "sha256": "b5da04b7615eaa84395bc6cb046dbb4c3a38c6ff9c6d2d087caab637adbd97ec",
+        "sha256_in_prefix": "b5da04b7615eaa84395bc6cb046dbb4c3a38c6ff9c6d2d087caab637adbd97ec",
+        "size_in_bytes": 18148
+      },
+      {
+        "_path": "include/glm/gtx/texture.hpp",
+        "path_type": "hardlink",
+        "sha256": "e621b2b8bf03e3fea3fa9280a45cc7b2356ca8296c3726eb92eaae3a21fccefc",
+        "sha256_in_prefix": "e621b2b8bf03e3fea3fa9280a45cc7b2356ca8296c3726eb92eaae3a21fccefc",
+        "size_in_bytes": 1336
+      },
+      {
+        "_path": "include/glm/gtx/texture.inl",
+        "path_type": "hardlink",
+        "sha256": "21465f47e1985a05aa85f7e5ba8283a34b42e63113acfe26397e80de6124fda8",
+        "sha256_in_prefix": "21465f47e1985a05aa85f7e5ba8283a34b42e63113acfe26397e80de6124fda8",
+        "size_in_bytes": 326
+      },
+      {
+        "_path": "include/glm/gtx/transform.hpp",
+        "path_type": "hardlink",
+        "sha256": "8c37792182119a2b99ae894090624e9667c240fe8c050004534d40aac35868d5",
+        "sha256_in_prefix": "8c37792182119a2b99ae894090624e9667c240fe8c050004534d40aac35868d5",
+        "size_in_bytes": 1745
+      },
+      {
+        "_path": "include/glm/gtx/transform.inl",
+        "path_type": "hardlink",
+        "sha256": "2952c4e8e2a540ea4869c5351eca7fb9deef58abda31a6d4ad1820af9946e20b",
+        "sha256_in_prefix": "2952c4e8e2a540ea4869c5351eca7fb9deef58abda31a6d4ad1820af9946e20b",
+        "size_in_bytes": 592
+      },
+      {
+        "_path": "include/glm/gtx/transform2.hpp",
+        "path_type": "hardlink",
+        "sha256": "41698ec3c6f8240ffe086e7534a19c7638bb2b79a95d2f9f9a8ed70a9d9a4220",
+        "sha256_in_prefix": "41698ec3c6f8240ffe086e7534a19c7638bb2b79a95d2f9f9a8ed70a9d9a4220",
+        "size_in_bytes": 3526
+      },
+      {
+        "_path": "include/glm/gtx/transform2.inl",
+        "path_type": "hardlink",
+        "sha256": "d552e49308fa83234bd2ea4767a482935ea59618c25ac499f62f4c941da4e5be",
+        "sha256_in_prefix": "d552e49308fa83234bd2ea4767a482935ea59618c25ac499f62f4c941da4e5be",
+        "size_in_bytes": 3703
+      },
+      {
+        "_path": "include/glm/gtx/type_aligned.hpp",
+        "path_type": "hardlink",
+        "sha256": "17189446aa8993f250aac17ea966e8c461c2411db4cb1ff7aa716cdf869e538c",
+        "sha256_in_prefix": "17189446aa8993f250aac17ea966e8c461c2411db4cb1ff7aa716cdf869e538c",
+        "size_in_bytes": 34272
+      },
+      {
+        "_path": "include/glm/gtx/type_aligned.inl",
+        "path_type": "hardlink",
+        "sha256": "44b82bf761bf372ddcc3f0c09e3e5cb3e9e98cc187b5a7b7161499d636cf7510",
+        "sha256_in_prefix": "44b82bf761bf372ddcc3f0c09e3e5cb3e9e98cc187b5a7b7161499d636cf7510",
+        "size_in_bytes": 52
+      },
+      {
+        "_path": "include/glm/gtx/type_trait.hpp",
+        "path_type": "hardlink",
+        "sha256": "bf309579b9b4f1a6f7ce13f5399087db7db622b2236cf95b3bb6ac1990d0654f",
+        "sha256_in_prefix": "bf309579b9b4f1a6f7ce13f5399087db7db622b2236cf95b3bb6ac1990d0654f",
+        "size_in_bytes": 2221
+      },
+      {
+        "_path": "include/glm/gtx/type_trait.inl",
+        "path_type": "hardlink",
+        "sha256": "418d632a2b0472e6833a0e589ab5244035827c60b6d9e30c2c33f8b6ece0829e",
+        "sha256_in_prefix": "418d632a2b0472e6833a0e589ab5244035827c60b6d9e30c2c33f8b6ece0829e",
+        "size_in_bytes": 2100
+      },
+      {
+        "_path": "include/glm/gtx/vec_swizzle.hpp",
+        "path_type": "hardlink",
+        "sha256": "cef860ed421dfa87d7857428c3bf6c535f519afacc0b4d7a5480808cf0399b6c",
+        "sha256_in_prefix": "cef860ed421dfa87d7857428c3bf6c535f519afacc0b4d7a5480808cf0399b6c",
+        "size_in_bytes": 79038
+      },
+      {
+        "_path": "include/glm/gtx/vector_angle.hpp",
+        "path_type": "hardlink",
+        "sha256": "351106ec3e042d56b63fbd9a03f605309fe05c598f81e0a72bd753f05da806dd",
+        "sha256_in_prefix": "351106ec3e042d56b63fbd9a03f605309fe05c598f81e0a72bd753f05da806dd",
+        "size_in_bytes": 1850
+      },
+      {
+        "_path": "include/glm/gtx/vector_angle.inl",
+        "path_type": "hardlink",
+        "sha256": "11e7dd4ef1f104c61f94b8302f3b98b5f1911791e2334dce4bd32e8e12da0274",
+        "sha256_in_prefix": "11e7dd4ef1f104c61f94b8302f3b98b5f1911791e2334dce4bd32e8e12da0274",
+        "size_in_bytes": 1461
+      },
+      {
+        "_path": "include/glm/gtx/vector_query.hpp",
+        "path_type": "hardlink",
+        "sha256": "d19ab5794192c1b7dda7566ad1be8c3410600261320e823c52527a2fd085aa7e",
+        "sha256_in_prefix": "d19ab5794192c1b7dda7566ad1be8c3410600261320e823c52527a2fd085aa7e",
+        "size_in_bytes": 2268
+      },
+      {
+        "_path": "include/glm/gtx/vector_query.inl",
+        "path_type": "hardlink",
+        "sha256": "ad541a94d6c4e9efcad6a5fe7a6bd50f1c4ece06ab56dee28cffd3d8b066f720",
+        "sha256_in_prefix": "ad541a94d6c4e9efcad6a5fe7a6bd50f1c4ece06ab56dee28cffd3d8b066f720",
+        "size_in_bytes": 4636
+      },
+      {
+        "_path": "include/glm/gtx/wrap.hpp",
+        "path_type": "hardlink",
+        "sha256": "aa519d456f00451be12c48f5f54bb6cccb44a45e9380d8359959ca8fe630abcf",
+        "sha256_in_prefix": "aa519d456f00451be12c48f5f54bb6cccb44a45e9380d8359959ca8fe630abcf",
+        "size_in_bytes": 900
+      },
+      {
+        "_path": "include/glm/gtx/wrap.inl",
+        "path_type": "hardlink",
+        "sha256": "a06921e48e9cd014ebc7105ed539b56592732481ec75dd98c5f7ff98e8cbec0c",
+        "sha256_in_prefix": "a06921e48e9cd014ebc7105ed539b56592732481ec75dd98c5f7ff98e8cbec0c",
+        "size_in_bytes": 59
+      },
+      {
+        "_path": "include/glm/integer.hpp",
+        "path_type": "hardlink",
+        "sha256": "98abbde1905926b960ca16bca288bd1a5444f8acf126a04c7d08b04128648a7c",
+        "sha256_in_prefix": "98abbde1905926b960ca16bca288bd1a5444f8acf126a04c7d08b04128648a7c",
+        "size_in_bytes": 10688
+      },
+      {
+        "_path": "include/glm/mat2x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "6056a3c939a3b2e6723fbda0bc2e40a88a376ae026db9542188863187d91dc46",
+        "sha256_in_prefix": "6056a3c939a3b2e6723fbda0bc2e40a88a376ae026db9542188863187d91dc46",
+        "size_in_bytes": 233
+      },
+      {
+        "_path": "include/glm/mat2x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "adeaedc3219cb10fa58aa30196491783faa4f86b5ef06407926ac9eb0e89b858",
+        "sha256_in_prefix": "adeaedc3219cb10fa58aa30196491783faa4f86b5ef06407926ac9eb0e89b858",
+        "size_in_bytes": 233
+      },
+      {
+        "_path": "include/glm/mat2x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "37d8f5a57c2885d495185153ad13b6b5a1da35294e48f934729f09dda7876203",
+        "sha256_in_prefix": "37d8f5a57c2885d495185153ad13b6b5a1da35294e48f934729f09dda7876203",
+        "size_in_bytes": 233
+      },
+      {
+        "_path": "include/glm/mat3x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "9bc06112c9f23e61895c8a755bfcfd87e6a130336fdaf3b8e26963dd5fe670c8",
+        "sha256_in_prefix": "9bc06112c9f23e61895c8a755bfcfd87e6a130336fdaf3b8e26963dd5fe670c8",
+        "size_in_bytes": 233
+      },
+      {
+        "_path": "include/glm/mat3x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "4da5a7d6ec599625d15f6e79e24a86aec6c395c66a88cf26650c9e908c8a8df9",
+        "sha256_in_prefix": "4da5a7d6ec599625d15f6e79e24a86aec6c395c66a88cf26650c9e908c8a8df9",
+        "size_in_bytes": 231
+      },
+      {
+        "_path": "include/glm/mat3x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "15d1f563d4584fec99a384514a6e07022499828201110dbf215a26c140ab77c9",
+        "sha256_in_prefix": "15d1f563d4584fec99a384514a6e07022499828201110dbf215a26c140ab77c9",
+        "size_in_bytes": 231
+      },
+      {
+        "_path": "include/glm/mat4x2.hpp",
+        "path_type": "hardlink",
+        "sha256": "9e773ef2f92febf5fc5d92b4b60e35fbe69a6876f9f7611f662c1169f62ff13b",
+        "sha256_in_prefix": "9e773ef2f92febf5fc5d92b4b60e35fbe69a6876f9f7611f662c1169f62ff13b",
+        "size_in_bytes": 233
+      },
+      {
+        "_path": "include/glm/mat4x3.hpp",
+        "path_type": "hardlink",
+        "sha256": "738acb70ca0e61e503e3944fc7cb0f9e0e92fb77b592f59da61f0b29084fb074",
+        "sha256_in_prefix": "738acb70ca0e61e503e3944fc7cb0f9e0e92fb77b592f59da61f0b29084fb074",
+        "size_in_bytes": 231
+      },
+      {
+        "_path": "include/glm/mat4x4.hpp",
+        "path_type": "hardlink",
+        "sha256": "5d8bac395211111db631fa4c19358ab740b07b40c4ed671949d0bacaa05b41c2",
+        "sha256_in_prefix": "5d8bac395211111db631fa4c19358ab740b07b40c4ed671949d0bacaa05b41c2",
+        "size_in_bytes": 233
+      },
+      {
+        "_path": "include/glm/matrix.hpp",
+        "path_type": "hardlink",
+        "sha256": "23e083028b3194de3dcd7d89223d45c52c659fb40c7a4a58339692bbb821ec01",
+        "sha256_in_prefix": "23e083028b3194de3dcd7d89223d45c52c659fb40c7a4a58339692bbb821ec01",
+        "size_in_bytes": 5899
+      },
+      {
+        "_path": "include/glm/packing.hpp",
+        "path_type": "hardlink",
+        "sha256": "1210b6194da61a9b13b287c191a2d89242ebfa3518feab1fe9a3a49069c0f083",
+        "sha256_in_prefix": "1210b6194da61a9b13b287c191a2d89242ebfa3518feab1fe9a3a49069c0f083",
+        "size_in_bytes": 11070
+      },
+      {
+        "_path": "include/glm/simd/common.h",
+        "path_type": "hardlink",
+        "sha256": "992336b8ab0ae9e0e31b4f63e0cc104e70810d7635871ccae9da30185037798f",
+        "sha256_in_prefix": "992336b8ab0ae9e0e31b4f63e0cc104e70810d7635871ccae9da30185037798f",
+        "size_in_bytes": 7242
+      },
+      {
+        "_path": "include/glm/simd/exponential.h",
+        "path_type": "hardlink",
+        "sha256": "a77b298d19f08b7e1fdb74b7b0d37d8044c49198e4886416c9a8df12f057b8b8",
+        "sha256_in_prefix": "a77b298d19f08b7e1fdb74b7b0d37d8044c49198e4886416c9a8df12f057b8b8",
+        "size_in_bytes": 397
+      },
+      {
+        "_path": "include/glm/simd/geometric.h",
+        "path_type": "hardlink",
+        "sha256": "fa4c54913c6bced254720b33f168511f2c4eaf99db247e397706560b2db1ed6b",
+        "sha256_in_prefix": "fa4c54913c6bced254720b33f168511f2c4eaf99db247e397706560b2db1ed6b",
+        "size_in_bytes": 4046
+      },
+      {
+        "_path": "include/glm/simd/integer.h",
+        "path_type": "hardlink",
+        "sha256": "80ecc7820049d329d11018543be52c5bd6065bde12a481f60f0632584c7eaba2",
+        "sha256_in_prefix": "80ecc7820049d329d11018543be52c5bd6065bde12a481f60f0632584c7eaba2",
+        "size_in_bytes": 3803
+      },
+      {
+        "_path": "include/glm/simd/matrix.h",
+        "path_type": "hardlink",
+        "sha256": "a1cdb242d8b3f0d5b08e4aba2587525cae02af21b44caf9ecc6f56fe4b1876e5",
+        "sha256_in_prefix": "a1cdb242d8b3f0d5b08e4aba2587525cae02af21b44caf9ecc6f56fe4b1876e5",
+        "size_in_bytes": 40979
+      },
+      {
+        "_path": "include/glm/simd/neon.h",
+        "path_type": "hardlink",
+        "sha256": "c5f510da0ddc0e86891c8b94c3d30abafd09879ca94e620634fa8465d4f97582",
+        "sha256_in_prefix": "c5f510da0ddc0e86891c8b94c3d30abafd09879ca94e620634fa8465d4f97582",
+        "size_in_bytes": 5043
+      },
+      {
+        "_path": "include/glm/simd/packing.h",
+        "path_type": "hardlink",
+        "sha256": "0b72445d56284d6b3583c7d5bea1bb9bcee7cbc21c613f661f03df56cdf548a0",
+        "sha256_in_prefix": "0b72445d56284d6b3583c7d5bea1bb9bcee7cbc21c613f661f03df56cdf548a0",
+        "size_in_bytes": 137
+      },
+      {
+        "_path": "include/glm/simd/platform.h",
+        "path_type": "hardlink",
+        "sha256": "2d172348af79a755ae878f09bf19ac2202974f18dab22acd7520104414fdcde3",
+        "sha256_in_prefix": "2d172348af79a755ae878f09bf19ac2202974f18dab22acd7520104414fdcde3",
+        "size_in_bytes": 13487
+      },
+      {
+        "_path": "include/glm/simd/trigonometric.h",
+        "path_type": "hardlink",
+        "sha256": "0c895446921d0e08a3028c8f30c416d9f802c178fa610d37735773ad30305974",
+        "sha256_in_prefix": "0c895446921d0e08a3028c8f30c416d9f802c178fa610d37735773ad30305974",
+        "size_in_bytes": 145
+      },
+      {
+        "_path": "include/glm/simd/vector_relational.h",
+        "path_type": "hardlink",
+        "sha256": "8f6e72b2d36d345272152fc95580865953b1b78d6ec6d54a14c83698c8e7ee3c",
+        "sha256_in_prefix": "8f6e72b2d36d345272152fc95580865953b1b78d6ec6d54a14c83698c8e7ee3c",
+        "size_in_bytes": 147
+      },
+      {
+        "_path": "include/glm/trigonometric.hpp",
+        "path_type": "hardlink",
+        "sha256": "bbd62e937699757aac3a38c8f00d8362f22e6243814713577875b0923b7b0163",
+        "sha256_in_prefix": "bbd62e937699757aac3a38c8f00d8362f22e6243814713577875b0923b7b0163",
+        "size_in_bytes": 10885
+      },
+      {
+        "_path": "include/glm/vec2.hpp",
+        "path_type": "hardlink",
+        "sha256": "08e7ea130089684f5bb0c3facd6437831959d5bc0b375f949d1c8f28d4f8afa8",
+        "sha256_in_prefix": "08e7ea130089684f5bb0c3facd6437831959d5bc0b375f949d1c8f28d4f8afa8",
+        "size_in_bytes": 451
+      },
+      {
+        "_path": "include/glm/vec3.hpp",
+        "path_type": "hardlink",
+        "sha256": "fe0cd0d3de3cfcb701aeaf8f1ab38fe4d88870db78eab3ce0ff519df9153fc24",
+        "sha256_in_prefix": "fe0cd0d3de3cfcb701aeaf8f1ab38fe4d88870db78eab3ce0ff519df9153fc24",
+        "size_in_bytes": 451
+      },
+      {
+        "_path": "include/glm/vec4.hpp",
+        "path_type": "hardlink",
+        "sha256": "77ffbc1bf2fe8d6ca9ea7f11d7728bc1b779afa1634ad0dfbfdccb5b9a270d13",
+        "sha256_in_prefix": "77ffbc1bf2fe8d6ca9ea7f11d7728bc1b779afa1634ad0dfbfdccb5b9a270d13",
+        "size_in_bytes": 453
+      },
+      {
+        "_path": "include/glm/vector_relational.hpp",
+        "path_type": "hardlink",
+        "sha256": "d31e49c0b04d7904882183f538bb49ab4f8827583053a5cea482facea451e37e",
+        "sha256_in_prefix": "d31e49c0b04d7904882183f538bb49ab4f8827583053a5cea482facea451e37e",
+        "size_in_bytes": 6464
+      },
+      {
+        "_path": "share/cmake/glm/glmConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "5b4b8d3cb9be5347d1f8b579c02e304d3525c51e2ca8638e64ab3ddf0a7e0cd5",
+        "sha256_in_prefix": "5b4b8d3cb9be5347d1f8b579c02e304d3525c51e2ca8638e64ab3ddf0a7e0cd5",
+        "size_in_bytes": 4004
+      },
+      {
+        "_path": "share/cmake/glm/glmConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "ab44d9aa5dddf6276ee6d85a0b35f7ec1929054bac00d9cdf4071ca239b72693",
+        "sha256_in_prefix": "ab44d9aa5dddf6276ee6d85a0b35f7ec1929054bac00d9cdf4071ca239b72693",
+        "size_in_bytes": 1404
+      },
+      {
+        "_path": "share/pkgconfig/glm.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/glm_1683111077279/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "sha256": "44c565449a3cb1856621128e8f077fa99ca59a2f9b3d3f225dc28c16abbe285c",
+        "sha256_in_prefix": "35ccccd394bf5ec66e4cb10426a75f08285ce2f1835a8867b287e58f1eb8dcb2",
+        "size_in_bytes": 404
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "5ea75d8a9a0dd3e190e911db25351879d349c281cefb2f59573d50bdcf735bac",
+  "size": 217770,
+  "subdir": "linux-64",
+  "timestamp": 1683111306984,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/glm-0.9.9.8-h00ab1b0_0.conda",
+  "version": "0.9.9.8"
+}

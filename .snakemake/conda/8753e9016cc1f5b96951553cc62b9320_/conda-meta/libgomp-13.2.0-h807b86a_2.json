@@ -1,0 +1,57 @@
+{
+  "build": "h807b86a_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "_libgcc_mutex 0.1 conda_forge"
+  ],
+  "extracted_package_dir": "/lab/projects1/GRUMP/miniconda3/pkgs/libgomp-13.2.0-h807b86a_2",
+  "files": [
+    "lib/libgomp.so",
+    "lib/libgomp.so.1.0.0",
+    "share/licenses/gcc-libs/RUNTIME.LIBRARY.EXCEPTION.gomp_copy"
+  ],
+  "fn": "libgomp-13.2.0-h807b86a_2.conda",
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "license_family": "GPL",
+  "link": {
+    "source": "/lab/projects1/GRUMP/miniconda3/pkgs/libgomp-13.2.0-h807b86a_2",
+    "type": 1
+  },
+  "md5": "e2042154faafe61969556f28bade94b9",
+  "name": "libgomp",
+  "package_tarball_full_path": "/lab/projects1/GRUMP/miniconda3/pkgs/libgomp-13.2.0-h807b86a_2.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libgomp.so",
+        "path_type": "softlink",
+        "sha256": "9aeda30493d2384a2b8c446826ae49f6d0536f74de6b176f8a45f8c1d3336355",
+        "size_in_bytes": 1082720
+      },
+      {
+        "_path": "lib/libgomp.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "9aeda30493d2384a2b8c446826ae49f6d0536f74de6b176f8a45f8c1d3336355",
+        "sha256_in_prefix": "9aeda30493d2384a2b8c446826ae49f6d0536f74de6b176f8a45f8c1d3336355",
+        "size_in_bytes": 1082720
+      },
+      {
+        "_path": "share/licenses/gcc-libs/RUNTIME.LIBRARY.EXCEPTION.gomp_copy",
+        "path_type": "hardlink",
+        "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+        "sha256_in_prefix": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+        "size_in_bytes": 3324
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "e1e82348f8296abfe344162b3b5f0ddc2f504759ebeb8b337ba99beaae583b15",
+  "size": 421133,
+  "subdir": "linux-64",
+  "timestamp": 1695219303065,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libgomp-13.2.0-h807b86a_2.conda",
+  "version": "13.2.0"
+}

@@ -1,0 +1,12 @@
+prefix=/lab/projects1/GRUMP/HotMAPS2/.snakemake/conda/8753e9016cc1f5b96951553cc62b9320_
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/nss
+
+Name: NSS
+Description: Network Security Services
+Version: 3.92.0
+Requires: nspr >= 4.27
+Libs: -L${prefix}/lib -lnss3 -lnssutil3 -lsmime3 -lssl3 -lsoftokn3
+Cflags: -I${includedir}
+

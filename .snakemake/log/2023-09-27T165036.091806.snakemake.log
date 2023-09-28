@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Creating conda environment hotmaps.yml...
+Downloading and installing remote packages.
+Environment for /lab/projects1/GRUMP/HotMAPS2/hotmaps.yml created (location: .snakemake/conda/8753e9016cc1f5b96951553cc62b9320_)
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                            count
+---------------------------  -------
+all                                1
+find_hotspot_regions               1
+hotspot                            1
+multiple_testing_correction        1
+prepare_mutations                  1
+total                              5
+
+Select jobs to execute...
+
+[Wed Sep 27 17:00:09 2023]
+rule prepare_mutations:
+    output: /output/NDD/NDD_mutation_counts.txt
+    jobid: 3
+    reason: Missing output files: /output/NDD/NDD_mutation_counts.txt
+    resources: tmpdir=/tmp
+
+RuleException in rule prepare_mutations in file /lab/projects1/GRUMP/HotMAPS2/Snakefile, line 7:
+NameError: The name "'clump_input'" is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}, when formatting the following:
+
+        awk  '{{ print $2, "ndd_out", $4":A" }}' {config['clump_input']} | sort |  uniq -c | awk -v OFS='	' '{{print $2, $3, $4, $1}}' > {output[0]}
+        
