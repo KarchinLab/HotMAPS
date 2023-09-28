@@ -1,0 +1,11 @@
+conda_env: "hotmaps.yml"
+clump_input: "data/vep_ndd_out.txt_clump_input_rightdomain.txt"
+gnf: "data/NDD.gnf"
+structure_path: "/lab/projects1/GRUMP/CLUMP-master/January_17_2023/"
+output_dir: "output/NDD/"
+log_dir: "log/"
+multiproc: "_multiprocess" 
+tumor_type: "NDD"
+n: 1000
+r: 10.0
+q: "0.01"

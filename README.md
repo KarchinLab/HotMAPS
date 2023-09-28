@@ -40,7 +40,7 @@ HotMAPS2 requires the following data as input:
 ### Running HotMAPS2
 Run HotMAPS2 pipeline using the following command:
 
-```snakemake --use-conda --cores 1 --configfile config.yaml```
+```snakemake --use-conda --cores 8 -s hotregion.snake --configfile hotregion.config.yaml```
 
 To compare hotspot regions between two datasets, use the following command:
 

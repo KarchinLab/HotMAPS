@@ -1,0 +1,69 @@
+configfile: "config.yaml"
+
+rule all:
+    input:
+        f"{config['output_dir']}{config['tumor_type']}_hotregions.txt"
+
+rule prepare_mutations:
+    output:
+        f"{config['output_dir']}{config['tumor_type']}_mutation_counts.txt"
+    conda:
+        f"{config['conda_env']}"
+    shell:
+        """
+	awk  '{{{{ print $2, "ndd_out", $4":A" }}}}' {config[clump_input]} | sort |  uniq -c | awk -v OFS='\t' '{{{{print $2, $3, $4, $1}}}}' > {output[0]}
+        """
+
+rule hotspot:
+    input:
+        f"{config['output_dir']}{config['tumor_type']}_mutation_counts.txt"
+    output:
+        merged_output = f"{config['output_dir']}{config['tumor_type']}_merged_hotspots.txt"
+    conda:
+        f"{config['conda_env']}"
+    shell:
+        """
+        python HotMAPS2/hotspot{config[multiproc]}.py -m "{input[0]}" \
+                                   -gnf "{config[gnf]}" \
+                                   -p "{config[structure_path]}" \
+                                   -n {config[n]} \
+                                   -r {config[r]} \
+                                   -od "{config[output_dir]}" \
+                                   -o "{config[tumor_type]}_merged_hotspots.txt" \
+                                   -l "{config[log_dir]}"
+        """
+
+rule multiple_testing_correction:
+    input:
+        f"{config['output_dir']}{config['tumor_type']}_merged_hotspots.txt"
+    output:
+        significance_level = f"{config['output_dir']}{config['tumor_type']}_significance_level.txt",
+        corrected_output = f"{config['output_dir']}{config['tumor_type']}_hotspots_multitestcorrected.txt"
+    conda:
+        f"{config['conda_env']}"
+    shell:
+        """
+        python HotMAPS2/multiple_testing_correction.py -c "{config[clump_input]}" \
+                                                 -i "{input[0]}" \
+                                                 -q "{config[q]}" \
+                                                 -s "{output[significance_level]}" \
+                                                 -o "{output[corrected_output]}"
+        """
+
+rule find_hotspot_regions:
+    input:
+        merged_output = f"{config['output_dir']}{config['tumor_type']}_merged_hotspots.txt",
+        corrected_output = f"{config['output_dir']}{config['tumor_type']}_hotspots_multitestcorrected.txt",
+        significance_level = f"{config['output_dir']}{config['tumor_type']}_significance_level.txt"
+    output:
+        f"{config['output_dir']}{config['tumor_type']}_hotregions.txt"
+    conda:
+        f"{config['conda_env']}"
+    shell:
+        """
+        python HotMAPS2/find_hotspot_regions.py -i "{input[merged_output]}" \
+                                          -m "{input[corrected_output]}" \
+                                          -p "{config[structure_path]}" \
+                                          -s "{input[significance_level]}" \
+                                          -o "{output[0]}"
+        """
