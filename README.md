@@ -42,11 +42,9 @@ Run HotMAPS2 pipeline using the following command:
 
 ```snakemake --use-conda --cores 8 -s hotregion.snake --configfile hotregion.config.yaml```
 
-To compare hotspot regions between two datasets, use the following command:
+To compare and visualize hotspot regions between two datasets, use the following command:
 
-```compare_hotregions.py -i hot_regions1 -j hot_regions2 [-d distance threshold] -o OUTPUT```
-, where distance threshold is the maximum distance between two hotspots to be considered the same hotspot. 
-
+```snakemake --use-conda --cores 8 -s compare.snake --configfile compare.config.yaml```
 
 ## Links
 
