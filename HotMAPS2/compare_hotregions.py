@@ -12,7 +12,7 @@ def parse_arguments():
                         type=str, required=True,
                         help='Output file from find_hotspot_regions')
     parser.add_argument('-d', '--distance',
-                        type=float, required=False, default=20.0,
+                        type=float, required=False, default=10.0,
                         help='Maximum distance between hotspots to be considered the same hotspot')
     parser.add_argument('-o', '--output',
                         type=str, required=True,
@@ -64,8 +64,8 @@ def calc_cog_distance(cog1, cog2):
 
 
 def main(opts):
-    hotregions1 = reimport_hotspots_from_file(opts.input1)
-    hotregions2 = reimport_hotspots_from_file(opts.input2)
+    hotregions1 = reimport_hotspots_from_file(opts['input1'])
+    hotregions2 = reimport_hotspots_from_file(opts['input2'])
 
     # get list of protein ids in both datasets
     protein_ids1 = set(hotregions1.keys())
@@ -75,7 +75,7 @@ def main(opts):
     protein_ids = protein_ids1.intersection(protein_ids2)
 
     # get distance threshold
-    d = opts.distance
+    d = opts['distance']
 
     output = []
 
@@ -84,27 +84,51 @@ def main(opts):
 
         regions1 = hotregions1[id]['hotspots']
         regions2 = hotregions2[id]['hotspots']
-        
-        # for each hotregion in dataset 1, 
-        # check if any hotregion in dataset 2 is further than X angstroms away
-        # OR, if any hotregion in dataset 2 has no residues in common
-        # if so, add to output file
-        for i in regions1:
-            for j in regions2:
-                if calc_cog_distance(i[0], j[0]) > d:
-                    output.append(id)
-                    # continue to the next protein
+
+        """
+        Add a protein ID to the output if
+        Any cog in regions1 is further than distance d from ALL cogs in regions2. 
+        OR
+        Any region in regions1 has no residues in common with ALL regions in regions2.
+        """
+        for cog1, residues1 in regions1:
+            is_far_from_all = True   # Assume a hotspot in regions1 is far from all in regions2
+            has_no_common_residue_with_all = True  # Assume no common residues
+            
+            for cog2, residues2 in regions2:
+                # Calculate the distance between the two CoGs
+                distance = calc_cog_distance(cog1, cog2)
+                
+                # Check if the two hotspots have residues in common
+                common_residues = set(residues1).intersection(residues2)
+                
+                # If distance is less than the threshold, then it's not far from this hotspot in regions2
+                if distance <= d:
+                    is_far_from_all = False
+                
+                # If there are common residues, then it has a common residue with this hotspot in regions2
+                if common_residues:
+                    has_no_common_residue_with_all = False
+                
+                # If either condition fails, no need to check this hotspot against others in regions2
+                if not is_far_from_all and not has_no_common_residue_with_all:
                     break
-                else:
-                    # check if any residues are shared
-                    if len(set(i[1]).intersection(set(j[1]))) == 0:
-                        output.append(id)
-                        # continue to the next protein
-                        break
+
+            # If a hotspot in regions1 is far from ALL hotspots in regions2 OR
+            # has no residues in common with ALL hotspots in regions2
+            if is_far_from_all or has_no_common_residue_with_all:
+                output.append(id)
+                break   # exit the loop for current protein as a condition is met
+
+    # Writing the output to a file
+    with open(opts['output'], 'w') as outfile:
+        outfile.write('\n'.join(output))
+
+  
 
 
     # write output file
-    with open(opts.output, 'w') as f:
+    with open(opts['output'], 'w') as f:
         f.write('\n'.join(output))
 
 if __name__ == '__main__':

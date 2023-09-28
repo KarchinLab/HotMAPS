@@ -5,6 +5,8 @@ Copy code
 *.egg
 *.egg-info
 __pycache__/
+.DS_Store
+log*
 
 # Log folder
 logs/

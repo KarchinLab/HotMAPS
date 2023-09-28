@@ -4,7 +4,7 @@ import re
 import argparse
 
 def parse_arguments():
-    info = ("Highlight hotregions from two datasets on the same protein structure")
+    info = ("Generate pml scripts to highlight hotregions from two datasets on the same protein structure")
     parser = argparse.ArgumentParser(description=info)
 
     # Add arguments

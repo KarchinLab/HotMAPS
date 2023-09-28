@@ -126,172 +126,161 @@ def main(opts):
     logger.info("Total %d genes in mutation file", len(gene_names))
     logger.info("%d genes has available PDB in pdb directory", len(gene_with_pdb))
 
-    # initialize merged output
-    output_merged = []
-    
-    # Loop through each gene name
-    failed_struct = []
-    for gene_name in gene_with_pdb:
-        # Set the pdb_path for the current gene
-        pdb_path = os.path.join(pdb_path, f'{gene_name}.pdb')
-
-        quiet = True if opts['log_level'] != "DEBUG" else False  # flag indicating pdb warnings
-        pdb_parser = PDBParser(QUIET=quiet)  # parser for pdb files
-        pdb_path = opts['pdbpath']  +  gene_name + ".pdb"
-
-        # read in structure
-        structure = utils.read_af_structure(pdb_path, gene_name, quiet=quiet)
-        if structure is None:
-            failed_struct.append(gene_name)
-            continue
-
-        # make a list of all chain letters in structure
-        struct_chains = []
-        for model in structure:
-            for chain in model:
-                struct_chains.append(chain.id)
-        
-        # initialize output
-        output = []
-                        
-
-        # get mutation info
-        structure_mutations = mutations.get(gene_name, [])
-        # skip structure if no mutations
-        if not structure_mutations:
-            failed_struct.append(gene_name)
-            continue
-        
-
-        # separate out mutation info
-        ttypes, mres, mcount, mchains = list(zip(*structure_mutations)) # if model_mutations else ([], [], [])
-
-        # stratify mutations by their tumor type
-        # ttype_ixs is a dictionary that contains
-        # ttype as the keys and a list of relevant
-        # indices as the values
-        unique_ttypes = set(ttypes)
-        ttype_ixs = {t: [i for i in range(len(mcount)) if ttypes[i]==t]
-                        for t in unique_ttypes}
-        unique_ttypes = list(unique_ttypes)
-
-        # obtain relevant info from structure
-        tmp_info = get_structure_info(structure, mchains, mres, mcount,
-                                        struct_chains, ttype_ixs)
-        (mut_res_centers_of_geometry,
-            mut_res_mutation_counts,
-            all_res_centers_of_geometry,
-            models) = tmp_info
-        if not all_res_centers_of_geometry:
-            logger.error('No available center of geometries for {0}'.format(gene_name))
-
-        # get neigbours for all residues
-        neighbors = find_neighbors(all_res_centers_of_geometry, opts['radius'])
-
-        # iterate through each tumour type
-        for tumour in unique_ttypes:
-
-
-            #print(tumour)
-            #print("+++++++++++++++++++++++++++++++++=")
-            # skip tumor types if not one specified
-            if (not opts['tumor_type'] == tumour and not opts['tumor_type'] == 'EVERY'):
-                continue
-
-            # draw information for the specific tumour type
-            t_mut_res_centers_of_geometry = mut_res_centers_of_geometry[tumour]
-            t_mut_res_mutation_counts = mut_res_mutation_counts[tumour]
-
-            mut_density = src.mutations.mutation_density(t_mut_res_mutation_counts,
-                                                            neighbors)
-            mut_vals = list(mut_density.values())
-            if mut_vals:
-                max_obs_dens = max(mut_density.values())
-            else:
-                max_obs_dens =0
-
-            # generate null distribution
-            # count total mutations in structure while
-            # avoiding double counting due to same id and chain
-            # being on multiple models
-            obs_models = []
-            obs_chains = []
-            total_mutations = 0
-            for k in t_mut_res_mutation_counts:
-                mutations_to_add = t_mut_res_mutation_counts[k]
-                for i in range(len(obs_models)):
-                    if not k[1] == obs_models[i] and k[2] == obs_chains[i]:
-                        mutations_to_add = 0
-                        break
-                total_mutations += mutations_to_add
-                obs_models.append(k[1])
-                obs_chains.append(k[2])
-
-
-            # generate empirical null distribution
-            struct_info = {}
-            for c in struct_chains:
-                struct_info[c] = c
-            sim_null_dist = sim.generate_null_dist(gene_name, models, struct_info,
-                                                    all_res_centers_of_geometry,
-                                                    total_mutations,
-                                                    opts['num_simulations'],
-                                                    opts['seed'],
-                                                    neighbors,
-                                                    opts['stop_criterion'],
-                                                    max_obs_dens)
-
-            # get a list of lists format for compute p values function
-            mut_list = [[res_id, mut_density[res_id]] for res_id in mut_density]
-    
-
-            # aditional information about p-values
-            # for specific residues in a structure
-            # compute p-values for observed
-            obs_pvals, sim_cdf = sim.compute_pvals(mut_list, sim_null_dist)
-
-            result = [gene_name, tumour,
-                            ','.join([str(o[0][1]) for o in mut_list]),
-                            ','.join([str(o[0][2]) for o in mut_list]),
-                            ','.join([str(o[0][3][1]) for o in mut_list]),
-                            ','.join([str(t_mut_res_mutation_counts[o[0]])
-                                        for o in mut_list]),
-                            ','.join([str(o[1]) for o in mut_list]),
-                            ','.join(map(str, obs_pvals)),]
-            output.append(result)
-            
-        # add to merged output
-        output_merged.append(result)
-
-
-        # write output to file if individual output is turned on
-        if opts['individual_output'] == True:
-            # add header to output
-            output = [['Structure', 'Tumor Type', 'Model', 'Chain', 'Mutation Residues',
-                    'Residue Mutation Count', 'Mutation Density', 'Hotspot P-value',
-                    ]] + output
-
-            # Generate output file name and path for the current gene
-            output_file = f"{gene_name}_output.txt"
-            output_path = os.path.join(opts['output_directory'], output_file)
-
-            # Write output to the file
-            with open(output_path, 'w') as handle:
-                csv.writer(handle, delimiter='\t', lineterminator='\n').writerows(output)
-
-    # write merged output to file
-    '''
-    output_final = [['Structure', 'Tumor Type', 'Model', 'Chain', 'Mutation Residues',
-                'Residue Mutation Count', 'Mutation Density', 'Hotspot P-value',
-                ]].extend(output_merged)
-    '''
     output_merged_file = opts['output_file']
     output_merged_path = os.path.join(opts['output_directory'], output_merged_file)
     with open(output_merged_path, 'w') as handle:
-        csv.writer(handle, delimiter='\t', lineterminator='\n').writerows([['Structure', 'Tumor Type', 'Model', 'Chain', 'Mutation Residues',
-                'Residue Mutation Count', 'Mutation Density', 'Hotspot P-value',
-                ]])
-        csv.writer(handle, delimiter='\t', lineterminator='\n').writerows(output_merged)
+    
+        # Loop through each gene name
+        failed_struct = []
+        for gene_name in gene_with_pdb:
+            # Set the pdb_path for the current gene
+            pdb_path = os.path.join(pdb_path, f'{gene_name}.pdb')
+
+            quiet = True if opts['log_level'] != "DEBUG" else False  # flag indicating pdb warnings
+            pdb_parser = PDBParser(QUIET=quiet)  # parser for pdb files
+            pdb_path = opts['pdbpath']  +  gene_name + ".pdb"
+
+            # read in structure
+            structure = utils.read_af_structure(pdb_path, gene_name, quiet=quiet)
+            if structure is None:
+                failed_struct.append(gene_name)
+                continue
+
+            # make a list of all chain letters in structure
+            struct_chains = []
+            for model in structure:
+                for chain in model:
+                    struct_chains.append(chain.id)
+            
+            # initialize output
+            output = []
+                            
+
+            # get mutation info
+            structure_mutations = mutations.get(gene_name, [])
+            # skip structure if no mutations
+            if not structure_mutations:
+                failed_struct.append(gene_name)
+                continue
+            
+
+            # separate out mutation info
+            ttypes, mres, mcount, mchains = list(zip(*structure_mutations)) # if model_mutations else ([], [], [])
+
+            # stratify mutations by their tumor type
+            # ttype_ixs is a dictionary that contains
+            # ttype as the keys and a list of relevant
+            # indices as the values
+            unique_ttypes = set(ttypes)
+            ttype_ixs = {t: [i for i in range(len(mcount)) if ttypes[i]==t]
+                            for t in unique_ttypes}
+            unique_ttypes = list(unique_ttypes)
+
+            # obtain relevant info from structure
+            tmp_info = get_structure_info(structure, mchains, mres, mcount,
+                                            struct_chains, ttype_ixs)
+            (mut_res_centers_of_geometry,
+                mut_res_mutation_counts,
+                all_res_centers_of_geometry,
+                models) = tmp_info
+            if not all_res_centers_of_geometry:
+                logger.error('No available center of geometries for {0}'.format(gene_name))
+
+            # get neigbours for all residues
+            neighbors = find_neighbors(all_res_centers_of_geometry, opts['radius'])
+
+            # iterate through each tumour type
+            for tumour in unique_ttypes:
+
+
+                #print(tumour)
+                #print("+++++++++++++++++++++++++++++++++=")
+                # skip tumor types if not one specified
+                if (not opts['tumor_type'] == tumour and not opts['tumor_type'] == 'EVERY'):
+                    continue
+
+                # draw information for the specific tumour type
+                t_mut_res_centers_of_geometry = mut_res_centers_of_geometry[tumour]
+                t_mut_res_mutation_counts = mut_res_mutation_counts[tumour]
+
+                mut_density = src.mutations.mutation_density(t_mut_res_mutation_counts,
+                                                                neighbors)
+                mut_vals = list(mut_density.values())
+                if mut_vals:
+                    max_obs_dens = max(mut_density.values())
+                else:
+                    max_obs_dens =0
+
+                # generate null distribution
+                # count total mutations in structure while
+                # avoiding double counting due to same id and chain
+                # being on multiple models
+                obs_models = []
+                obs_chains = []
+                total_mutations = 0
+                for k in t_mut_res_mutation_counts:
+                    mutations_to_add = t_mut_res_mutation_counts[k]
+                    for i in range(len(obs_models)):
+                        if not k[1] == obs_models[i] and k[2] == obs_chains[i]:
+                            mutations_to_add = 0
+                            break
+                    total_mutations += mutations_to_add
+                    obs_models.append(k[1])
+                    obs_chains.append(k[2])
+
+
+                # generate empirical null distribution
+                struct_info = {}
+                for c in struct_chains:
+                    struct_info[c] = c
+                sim_null_dist = sim.generate_null_dist(gene_name, models, struct_info,
+                                                        all_res_centers_of_geometry,
+                                                        total_mutations,
+                                                        opts['num_simulations'],
+                                                        opts['seed'],
+                                                        neighbors,
+                                                        opts['stop_criterion'],
+                                                        max_obs_dens)
+
+                # get a list of lists format for compute p values function
+                mut_list = [[res_id, mut_density[res_id]] for res_id in mut_density]
+        
+
+                # aditional information about p-values
+                # for specific residues in a structure
+                # compute p-values for observed
+                obs_pvals, sim_cdf = sim.compute_pvals(mut_list, sim_null_dist)
+
+                result = [gene_name, tumour,
+                                ','.join([str(o[0][1]) for o in mut_list]),
+                                ','.join([str(o[0][2]) for o in mut_list]),
+                                ','.join([str(o[0][3][1]) for o in mut_list]),
+                                ','.join([str(t_mut_res_mutation_counts[o[0]])
+                                            for o in mut_list]),
+                                ','.join([str(o[1]) for o in mut_list]),
+                                ','.join(map(str, obs_pvals)),]
+                output.append(result)
+
+                # write merged output to file
+
+                csv.writer(handle, delimiter='\t', lineterminator='\n').writerow(result)
+                
+
+                # write output to file if individual output is turned on
+                if opts['individual_output'] == True:
+                    # add header to output
+                    output = [['Structure', 'Tumor Type', 'Model', 'Chain', 'Mutation Residues',
+                            'Residue Mutation Count', 'Mutation Density', 'Hotspot P-value',
+                            ]] + output
+
+                    # Generate output file name and path for the current gene
+                    output_file = f"{gene_name}_output.txt"
+                    output_path = os.path.join(opts['output_directory'], output_file)
+                    # Write output to the file
+                    with open(output_path, 'w') as handle:
+                        csv.writer(handle, delimiter='\t', lineterminator='\n').writerows(output)
+
+                
 
     print(("NUM_MODEL_DIFF: " + str(sim.NUM_MODEL_DIFF)))
     print(("NUM_CHAIN_DIFF: " + str(sim.NUM_CHAIN_DIFF)))
