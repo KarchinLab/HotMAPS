@@ -17,7 +17,7 @@ HotMAPS2 updates the original HotMAPS tool by providing a simplified workflow us
 
 ## Installation
 
-Clone the HotMAPS2 repository to your local machine. HotMAPS2 provides a Conda environment file, hotmaps.yml, which lists all necessary packages. Anaconda and Snakemake are required to run HotMAPS2. 
+Clone the HotMAPS2 repository to your local machine. HotMAPS2 provides a Conda environment file, hotmaps.yml, which lists all necessary packages. Anaconda and Snakemake are required to run HotMAPS2 pipelines. 
 
 ## Usage
 ### Input
