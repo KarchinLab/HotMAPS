@@ -67,7 +67,7 @@ def parse_arguments():
     parser.add_argument('-o', '--output-file',
                         default='merged_output.txt',
                         type=str,
-                        help='Name for merged output file')
+                        help='Directory and name for merged output file')
 
 
     # logging arguments
@@ -126,9 +126,13 @@ def main(opts):
     logger.info("Total %d genes in mutation file", len(gene_names))
     logger.info("%d genes has available PDB in pdb directory", len(gene_with_pdb))
 
-    output_merged_file = opts['output_file']
-    output_merged_path = os.path.join(opts['output_directory'], output_merged_file)
+    output_merged_path = opts['output_file']
     with open(output_merged_path, 'w') as handle:
+
+        # write header to output
+        header = ['Structure', 'Tumor Type', 'Model', 'Chain', 'Mutation Residues',
+                    'Residue Mutation Count', 'Mutation Density', 'Hotspot P-value',
+                    ]
     
         # Loop through each gene name
         failed_struct = []
@@ -137,7 +141,7 @@ def main(opts):
             pdb_path = os.path.join(pdb_path, f'{gene_name}.pdb')
 
             quiet = True if opts['log_level'] != "DEBUG" else False  # flag indicating pdb warnings
-            pdb_parser = PDBParser(QUIET=quiet)  # parser for pdb files
+            #pdb_parser = PDBParser(QUIET=quiet)  # parser for pdb files
             pdb_path = opts['pdbpath']  +  gene_name + ".pdb"
 
             # read in structure
