@@ -1,6 +1,5 @@
 import argparse
 
-
 def parse_arguments():
     info = ('Compare hotregions detected in two datasets.')
     parser = argparse.ArgumentParser(description=info)
@@ -12,9 +11,6 @@ def parse_arguments():
     parser.add_argument('-j', '--input2',
                         type=str, required=True,
                         help='Output file from find_hotspot_regions')
-    parser.add_argument('-o', '--output',
-                        type=str, required=True,
-                        help='Output file with comparison results')
     parser.add_argument('-d', '--distance',
                         type=float, required=False, default=20.0,
                         help='Maximum distance between hotspots to be considered the same hotspot')
