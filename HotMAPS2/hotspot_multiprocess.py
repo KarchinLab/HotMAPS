@@ -128,6 +128,11 @@ def process_gene(gene_name, mutations, opts):
 
     # get mutation info
     structure_mutations = mutations.get(gene_name, [])
+
+    # add error message if no mutations for gene
+    if not structure_mutations:
+        logger.info('No mutations for {0}'.format(gene_name))
+        return output
     
 
     # separate out mutation info

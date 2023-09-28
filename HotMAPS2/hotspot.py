@@ -163,9 +163,11 @@ def main(opts):
             # get mutation info
             structure_mutations = mutations.get(gene_name, [])
             # skip structure if no mutations
+                # add error message if no mutations for gene
             if not structure_mutations:
-                failed_struct.append(gene_name)
-                continue
+                logger.info('No mutations for {0}'.format(gene_name))
+                return output
+    
             
 
             # separate out mutation info
