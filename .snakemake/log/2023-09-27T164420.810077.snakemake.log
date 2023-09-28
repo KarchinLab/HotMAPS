@@ -1,3 +1,0 @@
-RuleException in file /lab/projects1/GRUMP/HotMAPS2/Snakefile, line 3:
-Conda environments are only allowed with shell, script, notebook, or wrapper directives (not with run or template_engine).
-  File "/lab/projects1/GRUMP/HotMAPS2/Snakefile", line 3, in <module>

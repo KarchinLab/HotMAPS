@@ -1,8 +1,0 @@
-prefix=/lab/projects1/GRUMP/HotMAPS2/.snakemake/conda/8753e9016cc1f5b96951553cc62b9320_
-includedir=${prefix}/include
-
-Name: gstreamer-gl-x11-1.0
-Description: Streaming media framework, OpenGL plugins libraries (X11 specifics)
-Version: 1.22.3
-Requires: gstreamer-gl-1.0, x11-xcb
-Cflags: -I${includedir}/gstreamer-1.0
