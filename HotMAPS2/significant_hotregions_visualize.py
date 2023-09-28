@@ -108,14 +108,16 @@ def main(opts):
 
             count = 0
             for region in data1:
-                file.write(f'select {tumor_name1}_{count}, resi {"+".join(region)}\n')
+                res = [r.split(':')[2] for r in region]
+                file.write(f'select {tumor_name1}_{count}, resi {"+".join(res)}\n')
                 file.write(f'show spheres, {tumor_name1}_{count}\n')
                 file.write(f'color red, {tumor_name1}_{count}\n')
                 count += 1
 
             count = 0
             for region in data2:
-                file.write(f'select {tumor_name2}_{count}, resi {"+".join(region)}\n')
+                res = [r.split(':')[2] for r in region]
+                file.write(f'select {tumor_name2}_{count}, resi {"+".join(res)}\n')
                 file.write(f'show spheres, {tumor_name2}_{count}\n')
                 file.write(f'color blue, {tumor_name2}_{count}\n')
                 count += 1

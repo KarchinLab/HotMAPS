@@ -1,0 +1,50 @@
+configfile: "compare.config.yaml"
+
+rule all:
+    input:
+        diff="{config[compare_dir]}{tumor1}_{tumor2}_diff.txt",
+        pml="{config[compare_dir]}pml/"
+
+rule compare_hotregions:
+    output:
+        "{config[compare_dir]}{tumor1}_{tumor2}_diff.txt"
+    conda:
+        f"{config['conda_env']}"
+    shell:
+        """
+        python HotMAPS2/compare_hotregions.py -i "{config[hotregion1]}" \
+            -j "{config[hotregion2]}" \
+            -d {config[distance]} \
+            -o "{config[compare_dir]}{tumor1}_{tumor2}_diff.txt"
+
+        """
+rule visualize_hotregions:
+    input:
+        "{config[compare_dir]}{tumor1}_{tumor2}_diff.txt"
+    output:
+        "{config[compare_dir]}/pml/"
+    conda:
+        f"{config['conda_env']}"
+    shell:
+        """
+        mkdir {config[compare_dir]}pml/
+        python HotMAPS2/significant_hotregions_visualize.py -c "{config[compare_dir]}{tumor1}_{tumor2}_diff.txt" \
+            -i "{config[hotregion1]}" \
+            -j "{config[hotregion2]}" \
+            -t1 "{config[tumor1]}" \
+            -t2 "{config[tumor2]} \
+            -s "{config[structures_dir]}" \
+            -o "{config[compare_dir]}/pml/"
+        """
+
+rule run_pymol:
+    input:
+        dir = "{config[compare_dir]}/pml/"
+    conda:
+        f"{config['conda_env']}"
+    shell:
+        """
+        run_pymol=$(ls -1 {input[dir]} | sed 's/^/pymol -q -c /')
+        cd {input[dir]}
+        eval "$run_pymol"
+        """
