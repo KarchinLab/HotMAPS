@@ -10,8 +10,9 @@ HotMAPS2 updates the original HotMAPS tool by providing a simplified workflow us
 
 ## Features
 
-* **Alphafold Integration**: HotMAPS2 can seamlessly integrate with Alphafold PDB predictions.
+* **Offline Support**: HotMAPS2 can work offline with arbitrary user-supplied PDB structures including Alphafold predictions.
 * **Snakemake Workflow**: Simplified and streamlined workflow using Snakemake.
+* **Multi-process**: HotMAPS2 hotspot detection can run multiple proteins in parallel.
 * **Dataset Comparison**: Users can now compare hotspot regions between two datasets on the same protein.
 * **Enhanced Visualization**: Visualize hotspots using Pymol.
 
