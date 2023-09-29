@@ -23,7 +23,7 @@ rule hotspot:
         f"{config['conda_env']}"
     shell:
         """
-        python HotMAPS2/hotspot{config[multiproc]}.py -m "{input[0]}" \
+        python {config[code_dir]}hotspot{config[multiproc]}.py -m "{input[0]}" \
                                    -gnf "{config[gnf]}" \
                                    -p "{config[structure_path]}" \
                                    -n {config[n]} \
@@ -43,7 +43,7 @@ rule multiple_testing_correction:
         f"{config['conda_env']}"
     shell:
         """
-        python HotMAPS2/multiple_testing_correction.py -c "{config[clump_input]}" \
+        python {config[code_dir]}multiple_testing_correction.py -c "{config[clump_input]}" \
                                                  -i "{input[0]}" \
                                                  -q "{config[q]}" \
                                                  -s "{output[significance_level]}" \
@@ -61,7 +61,7 @@ rule find_hotspot_regions:
         f"{config['conda_env']}"
     shell:
         """
-        python HotMAPS2/find_hotspot_regions.py -i "{input[merged_output]}" \
+        python {config[code_dir]}find_hotspot_regions.py -i "{input[merged_output]}" \
                                           -m "{input[corrected_output]}" \
                                           -p "{config[structure_path]}" \
                                           -s "{input[significance_level]}" \

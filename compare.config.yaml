@@ -1,3 +1,5 @@
+code_dir: "HotMAPS2/HotMAPS2/"
+conda_env: "hotmaps.yml"
 hotregion1: "output/NDD/NDD_hotregions.txt"
 hotregion2: "output/COAD/COAD_hotregions.txt"
 tumor1: "NDD"
