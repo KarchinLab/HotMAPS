@@ -70,6 +70,12 @@ def parse_arguments():
                         default='merged_output.txt',
                         type=str,
                         help='Directory and name for merged output file')
+    
+    # number of cores to use
+    parser.add_argument('-c', '--cores',
+                        default=1,
+                        type=int,
+                        help='Number of cores to use (Default: 1)')
 
 
     # logging arguments
@@ -258,7 +264,9 @@ def main(opts):
     
     # Create a Pool of processes
     # Adjust the number of processes according to machine's capabilities
-    num_cores = multiprocessing.cpu_count()
+
+    #num_cores = multiprocessing.cpu_count()
+    num_cores = opts['cores']
     print("Running on " + str(num_cores) + " cores")
     with Pool(processes=num_cores) as pool:
         results = pool.starmap(process_gene, [(gene_name, mutations, opts) for gene_name in gene_with_pdb])

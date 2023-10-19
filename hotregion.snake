@@ -28,6 +28,7 @@ rule hotspot:
                                    -p "{config[structure_path]}" \
                                    -n {config[n]} \
                                    -r {config[r]} \
+                                   -c {config[cores]} \
                                    -od "{config[output_dir]}" \
                                    -o "{config[tumor_type]}_merged_hotspots.txt" \
                                    -l "{config[log_dir]}"

@@ -10,3 +10,4 @@ tumor_type: "NDD"
 n: 1000
 r: 10.0
 q: "0.01"
+cores: 8
