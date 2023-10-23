@@ -45,6 +45,7 @@ rule multiple_testing_correction:
     shell:
         """
         python {config[code_dir]}multiple_testing_correction.py -c "{config[clump_input]}" \
+                                                 -m "{config[m]}" \
                                                  -i "{input[0]}" \
                                                  -q "{config[q]}" \
                                                  -s "{output[significance_level]}" \

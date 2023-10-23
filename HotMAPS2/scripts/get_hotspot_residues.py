@@ -19,7 +19,7 @@ def parse_arguments():
 
 
 def main(opts):
-    output = [['Structure', 'Tumor Type', 'Model', 'Chain','Residue Position', 'Mutation Density', 'p-value', 'Density Z-score']]
+    output = [['Structure', 'Tumor Type', 'Model', 'Chain','Residue Position', 'Residue Mutation Count', 'p-value', 'Density Z-score']]
     with open(opts['input']) as handle:
         # get csv reader
         myreader = csv.reader(handle, delimiter='\t')
@@ -32,7 +32,7 @@ def main(opts):
         chain_ix = header.index('Chain')
         res_ix = header.index('Mutation Residues')
         pval_ix = header.index('Hotspot P-value')
-        density_ix = header.index('Mutation Density')
+        density_ix = header.index('Residue Mutation Count')
         if 'Density Z-score' in header:
             zscore_ix = header.index('Density Z-score')
 

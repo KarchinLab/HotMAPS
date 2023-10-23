@@ -169,6 +169,7 @@ def get_group_pvals(clump_groups, gene_ind, transcript_ind,
 
         # Extract mutation count and check if it meets the threshold
         mutation_count = int(hspot_data[5])
+
         if mutation_count < opts["min_mutations"]:
             continue
 

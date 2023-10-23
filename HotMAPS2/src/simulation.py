@@ -28,8 +28,10 @@ def compute_pvals(density, sim_null):
         list of p-values for observed densities
     """
 
+
     # construct the cumulative distribution for the simulations
     sim_null_pval = np.cumsum(sim_null[:,1][::-1] / float(np.sum(sim_null[:,1])))[::-1]
+
 
     # get indices of p-value in simulated null distribution
     ixs = []
@@ -101,6 +103,7 @@ def generate_null_dist(struct_id, model_info, chain_info,
     res_keys = list(cog.keys())
     model_diff = False
     chain_diff = False
+
 
     # produce num_mutations number of mutations
     # num_sims number of times
@@ -188,7 +191,7 @@ def compute_significant_count(sim_null, sig_level):
     sim_null_pval = np.cumsum(sim_null[:,1][::-1] / float(np.sum(sim_null[:,1])))[::-1]
 
     # find counts that are significant
-    significant_counts = [sim_null[i][0]
+    significant_counts = [sim_null[i][0] 
                           for i in range(sim_null_pval.shape[0])
                           if sim_null_pval[i] <= sig_level]
 
