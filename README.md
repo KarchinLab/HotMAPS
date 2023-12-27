@@ -1,28 +1,28 @@
-# HotMAPS2
+# HotMAPS
 
-**HotMAPS2 is an updated version of the original HotMAPS.**
+**HotMAPS is an updated version of the original HotMAPS and starts at version 1.2. The old HotMAPS is renamed HotMAPs-2016.*
 
 ## About
 
-**Hotspot Missense mutation Areas in Protein Structures 2 (HotMAPS2)** is an advanced tool designed to detect somatic mutation hotspot regions in 3D protein structures. Understanding the impact of missense mutations in cancer can be challenging; however, mutations that occur at hotspots typically play a significant role in driving cancer development. HotMAPS2 identifies these hotspot regions at the residue level, accommodating various sizes, e.g., 1, 5, or more residues. 
+**Hotspot Missense mutation Areas in Protein Structures (HotMAPS)** is an advanced tool designed to detect somatic mutation hotspot regions in 3D protein structures. Understanding the impact of missense mutations in cancer can be challenging; however, mutations that occur at hotspots typically play a significant role in driving cancer development. HotMAPS identifies these hotspot regions at the residue level, accommodating various sizes, e.g., 1, 5, or more residues. 
 
-HotMAPS2 updates the original HotMAPS tool by providing a simplified workflow using Snakemake to analyze hotspot regions in a single protein or compare hotspot regions between two datasets on the same protein. HotMAPS2 now supports integration with Alphafold PDB predictions and can work offline with arbitrary user-supplied structures. Input formats have also been updated to support CLUMP mutation files for a consistent workflow.
+HotMAPS updates the original HotMAPS tool by providing a simplified workflow using Snakemake to analyze hotspot regions in a single protein or compare hotspot regions between two datasets on the same protein. HotMAPS now supports integration with Alphafold PDB predictions and can work offline with arbitrary user-supplied structures. Input formats have also been updated to support CLUMP mutation files for a consistent workflow.
 
 ## Features
 
-* **Offline Support**: HotMAPS2 can work offline with arbitrary user-supplied PDB structures including Alphafold predictions.
+* **Offline Support**: HotMAPS can work offline with arbitrary user-supplied PDB structures including Alphafold predictions.
 * **Snakemake Workflow**: Simplified and streamlined workflow using Snakemake.
-* **Multi-process**: HotMAPS2 hotspot detection can run multiple proteins in parallel.
+* **Multi-process**: HotMAPS hotspot detection can run multiple proteins in parallel.
 * **Dataset Comparison**: Users can now compare hotspot regions between two datasets on the same protein.
 * **Enhanced Visualization**: Visualize hotspots using Pymol.
 
 ## Installation
 
-Clone the HotMAPS2 repository to your local machine. HotMAPS2 provides a Conda environment file, hotmaps.yml, which lists all necessary packages. Anaconda and Snakemake are required to run HotMAPS2 pipelines. 
+Clone the HotMAPS repository to your local machine. HotMAPS provides a Conda environment file, hotmaps.yml, which lists all necessary packages. Anaconda and Snakemake are required to run HotMAPS pipelines. 
 
 ## Usage
 ### Input
-HotMAPS2 requires the following data as input:
+HotMAPS requires the following data as input:
 * **Gene Name File**: A newline-delimited file containing protein ids (eg. NP_001005484).
 * **CLUMP mutation file**: A tab-delimited file containing missense mutation data.
   * Column 1: GENE_HUGO_ID 	      Required
@@ -38,8 +38,8 @@ HotMAPS2 requires the following data as input:
 * **PDB Files**: A directory containing PDB files. The PDB files should be named using the following format: **protein_id.pdb** (eg. NP_001005484.pdb). 
 
 
-### Running HotMAPS2
-Run HotMAPS2 pipeline using the following command:
+### Running HotMAPS
+Run HotMAPS pipeline using the following command:
 
 ```snakemake --use-conda --cores 8 -s hotregion.snake --configfile hotregion.config.yaml```
 
@@ -49,17 +49,17 @@ To compare and visualize hotspot regions between two datasets, use the following
 
 ## Links
 
-* [HotMAPS](https://github.com/KarchinLab/HotMAPS)
+* [HotMAPS](https://github.com/KarchinLab/HotMAPS_2016)
 * [CLUMP](https://github.com/KarchinLab/CLUMP)
 
 
 ## Releases
 
-* HotMAPS2-1.0.0 Initial release (List subsequent releases as they occur)
+* HotMAPS-1.2.0 First release. The last HotMAPs_2016 release is 1.1.3 (List subsequent releases as they occur)
 
 ## Citation
 
-If you use HotMAPS2 in your research, please cite the original HotMAPS paper:
+If you use HotMAPS in your research, please cite the original HotMAPS paper:
 
 * Tokheim C, Bhattacharya R, Niknafs N, Gygax DM, Kim R, Ryan M, Masica DL, Karchin R (2016) Exome-scale discovery of hotspot mutation regions in human cancer using 3D protein structure Cancer Research Published OnlineFirst April 28, 2016; doi:10.1158/0008-5472.CAN-15-3190
   
@@ -67,11 +67,11 @@ If you use HotMAPS2 in your research, please cite the original HotMAPS paper:
 
 Releases can be found on github at:
 
-* [http://github.com/KarchinLab/HotMAPS2/releases](http://github.com/KarchinLab/HotMAPS2/releases)
+* [http://github.com/KarchinLab/HotMAPS2/releases](http://github.com/KarchinLab/HotMAPS/releases)
 
 ## Platform
 
-HotMAPS2 is compatible with **linux** operating systems. Ensure python is installed. For additional installation details, refer to the installation page.
+HotMAPS is compatible with **linux** operating systems. Ensure python is installed. For additional installation details, refer to the installation page.
 
 ## Support
 
