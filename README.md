@@ -55,11 +55,11 @@ To compare and visualize hotspot regions between two datasets, use the following
 
 ## Releases
 
-* HotMAPS-1.2.0 First release. The last HotMAPs_2016 release is 1.1.3 (List subsequent releases as they occur)
+* HotMAPs-1.2.0 First release. The last HotMAPs_2016 release is 1.1.3 (List subsequent releases as they occur)
 
 ## Citation
 
-If you use HotMAPS in your research, please cite the original HotMAPS paper:
+If you use HotMAPs in your research, please cite the original HotMAPs paper:
 
 * Tokheim C, Bhattacharya R, Niknafs N, Gygax DM, Kim R, Ryan M, Masica DL, Karchin R (2016) Exome-scale discovery of hotspot mutation regions in human cancer using 3D protein structure Cancer Research Published OnlineFirst April 28, 2016; doi:10.1158/0008-5472.CAN-15-3190
   
@@ -67,7 +67,7 @@ If you use HotMAPS in your research, please cite the original HotMAPS paper:
 
 Releases can be found on github at:
 
-* [http://github.com/KarchinLab/HotMAPS2/releases](http://github.com/KarchinLab/HotMAPS/releases)
+* [http://github.com/KarchinLab/HotMAPS/releases](http://github.com/KarchinLab/HotMAPS/releases)
 
 ## Platform
 
