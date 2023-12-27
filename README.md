@@ -1,12 +1,12 @@
-# HotMAPS
+# HotMAPs
 
-**HotMAPS is an updated version of the original HotMAPS and starts at version 1.2. The old HotMAPS is renamed HotMAPs-2016.*
+**HotMAPs is an updated version of the original HotMAPs and starts at version 1.2. The old HotMAPs is renamed HotMAPs-2016.*
 
 ## About
 
-**Hotspot Missense mutation Areas in Protein Structures (HotMAPS)** is an advanced tool designed to detect somatic mutation hotspot regions in 3D protein structures. Understanding the impact of missense mutations in cancer can be challenging; however, mutations that occur at hotspots typically play a significant role in driving cancer development. HotMAPS identifies these hotspot regions at the residue level, accommodating various sizes, e.g., 1, 5, or more residues. 
+**Hotspot Missense mutation Areas in Protein Structures (HotMAPs)** is an advanced tool designed to detect somatic mutation hotspot regions in 3D protein structures. Understanding the impact of missense mutations in cancer can be challenging; however, mutations that occur at hotspots typically play a significant role in driving cancer development. HotMAPs identifies these hotspot regions at the residue level, accommodating various sizes, e.g., 1, 5, or more residues. 
 
-HotMAPS updates the original HotMAPS tool by providing a simplified workflow using Snakemake to analyze hotspot regions in a single protein or compare hotspot regions between two datasets on the same protein. HotMAPS now supports integration with Alphafold PDB predictions and can work offline with arbitrary user-supplied structures. Input formats have also been updated to support CLUMP mutation files for a consistent workflow.
+HotMAPs updates the original HotMAPS tool by providing a simplified workflow using Snakemake to analyze hotspot regions in a single protein or compare hotspot regions between two datasets on the same protein. HotMAPS now supports integration with Alphafold PDB predictions and can work offline with arbitrary user-supplied structures. Input formats have also been updated to support CLUMP mutation files for a consistent workflow.
 
 ## Features
 
@@ -18,7 +18,7 @@ HotMAPS updates the original HotMAPS tool by providing a simplified workflow usi
 
 ## Installation
 
-Clone the HotMAPS repository to your local machine. HotMAPS provides a Conda environment file, hotmaps.yml, which lists all necessary packages. Anaconda and Snakemake are required to run HotMAPS pipelines. 
+Clone the HotMAPs repository to your local machine. HotMAPS provides a Conda environment file, hotmaps.yml, which lists all necessary packages. Anaconda and Snakemake are required to run HotMAPS pipelines. 
 
 ## Usage
 ### Input
@@ -39,7 +39,7 @@ HotMAPS requires the following data as input:
 
 
 ### Running HotMAPS
-Run HotMAPS pipeline using the following command:
+Run HotMAPs pipeline using the following command:
 
 ```snakemake --use-conda --cores 8 -s hotregion.snake --configfile hotregion.config.yaml```
 
@@ -71,7 +71,7 @@ Releases can be found on github at:
 
 ## Platform
 
-HotMAPS is compatible with **linux** operating systems. Ensure python is installed. For additional installation details, refer to the installation page.
+HotMAPs is compatible with **linux** operating systems. Ensure python is installed. For additional installation details, refer to the installation page.
 
 ## Support
 
