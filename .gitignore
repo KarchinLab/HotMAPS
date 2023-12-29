@@ -13,3 +13,15 @@ logs/
 output/**
 .snakemake/
 ./DS_Store
+
+# Ignore everything in repository root 
+/*
+
+# Files to not ignore
+!/.gitignore
+!/*yml
+!/*yaml
+!/*snake
+
+# Folder to not ignore
+!/HotMAPS
