@@ -61,7 +61,7 @@ def parse_arguments():
     parser.add_argument('-s', '--significance-level',
                         type=str, required=True,
                         help='Output file to write the significance level cutoff'
-                        ' for each tumor type')
+                        ' for each dataset')
     
 
     args = parser.parse_args()
@@ -272,7 +272,7 @@ def main(opts):
             stratified_hotspot_output[ttype].append(hspot_data)
 
     # open a file to write results to
-    header = ["HUGO Symbol", "Tumor Type",
+    header = ["HUGO Symbol", "Dataset Name",
               "Sequence Ontology Transcript", "Chain", "Mutation Residue",
               "Ref AA",
               'chromosome', 'genomic position',

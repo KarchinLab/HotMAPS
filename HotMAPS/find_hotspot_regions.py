@@ -89,7 +89,7 @@ def read_residue_info(path):
     header = header.strip()
     header = header.split('\t')
     struct_ix = header.index("Structure")
-    ttype_ix = header.index("Tumor Type")
+    ttype_ix = header.index("Dataset Name")
     model_ix = header.index("Model")
     chain_ix = header.index("Chain")
     res_ix = header.index("Mutation Residues")
@@ -153,7 +153,7 @@ def read_mtc_file(path):
     # record the position of the columns in the header
     column_dict = {
         'gene': header.index('HUGO Symbol'),
-        'tumor_type': header.index('Tumor Type'),
+        'tumor_type': header.index('Dataset Name'),
         'tx': header.index('Sequence Ontology Transcript'),
         'chain': header.index('Chain'),
         'res': header.index('Mutation Residue'),
@@ -430,7 +430,7 @@ def main(opts):
     #mtc = read_delim(opts['multiple_testing'])
     header = hotspots.pop(0)
 
-    ttype_ix = header.index('Tumor Type')
+    ttype_ix = header.index('Dataset Name')
     struct_ix = header.index('Structure')
     model_ix = header.index('Model')
     chain_ix = header.index('Chain')
@@ -556,7 +556,7 @@ def main(opts):
     '''
     with open(opts['output'], 'w') as handle:
     # Write a header
-        handle.write('Protein_ID\tTumor_Type\tHotspot_Info\n')
+        handle.write('Protein_ID\tDataset_Name\tHotspot_Info\n')
         
         for line in output:
             print(line)

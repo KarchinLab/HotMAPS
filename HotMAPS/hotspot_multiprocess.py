@@ -276,7 +276,7 @@ def main(opts):
     with open(output_merged_file, 'w') as handle:
 
         # write header to output
-        csv.writer(handle, delimiter='\t', lineterminator='\n').writerow(['Structure', 'Tumor Type', 'Model', 'Chain', 'Mutation Residues',
+        csv.writer(handle, delimiter='\t', lineterminator='\n').writerow(['Structure', 'Dataset Name', 'Model', 'Chain', 'Mutation Residues',
             'Residue Mutation Count', 'Mutation Density', 'Hotspot P-value'])
         for result in results:
             csv.writer(handle, delimiter='\t', lineterminator='\n').writerows(result)

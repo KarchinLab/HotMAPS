@@ -17,12 +17,12 @@ def parse_arguments():
     parser.add_argument('-j', '--input2',
                         type=str, required=True,
                         help='Output file from find_hotspot_regions')
-    parser.add_argument('-t1', '--tumor_name1',
+    parser.add_argument('-t1', '--dataset_name1',
                         type=str, required=True,
-                        help='Tumor name for input1')
-    parser.add_argument('-t2', '--tumor_name2',
+                        help='Dataset name for input1')
+    parser.add_argument('-t2', '--dataset_name2',
                         type=str, required=True,
-                        help='Tumor name for input2')
+                        help='Dataset name for input2')
     parser.add_argument('-s', '--structure',
                         type=str, required=True,
                         help='Folder containing PDB files')
@@ -74,8 +74,8 @@ def main(opts):
     regions1 = opts['input1']
     regions2 = opts['input2']
     compare_file = opts['compare_file']
-    tumor_name1 = opts['tumor_name1']
-    tumor_name2 = opts['tumor_name2']
+    tumor_name1 = opts['dataset_name1']
+    tumor_name2 = opts['dataset_name2']
     structure_folder_path = opts['structure']
     output_folder = opts['output']
 

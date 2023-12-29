@@ -275,7 +275,7 @@ def main(opts):
                 # write output to file if individual output is turned on
                 if opts['individual_output'] == True:
                     # add header to output
-                    output = [['Structure', 'Tumor Type', 'Model', 'Chain', 'Mutation Residues',
+                    output = [['Structure', 'Dataset Name', 'Model', 'Chain', 'Mutation Residues',
                             'Residue Mutation Count', 'Mutation Density', 'Hotspot P-value',
                             ]] + output
 
