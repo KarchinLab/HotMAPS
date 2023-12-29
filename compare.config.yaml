@@ -7,3 +7,4 @@ tumor2: "COAD"
 distance: 10
 compare_dir: "output/NDDvsCOAD/"
 structures_dir: "/lab/projects1/GRUMP/CLUMP-master/January_17_2023/"
+clump_input: "" 
