@@ -20,7 +20,7 @@ For [CLUMP](https://github.com/KarchinLab/CLUMP) users: HotMAPs input format has
 
 ## Installation
 
-Clone the HotMAPs repository to your local machine. HotMAPS provides a Conda environment file, hotmaps.yml, which lists all necessary packages. Anaconda and Snakemake are required to run HotMAPS pipelines. 
+Clone the HotMAPs repository to your local machine. HotMAPS provides a Conda environment file, **hotmaps.yml**, which lists all necessary packages. Anaconda and Snakemake are required to run HotMAPS pipelines. 
 
 ## Usage
 ### Input
@@ -57,10 +57,17 @@ HotMAPS generates the following output files in the output directory:
 * **dataset_significance_level.txt**: A file containing the significance level cutoff for the dataset.
 * **dataset_hotregions.txt**: A tab-delimited file containing HotMAPS-detected hot regions in each protein, one protein per line in the following format: ```coord@model:chain:resid;coord@model:chain:resid|coord@model:chain:resid;coord@model:chain:resid|...```
 
+HotMAPS comparison script generates the following output files in the comparison output directory:
+* **compare_dataset1_dataset2.tsv**: A comppiled file containing hotspots and hot regions from both datasets.
+* **pml/dataset1_dataset2_hugo_proteinid.pml**: Pymol scripts to visualize the protein structure and hotspots from both datasets.
+* **pml/dataset1_dataset2_hugo_proteinid.pse**: Pymol session file to visualize the protein structure and hotspots from both datasets.
+* **pml/dataset1_dataset2_hugo_proteinid.png**: Pymol image file to visualize the protein structure and hotspots from both datasets.
+Note that the Pymol scripts and session file can be used to visualize the protein structure and hotspots from both datasets using the Pymol software. The Pymol image file is a static image of the protein structure and hotspots from both datasets. By default, hotspots in dataset1 is colored in read and hotspots dataset2 is colored in blue, hotspots in both datasets are colored in purple. Hot region is represented by mesh surface of the residues in the hot region.
+
 
 ## Links
 
-* [HotMAPS](https://github.com/KarchinLab/HotMAPS_2016)
+* [HotMAPS_2016](https://github.com/KarchinLab/HotMAPS_2016)
 
 
 ## Releases
@@ -85,4 +92,4 @@ HotMAPs is compatible with **linux** operating systems. Ensure python is install
 
 ## Support
 
-For suggestions, questions, or bug reports, please contact Yilin Chen (ychen338 at jhu dot edu).
+For suggestions, questions, or bug reports, please contact Yilin Chen (yilinc5 at stanford dot edu).
