@@ -26,16 +26,16 @@ Clone the HotMAPs repository to your local machine. HotMAPS provides a Conda env
 ### Input
 HotMAPS requires the following data as input:
 * **Gene Name File**: A newline-delimited file containing protein ids (eg. NP_001005484).
-* **CLUMP mutation file**: A tab-delimited file containing missense mutation data.
+* **Mutation File**: A tab-delimited file containing missense mutation data.
   * Column 1: GENE_HUGO_ID 	      Required
-  * Column 2: PROTEIN_ID 	       Required: Must match Protein Id's provided in the protein length file
-  * Column 3: STUDY_NAME 	       Used as a column placeholder in CLUMP scripts (Can use NA if unavailable)
+  * Column 2: PROTEIN_ID 	       Required: Must match Protein Id's provided in the gene name file and naming of PDB files
+  * Column 3: STUDY_NAME 	       Used as a column placeholder in the scripts (Can use NA if unavailable)
   * Column 4: AMINO_ACID_POSITION  Required: Amino Acid position of the variant
-  * Column 5: CHROM 	       Used as a column placeholder in CLUMP scripts (Can use NA if unavailable)
-  * Column 6: POSITION 	       Used as a column placeholder in CLUMP scripts (Can use NA if unavailable)
-  * Column 7: REF Allele	       Used as a column placeholder in CLUMP scripts (Can use NA if unavailable)
-  * Column 8: ALT Allele	       Used as a column placeholder in CLUMP scripts (Can use NA if unavailable)
-  * Column 9: ALLELE_FREQUENCY     Required column. Need to add a value between 0 and 1. If you do not know it can just be 0 unless you are actually using the allele frequency feature of CLUMP.
+  * Column 5: CHROM 	       Used as a column placeholder in the scripts (Can use NA if unavailable)
+  * Column 6: POSITION 	       Used as a column placeholder in the scripts (Can use NA if unavailable)
+  * Column 7: REF Allele	       Used as a column placeholder in the scripts (Can use NA if unavailable)
+  * Column 8: ALT Allele	       Used as a column placeholder in the scripts (Can use NA if unavailable)
+  * Column 9: ALLELE_FREQUENCY     RUsed as a column placeholder in the scripts (Can use 0 if unavailable)
   * Column 10:DOMAIN	       Optional column (can be NA)
 * **PDB Files**: A directory containing PDB files. The PDB files should be named using the following format: **protein_id.pdb** (eg. NP_001005484.pdb). 
 
@@ -52,7 +52,6 @@ To compare and visualize hotspot regions between two datasets, use the following
 ## Links
 
 * [HotMAPS](https://github.com/KarchinLab/HotMAPS_2016)
-* [CLUMP](https://github.com/KarchinLab/CLUMP)
 
 
 ## Releases
