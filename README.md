@@ -6,7 +6,9 @@
 
 **Hotspot Missense mutation Areas in Protein Structures (HotMAPs)** is an advanced tool designed to detect somatic mutation hotspot regions in 3D protein structures. Understanding the impact of missense mutations in cancer can be challenging; however, mutations that occur at hotspots typically play a significant role in driving cancer development. HotMAPs identifies these hotspot regions at the residue level, accommodating various sizes, e.g., 1, 5, or more residues. 
 
-HotMAPs updates the original HotMAPS tool by providing a simplified workflow using Snakemake to analyze hotspot regions in a single protein or compare hotspot regions between two datasets on the same protein. HotMAPS now supports integration with Alphafold PDB predictions and can work offline with arbitrary user-supplied structures. Input formats have also been updated to support CLUMP mutation files for a consistent workflow.
+HotMAPs updates the original HotMAPS tool by providing a simplified workflow using Snakemake to analyze hotspot regions in a single protein or compare hotspot regions between two datasets on the same protein. HotMAPS now supports integration with Alphafold PDB predictions and can work offline with arbitrary user-supplied structures. 
+
+For [CLUMP](https://github.com/KarchinLab/CLUMP) users: HotMAPs input format has been updated to support CLUMP mutation file format for a consistent workflow incorporating both tools.
 
 ## Features
 
