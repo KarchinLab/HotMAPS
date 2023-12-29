@@ -11,7 +11,7 @@ rule prepare_mutations:
         f"{config['conda_env']}"
     shell:
         """
-	awk  '{{{{ print $2, "ndd_out", $4":A" }}}}' {config[mutation_input]} | sort |  uniq -c | awk -v OFS='\t' '{{{{print $2, $3, $4, $1}}}}' > {output[0]}
+	awk  '{{{{ print $2, "{config[dataset_name]}", $4":A" }}}}' {config[mutation_input]} | sort |  uniq -c | awk -v OFS='\t' '{{{{print $2, $3, $4, $1}}}}' > {output[0]}
         """
 
 rule hotspot:
