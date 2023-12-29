@@ -1,6 +1,6 @@
 # HotMAPs
 
-**HotMAPs is an updated version of the original HotMAPs and starts at version 1.2. The old HotMAPs is renamed HotMAPs-2016.*
+**HotMAPs is an updated version of the original HotMAPs and starts at version 1.2. The old HotMAPs is renamed HotMAPs-2016.* 
 
 ## About
 
