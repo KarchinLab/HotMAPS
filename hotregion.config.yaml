@@ -1,13 +1,13 @@
-code_dir: "HotMAPS2/HotMAPS2/"
-conda_env: "hotmaps.yml"
-clump_input: "data/vep_ndd_out.txt_clump_input_rightdomain.txt"
-gnf: "data/NDD.gnf"
-structure_path: "/lab/projects1/GRUMP/CLUMP-master/January_17_2023/"
-output_dir: "output/NDD/"
-log_dir: "log/"
-multiproc: "_multiprocess" 
-tumor_type: "NDD"
-n: 1000
-r: 10.0
-q: "0.01"
-cores: 8
+code_dir: "HotMAPS/"  # absolute path to HotMAPS code directory
+conda_env: "hotmaps.yml" # conda environment
+mutation_input: "folder/mutation_input.txt" # absolute path to mutation input file
+gnf: "folder/gene_names.gnf" # absolute path to gene name file
+structure_path: "folder/structure_folder/" # absolute path to folder containing pdb structures
+output_dir: "folder/output/" # absolute path to output folder
+log_dir: "folder/log/" # absolute path to folder where logs are stored
+multiproc: "_multiprocess"  # Either "_multiprocess" or "", whether to use python multiprocess
+dataset_name: "dataset1" # name of dataset
+n: 1000 # number of permutation
+r: 10.0 # radius 
+q: "0.01" # q value threshold
+cores: 8 # number of cores used in running

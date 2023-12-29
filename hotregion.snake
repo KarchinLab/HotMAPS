@@ -2,23 +2,23 @@ configfile: "config.yaml"
 
 rule all:
     input:
-        f"{config['output_dir']}{config['tumor_type']}_hotregions.txt"
+        f"{config['output_dir']}{config['dataset_name']}_hotregions.txt"
 
 rule prepare_mutations:
     output:
-        f"{config['output_dir']}{config['tumor_type']}_mutation_counts.txt"
+        f"{config['output_dir']}{config['dataset_name']}_mutation_counts.txt"
     conda:
         f"{config['conda_env']}"
     shell:
         """
-	awk  '{{{{ print $2, "ndd_out", $4":A" }}}}' {config[clump_input]} | sort |  uniq -c | awk -v OFS='\t' '{{{{print $2, $3, $4, $1}}}}' > {output[0]}
+	awk  '{{{{ print $2, "ndd_out", $4":A" }}}}' {config[mutation_input]} | sort |  uniq -c | awk -v OFS='\t' '{{{{print $2, $3, $4, $1}}}}' > {output[0]}
         """
 
 rule hotspot:
     input:
-        f"{config['output_dir']}{config['tumor_type']}_mutation_counts.txt"
+        f"{config['output_dir']}{config['dataset_name']}_mutation_counts.txt"
     output:
-        merged_output = f"{config['output_dir']}{config['tumor_type']}_merged_hotspots.txt"
+        merged_output = f"{config['output_dir']}{config['dataset_name']}_merged_hotspots.txt"
     conda:
         f"{config['conda_env']}"
     shell:
@@ -30,21 +30,21 @@ rule hotspot:
                                    -r {config[r]} \
                                    -c {config[cores]} \
                                    -od "{config[output_dir]}" \
-                                   -o "{config[tumor_type]}_merged_hotspots.txt" \
+                                   -o "{config[dataset_name]}_merged_hotspots.txt" \
                                    -l "{config[log_dir]}"
         """
 
 rule multiple_testing_correction:
     input:
-        f"{config['output_dir']}{config['tumor_type']}_merged_hotspots.txt"
+        f"{config['output_dir']}{config['dataset_name']}_merged_hotspots.txt"
     output:
-        significance_level = f"{config['output_dir']}{config['tumor_type']}_significance_level.txt",
-        corrected_output = f"{config['output_dir']}{config['tumor_type']}_hotspots_multitestcorrected.txt"
+        significance_level = f"{config['output_dir']}{config['dataset_name']}_significance_level.txt",
+        corrected_output = f"{config['output_dir']}{config['dataset_name']}_hotspots_multitestcorrected.txt"
     conda:
         f"{config['conda_env']}"
     shell:
         """
-        python {config[code_dir]}multiple_testing_correction.py -c "{config[clump_input]}" \
+        python {config[code_dir]}multiple_testing_correction.py -c "{config[mutation_input]}" \
                                                  -m "{config[m]}" \
                                                  -i "{input[0]}" \
                                                  -q "{config[q]}" \
@@ -54,11 +54,11 @@ rule multiple_testing_correction:
 
 rule find_hotspot_regions:
     input:
-        merged_output = f"{config['output_dir']}{config['tumor_type']}_merged_hotspots.txt",
-        corrected_output = f"{config['output_dir']}{config['tumor_type']}_hotspots_multitestcorrected.txt",
-        significance_level = f"{config['output_dir']}{config['tumor_type']}_significance_level.txt"
+        merged_output = f"{config['output_dir']}{config['dataset_name']}_merged_hotspots.txt",
+        corrected_output = f"{config['output_dir']}{config['dataset_name']}_hotspots_multitestcorrected.txt",
+        significance_level = f"{config['output_dir']}{config['dataset_name']}_significance_level.txt"
     output:
-        f"{config['output_dir']}{config['tumor_type']}_hotregions.txt"
+        f"{config['output_dir']}{config['dataset_name']}_hotregions.txt"
     conda:
         f"{config['conda_env']}"
     shell:
