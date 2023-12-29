@@ -58,13 +58,16 @@ def reimport_hotregions(filename):
             dataset1_regions = eval(parts[3]) if parts[2] != '[]' else []
             dataset2_spots = eval(parts[4]) if parts[4] != '[]' else []
             dataset2_regions = eval(parts[5]) if parts[5] != '[]' else []
+            shared_hotspots = eval(parts[6]) if parts[6] != '[]' else []
 
             dataset1_hotregions[protein_id] = dataset1_regions
             dataset2_hotregions[protein_id] = dataset2_regions
             dataset1_hotspots[protein_id] = dataset1_spots
             dataset2_hotspots[protein_id] = dataset2_spots
+            shared_hotspots[protein_id] = shared_hotspots
 
-    return protein_hugo_tuples, dataset1_hotspots, dataset1_hotregions, dataset2_hotspots, dataset2_hotregions
+
+    return protein_hugo_tuples, dataset1_hotspots, dataset1_hotregions, dataset2_hotspots, dataset2_hotregions, shared_hotspots
 
 
 
@@ -91,6 +94,7 @@ def main(opts):
         spot2 = hotspots2[id]
         region1 = hotregions1[id]
         region2 = hotregions2[id]
+        shared_hotspots = shared_hotspots[id]
         script_name = f'{output_folder}/{dataset_name1}_{dataset_name2}_{gene}_{id}.pml'
 
 
@@ -104,13 +108,15 @@ def main(opts):
             # select hotspots and show as spheres
             spot_res1 = [str(x) for x in spot1]
             spot_res2 = [str(x) for x in spot2]
-            file.write(f'select {tumor_name1}_hotspots, resi {"+".join(spot_res1)}\n')
-            file.write(f'select {tumor_name2}_hotspots, resi {"+".join(spot_res2)}\n')
-            file.write(f'show spheres, {tumor_name1}_hotspots and name CA\n')
-            file.write(f'show spheres, {tumor_name2}_hotspots and name CA\n')
-            file.write(f'color red, {tumor_name1}_hotspots\n')
-            file.write(f'color blue, {tumor_name2}_hotspots\n')
-
+            file.write(f'select {dataset_name1}_hotspots, resi {"+".join(spot_res1)}\n')
+            file.write(f'select {dataset_name2}_hotspots, resi {"+".join(spot_res2)}\n')
+            file.write(f'show spheres, {dataset_name1}_hotspots and name CA\n')
+            file.write(f'show spheres, {dataset_name2}_hotspots and name CA\n')
+            file.write(f'color red, {dataset_name1}_hotspots\n')
+            file.write(f'color blue, {dataset_name2}_hotspots\n')
+            file.write (f'select shared_hotspots, resi {"+".join(shared_hotspots)}\n')
+            file.write (f'show spheres, shared_hotspots and name CA\n')
+            file.write (f'color purple, shared_hotspots\n')
     
             '''
             select dataset1_hotregion1, resi 368
@@ -121,7 +127,7 @@ def main(opts):
             count = 1
             for region in region1:
                 #print(region)
-                selection_name = f'{tumor_name1}_hotregion{count}'
+                selection_name = f'{dataset_name1}_hotregion{count}'
                 res = [str(x) for x in region]
                 file.write(f'select {selection_name}, resi {"+".join(res)}\n')
                 file.write(f'create {selection_name}_obj, {selection_name}\n')
@@ -131,7 +137,7 @@ def main(opts):
 
             count = 1
             for region in region2:
-                selection_name = f'{tumor_name2}_hotregion{count}'
+                selection_name = f'{dataset_name2}_hotregion{count}'
                 res = [str(x) for x in region]
                 file.write(f'select {selection_name}, resi {"+".join(res)}\n')
                 file.write(f'create {selection_name}_obj, {selection_name}\n')
@@ -141,9 +147,9 @@ def main(opts):
                 
 
             file.write(f'zoom\n')
-            file.write(f'save {tumor_name1}_{tumor_name2}_{gene}_{id}.pse\n')
+            file.write(f'save {dataset_name1}_{dataset_name2}_{gene}_{id}.pse\n')
             file.write(f'ray\n')  # Raytrace before saving the image
-            file.write(f'png {tumor_name1}_{tumor_name2}_{gene}_{id}.png\n')
+            file.write(f'png {dataset_name1}_{dataset_name2}_{gene}_{id}.png\n')
             #file.write(f"delete {protein}\n")
             file.write(f'quit\n')
 
