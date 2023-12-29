@@ -49,6 +49,15 @@ To compare and visualize hotspot regions between two datasets, use the following
 
 ```snakemake --use-conda --cores 8 -s compare.snake --configfile compare.config.yaml```
 
+### Output
+HotMAPS generates the following output files in the output directory:
+* **dataset_mutation_counts.txt**: A tab-delimited file containing the number of mutations per residue number per protein in mutation file input.
+* **dataset_merged_hotspots.txt**: A tab-delimited file containing HotMAPS-detected hotspots in each protein, one protein per line.
+* **dataset_hotspots_multitestcorrected.txt**: A tab-delimited file containing HotMAPS-detected hotspots in each protein, one hotspot per line, with multiple testing correction applied.
+* **dataset_significance_level.txt**: A file containing the significance level cutoff for the dataset.
+* **dataset_hotregions.txt**: A tab-delimited file containing HotMAPS-detected hot regions in each protein, one protein per line in the following format: coord@model:chain:resid;coord@model:chain:resid|coord@model:chain:resid;coord@model:chain:resid|...
+
+
 ## Links
 
 * [HotMAPS](https://github.com/KarchinLab/HotMAPS_2016)
