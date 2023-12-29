@@ -55,7 +55,7 @@ HotMAPS generates the following output files in the output directory:
 * **dataset_merged_hotspots.txt**: A tab-delimited file containing HotMAPS-detected hotspots in each protein, one protein per line.
 * **dataset_hotspots_multitestcorrected.txt**: A tab-delimited file containing HotMAPS-detected hotspots in each protein, one hotspot per line, with multiple testing correction applied.
 * **dataset_significance_level.txt**: A file containing the significance level cutoff for the dataset.
-* **dataset_hotregions.txt**: A tab-delimited file containing HotMAPS-detected hot regions in each protein, one protein per line in the following format: coord@model:chain:resid;coord@model:chain:resid|coord@model:chain:resid;coord@model:chain:resid|...
+* **dataset_hotregions.txt**: A tab-delimited file containing HotMAPS-detected hot regions in each protein, one protein per line in the following format: ```coord@model:chain:resid;coord@model:chain:resid|coord@model:chain:resid;coord@model:chain:resid|...```
 
 
 ## Links
