@@ -24,7 +24,7 @@ def parse_arguments():
     parser.add_argument('-r2', '--hotregions2', type=str, required=True,
                         help='Name of the hotregions file for dataset2.')
     parser.add_argument('-o', '--output', type=str, required=True,
-                        help='Name of the output file.')
+                        help='Name of the output directory.')
     
     # Parse arguments
     args = parser.parse_args()
@@ -137,9 +137,8 @@ def main(opts):
     compare_df[f"{dataset2}_hotregions"] = compare_df["Transcript ID"].apply(lambda x: str(ds2_regions.get(x, "[]")).replace("'", ""))
     compare_df["Shared_hotspots"] = compare_df["Transcript ID"].apply(lambda x: str(list(set(ds1_hotspots[x]).intersection(set(ds2_hotspots[x])))).replace("'", ""))
 
-    # write compare_df to output file
-    compare_df.to_csv(output, sep="\t", index=False)
-
+    # write compare_df to output directory as a tabular file
+    compare_df.to_csv(f"{output}/compare_{dataset1}_{dataset2}.tsv", sep="\t", index=False)
 
 
 if __name__ == '__main__':
