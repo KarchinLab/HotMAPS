@@ -2,13 +2,13 @@ configfile: "compare2.config.yaml"
 
 rule all:
     input:
-        f"{config['compare_dir']}{config['tumor1']}_{config['tumor2']}_diff2.txt",
+        f"{config['compare_dir']}{config['dataset1']}_{config['dataset2']}_diff2.txt",
         f"{config['compare_dir']}pml/"
    
 
 rule compare_hotregions:
     output:
-        f"{config['compare_dir']}{config['tumor1']}_{config['tumor2']}_diff2.txt"
+        f"{config['compare_dir']}{config['dataset1']}_{config['dataset2']}_diff2.txt"
     conda:
         f"{config['conda_env']}"
     shell:
@@ -16,12 +16,12 @@ rule compare_hotregions:
         python {config[code_dir]}compare_hotregions2.py -i "{config[hotregion1]}" \
             -j "{config[hotregion2]}" \
             -d {config[distance]} \
-            -o "{config[compare_dir]}{config[tumor1]}_{config[tumor2]}_diff2.txt"
+            -o "{config[compare_dir]}{config[dataset1]}_{config[dataset2]}_diff2.txt"
 
         """
 rule visualize_hotregions:
     input:
-        f"{config['compare_dir']}{config['tumor1']}_{config['tumor2']}_diff2.txt"
+        f"{config['compare_dir']}{config['dataset1']}_{config['dataset2']}_diff2.txt"
     output:
         directory(f"{config['compare_dir']}pml/")
     conda:
@@ -29,11 +29,11 @@ rule visualize_hotregions:
     shell:
         """
         mkdir {output[0]}
-        python {config[code_dir]}significant_hotregions_visualize.py -c "{config[compare_dir]}{config[tumor1]}_{config[tumor2]}_diff2.txt" \
+        python {config[code_dir]}significant_hotregions_visualize.py -c "{config[compare_dir]}{config[dataset1]}_{config[dataset2]}_diff2.txt" \
             -i "{config[hotregion1]}" \
             -j "{config[hotregion2]}" \
-            -t1 "{config[tumor1]}" \
-            -t2 "{config[tumor2]}" \
+            -t1 "{config[dataset1]}" \
+            -t2 "{config[dataset2]}" \
             -s "{config[structures_dir]}" \
             -o "{config[compare_dir]}pml/"
    
@@ -43,15 +43,15 @@ rule visualize_hotregions:
         """
 rule write_info:
     input:
-        f"{config['compare_dir']}{config['tumor1']}_{config['tumor2']}_diff2.txt"
+        f"{config['compare_dir']}{config['dataset1']}_{config['dataset2']}_diff2.txt"
     output:
-        f"{config['compare_dir']}{config['tumor1']}_{config['tumor2']}_info2.txt"
+        f"{config['compare_dir']}{config['dataset1']}_{config['dataset2']}_info2.txt"
     conda:
         f"{config['conda_env']}"
     shell:
         """
         awk 'NR==FNR {a[$1]=$2; next} $1 in a {print $1, a[$1], $3}' \
-            <(awk 'NR==FNR {a[$1]; next} $2 in a {print $2, $1}' {config['compare_dir']}{config['tumor1']}_{config['tumor2']}_diff.txt {config[clump_input]}) \
+            <(awk 'NR==FNR {a[$1]; next} $2 in a {print $2, $1}' {config['compare_dir']}{config['dataset1']}_{config['dataset2']}_diff.txt {config[mutation_input]}) \
             "{config[hotregion1]}" | \
             awk 'NR==FNR {b[$1]=$3; next} $1 in b {print $0, b[$1]}' {config[hotregion2]} - > {output[0]}
         """
