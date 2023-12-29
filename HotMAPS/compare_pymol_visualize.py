@@ -41,6 +41,7 @@ def reimport_hotregions(filename):
     dataset2_hotregions = {}
     dataset1_hotspots = {}
     dataset2_hotspots = {}
+    shared_hotspots = {}
 
     with open(filename, 'r') as file:
         next(file)  # Skip the header line
@@ -58,13 +59,13 @@ def reimport_hotregions(filename):
             dataset1_regions = eval(parts[3]) if parts[2] != '[]' else []
             dataset2_spots = eval(parts[4]) if parts[4] != '[]' else []
             dataset2_regions = eval(parts[5]) if parts[5] != '[]' else []
-            shared_hotspots = eval(parts[6]) if parts[6] != '[]' else []
+            shared = eval(parts[6]) if parts[6] != '[]' else []
 
             dataset1_hotregions[protein_id] = dataset1_regions
             dataset2_hotregions[protein_id] = dataset2_regions
             dataset1_hotspots[protein_id] = dataset1_spots
             dataset2_hotspots[protein_id] = dataset2_spots
-            shared_hotspots[protein_id] = shared_hotspots
+            shared_hotspots[protein_id] = shared
 
 
     return protein_hugo_tuples, dataset1_hotspots, dataset1_hotregions, dataset2_hotspots, dataset2_hotregions, shared_hotspots
@@ -81,7 +82,7 @@ def main(opts):
     dataset_name2 = opts['dataset2']
 
     # import hotspots ahd hotregions
-    protein_info, hotspots1, hotregions1, hotspots2, hotregions2 = reimport_hotregions(compare_file)
+    protein_info, hotspots1, hotregions1, hotspots2, hotregions2, shared = reimport_hotregions(compare_file)
 
 
     # Iterate over common proteins
@@ -94,7 +95,8 @@ def main(opts):
         spot2 = hotspots2[id]
         region1 = hotregions1[id]
         region2 = hotregions2[id]
-        shared_hotspots = shared_hotspots[id]
+        shared_hotspots = [str(x) for x in shared[id]]
+
         script_name = f'{output_folder}/{dataset_name1}_{dataset_name2}_{gene}_{id}.pml'
 
 
@@ -114,9 +116,10 @@ def main(opts):
             file.write(f'show spheres, {dataset_name2}_hotspots and name CA\n')
             file.write(f'color red, {dataset_name1}_hotspots\n')
             file.write(f'color blue, {dataset_name2}_hotspots\n')
-            file.write (f'select shared_hotspots, resi {"+".join(shared_hotspots)}\n')
-            file.write (f'show spheres, shared_hotspots and name CA\n')
-            file.write (f'color purple, shared_hotspots\n')
+            if shared_hotspots != []:
+                file.write (f'select shared_hotspots, resi {"+".join(shared_hotspots)}\n')
+                file.write (f'show spheres, shared_hotspots and name CA\n')
+                file.write (f'color purple, shared_hotspots\n')
     
             '''
             select dataset1_hotregion1, resi 368
