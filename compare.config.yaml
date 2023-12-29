@@ -1,10 +1,10 @@
 code_dir: "HotMAPS/"  # absolute path to HotMAPS code directory
 conda_env: "hotmaps.yml" # conda environment
-hotregion1: "output/dataset1/dataset1_hotregions.txt" # absolute path to hotmaps hotregion output of dataset1
-hotregion2: "output/dataset2/dataset2_hotregions.txt" # absolute path to hotmaps hotregion output of dataset2
+hotspots1: "output/dataset1/dataset1_multitestcorrected.txt" # absolute path to hotmaps multitestcorrected hotspots output of dataset1
+hotspots2: "output/dataset1/dataset2_multitestcorrected.txt" # absolute path to hotmaps multitestcorrected hotspots output of dataset2
+hotregions1: "output/dataset1/dataset1_hotregions.txt" # absolute path to hotmaps hotregion output of dataset1
+hotregions2: "output/dataset2/dataset2_hotregions.txt" # absolute path to hotmaps hotregion output of dataset2
 dataset1: "dataset1" # name of dataset 1
 dataset2: "dataset2" # name of dataset 2
-distance: 10 # distance in A to consider two regions far apart
-compare_dir: "output/dataset1vsdataset2/" # absolute path of comparison output
+compare_dir: "output/dataset1vsdataset2/" # absolute path of folder to write comparison and visualization output
 structure_path: "folder/structure_folder/" # absolute path to folder containing pdb structures
-mutation_input: "folder/mutation_input.txt" # absolute path to mutation input file

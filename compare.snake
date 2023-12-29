@@ -2,7 +2,7 @@ configfile: "compare2.config.yaml"
 
 rule all:
     input:
-        f"{config['compare_dir']}{config['dataset1']}_{config['dataset2']}_diff2.txt",
+        f"{config['compare_dir']}compare_{config['dataset1']}_{config['dataset2']}_resultcompare.tsv",
         f"{config['compare_dir']}pml/"
    
 
@@ -13,15 +13,18 @@ rule compare_hotregions:
         f"{config['conda_env']}"
     shell:
         """
-        python {config[code_dir]}compare_hotregions2.py -i "{config[hotregion1]}" \
-            -j "{config[hotregion2]}" \
-            -d {config[distance]} \
-            -o "{config[compare_dir]}{config[dataset1]}_{config[dataset2]}_diff2.txt"
+        python {config[code_dir]}generate_compare_result.py -d1 "{config[dataset1]}" \ 
+            -d2 "{config[dataset1]}" \
+            -s1 "{config[hotspots1]}" \
+            -s2 "{config[hotspots2]}" \
+            -r1 "{config[hotregions1]}" \
+            -r2 "{config[hotregions2]}" \
+            -o "{config[compare_dir]}"
 
         """
 rule visualize_hotregions:
     input:
-        f"{config['compare_dir']}{config['dataset1']}_{config['dataset2']}_diff2.txt"
+        f"{config['compare_dir']}compare_{config['dataset1']}_{config['dataset2']}_resultcompare.tsv"
     output:
         directory(f"{config['compare_dir']}pml/")
     conda:
@@ -29,31 +32,15 @@ rule visualize_hotregions:
     shell:
         """
         mkdir {output[0]}
-        python {config[code_dir]}significant_hotregions_visualize.py -c "{config[compare_dir]}{config[dataset1]}_{config[dataset2]}_diff2.txt" \
-            -i "{config[hotregion1]}" \
-            -j "{config[hotregion2]}" \
-            -t1 "{config[dataset1]}" \
-            -t2 "{config[dataset2]}" \
+        python {config[code_dir]}compare_pymol_visualize.py -c "{config[compare_dir]}compare_{config[dataset1]}_{config[dataset2]}_resultcompare.tsv" \
+            -d1 "{config[dataset1]}" \
+            -d2 "{config[dataset2]}" \
             -s "{config[structures_dir]}" \
             -o "{config[compare_dir]}pml/"
    
         run_pymol=$(ls -1 {output[0]} | sed 's/^/pymol -q -c /')
         cd {output[0]}
         eval "$run_pymol"
-        """
-rule write_info:
-    input:
-        f"{config['compare_dir']}{config['dataset1']}_{config['dataset2']}_diff2.txt"
-    output:
-        f"{config['compare_dir']}{config['dataset1']}_{config['dataset2']}_info2.txt"
-    conda:
-        f"{config['conda_env']}"
-    shell:
-        """
-        awk 'NR==FNR {a[$1]=$2; next} $1 in a {print $1, a[$1], $3}' \
-            <(awk 'NR==FNR {a[$1]; next} $2 in a {print $2, $1}' {config['compare_dir']}{config['dataset1']}_{config['dataset2']}_diff.txt {config[mutation_input]}) \
-            "{config[hotregion1]}" | \
-            awk 'NR==FNR {b[$1]=$3; next} $1 in b {print $0, b[$1]}' {config[hotregion2]} - > {output[0]}
         """
 
 
